@@ -1,0 +1,193 @@
+
+:root {
+  --darkB: hsla(217, 19%, 35%);
+  --desB: hsl(214, 17%, 51%);
+  --grayB: hsl(212, 23%, 69%);
+  --lightGB: hsl(210, 46%, 95%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  width: 100%;
+  height: 90vh;
+  font-size: 13px;
+  background-color: var(--lightGB);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  height: 285px;
+  width: 720px;
+  box-shadow: 0px 0px 30px rgb(170, 170, 170);
+  border-radius: 15px;
+}
+.drawers {
+  width: 354px;
+  height: 285px;
+  float: left;
+  margin: 0px;
+  border-radius: 15px;
+}
+.content {
+  position: absolute;
+  left: 290px;
+  width: 438px;
+  height: 285px;
+  padding: 35px;
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+header {
+  width: 335px;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--darkB);
+}
+p {
+  width: 350px;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: grey;
+  letter-spacing: 0.2px;
+}
+h2 {
+  position: absolute;
+  font-weight: 800;
+  top: 200px;
+  left: 90px;
+  float: left;
+  margin: 8px;
+  clear: right;
+  font-size: 15px;
+  width: 190px;
+  color: #49556b;
+}
+.date {
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  font-weight: 100;
+  color: var(--grayB);
+}
+.person {
+  position: relative;
+  top: 15px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+}
+.share {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 25px;
+  right: -322px;
+  background-image: url(../images/bShare.svg);
+}
+.share:hover {
+  background-image: url(../images/aShare.svg);
+}
+.desktopHover {
+  position: relative;
+  top: -120px;
+  left: -110px;
+  display: none;
+}
+.share:hover .desktopHover {
+  display: flex;
+  border: 2px solid red;
+}
+.shareOptions {
+  position: relative;
+  top: -150px;
+  left: 220px;
+}
+.mobileHover {
+  position: relative;
+  top: -135px;
+  left: -33px;
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  body {
+    width: 375px;
+    height: 60vh;
+  }
+  .container {
+    margin-left: 50px;
+    width: 331px;
+  }
+  .drawers {
+    width: 331px;
+    border-radius: 15px;
+  }
+  .content {
+    text-align: center;
+    margin-top: 250px;
+    border-radius: 0px 0px 15px 15px;
+    top: -5px;
+    left: 0px;
+    width: 331px;
+    height: 280px;
+    background-color: white;
+    box-shadow: 3px 4px 9px grey;
+  }
+  header {
+    font-size: 14px;
+    width: 260px;
+    line-height: unset;
+    margin-left: 10px;
+  }
+  p {
+    width: 225px;
+    margin: 10px;
+    font-size: 11px;
+  }
+  .person {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    height: 35px;
+  }
+  h2 {
+    position: relative;
+    top: 10px;
+    left: -10px;
+    font-size: 13px;
+  }
+  .date {
+    left: 105px;
+    top: 235px;
+    margin: 0;
+    padding: 0;
+  }
+  .share {
+    position: relative;
+    top: 20px;
+    left: 230px;
+  }
+  .desktopHover {
+    display: none !important;
+  }
+  .mobileHover {
+    position: relative;
+    top: -40px;
+    left: -265px;
+    display: none;
+  }
+  .share:hover .mobileHover {
+    display: flex;
+  }
+}
