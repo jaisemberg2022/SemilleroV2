@@ -1,0 +1,47 @@
+#div_1{
+    background-color: white;
+    width: 720px;
+    height: 512px;
+    left: 25%;
+    top: 6.25%;  
+    position: fixed;
+}
+
+body{
+   background-color: gray;
+}
+#fondo{
+    position: absolute;
+width: 325px;
+height: 512px;
+left: 0px;
+top: 0px;
+}
+#container-left{
+      position: absolute;
+width: 325px;
+height: 512px;
+left: 0px;
+top: 0px;
+border:solid blue ;
+}
+
+#container-right{
+display: flex;
+width: 325px;
+height: 512px;
+left: 50% ;
+border:solid red ;
+}
+
+.centered {
+  position: absolute;
+width: 300px;
+left: 1.5625%;
+top: 12.5%;
+font-size: 18px;
+font-style: normal;
+line-height: 23.5px;
+text-align: center;
+color: #FFFFFF;
+  }
