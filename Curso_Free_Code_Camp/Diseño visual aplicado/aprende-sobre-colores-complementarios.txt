@@ -1,0 +1,24 @@
+<style>
+  body {
+    background-color: #FFFFFF;
+  }
+  .blue {
+    background-color: #000000;
+  }
+  .yellow {
+    background-color: #000000;
+  }
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+  .blue{
+    background-color:blue;
+  }
+  .yellow{
+    background-color:yellow;
+  }
+</style>
+<div class="blue"></div>
+<div class="yellow"></div>

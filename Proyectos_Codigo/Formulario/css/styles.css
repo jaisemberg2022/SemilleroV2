@@ -1,47 +1,110 @@
-#div_1{
-    background-color: white;
-    width: 720px;
-    height: 512px;
-    left: 25%;
-    top: 6.25%;  
-    position: fixed;
+body{
+  width: 100%;
+  height: 100vh;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
-body{
-   background-color: gray;
+main{
+    background-color: white;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75vh;
+    display:flex;
+    box-shadow: 0px 0px 30px 0px rgb(100, 100, 100);
+    justify-items: center;
+    
 }
-#fondo{
-    position: absolute;
-width: 325px;
-height: 512px;
-left: 0px;
-top: 0px;
+span{
+  color:red;
+  
 }
+p{
+  font-size: 11px;
+  
+}
+#text-left-container {
+  font-size: 15px;
+  font-style: normal;
+  line-height: 23.5px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 25%;
+  padding-right: 25%;
+  }
+h1{
+  padding-top: 18.75%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.button-header{
+  margin-top: 15px;
+  width: 90%;
+  height: 15%;
+  margin-bottom: 20px;
+  background-color:#1FC9C8;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+#button-foot{
+width: 70%;
+height: 12%;
+margin-bottom: 1px;
+background-color: #2D3DD0;
+color: white;
+border-color: #2D3DD0;
+border-radius: 5px ;
+font-size: 10px;
+
+}
+
+#button-foot:hover{
+  background-color: #6a79ff;
+  border-color: #6a79ff;
+  color: white;
+}
+input{
+
+width: 80%;
+height: 40px;
+background: #FFFFFF;
+border: 2px solid #DEDEDE;
+border-radius: 5px;
+margin-bottom: 15px;
+
+}
+
 #container-left{
-      position: absolute;
-width: 325px;
-height: 512px;
-left: 0px;
-top: 0px;
-border:solid blue ;
+background-image: url("../imagenes/fondo2.jpg");  
+background-size: cover;
+flex:1;
+color: white;
+text-align: center;
+font-size: 17px;
+display: block;
 }
 
 #container-right{
 display: flex;
-width: 325px;
-height: 512px;
-left: 50% ;
-border:solid red ;
+flex:1;
+flex-direction: column;
+justify-content: center;
+box-shadow: 0px 0px 30px rgb(170, 170, 170);
+
 }
 
-.centered {
-  position: absolute;
-width: 300px;
-left: 1.5625%;
-top: 12.5%;
-font-size: 18px;
-font-style: normal;
-line-height: 23.5px;
-text-align: center;
-color: #FFFFFF;
-  }
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  box-shadow: 0px 0px 2px rgb(100, 100, 100);
+  margin-left: 10%;
+  margin-right: 10%;  
+
+}

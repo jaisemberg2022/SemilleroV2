@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="left">
+      <aside id="flex">
+        <img src="./images/Bg (4).svg" id="fylo" />
+        <div>
+          <img src="./images/Bg (1).svg" class="a" />
+          <img src="./images/Bg (2).svg" class="a" />
+          <img src="./images/Bg (3).svg" class="a" />
+        </div>
+      </aside>
+    </section>
+    <section id="right">
+
+
+  <div class="porcentaje" id="porcentaje"></div>
+      <!-- <div disabled="disabled" id="barra_progreso"> 
+         <span class="progreso" id="progreso"> </span>   -->
+        <div class="bar">
+          <span class="progress-bar">
+            <div class="pin"></div>
+          </span>
+        </div>
+      </div>
+      <p id="asd"></p>
+      <p id="asb"></p>
+    </section>
+    <script>
+      const progreso = document.getElementById("progreso");
+      const porcentaje = document.getElementById("porcentaje");
+      const asd = document.getElementById("asd")
+      const asb = document.getElementById("asb")
+      let cantidad = 0;
+
+      let tiempo = setInterval(() => {
+        cantidad += 1;
+        // progreso.style.width = `${cantidad}%`;
+
+        if (cantidad == 80) {
+          clearInterval(tiempo);
+        }
+        porcentaje.textContent = `you’ve used of your storage ${cantidad * 10} GB of your storage`;
+        asd.textContent =`0 GB`;
+        asb.textContent=`1000 GB`;
+        
+      }, 50);
+    </script>
+  </body>
+</html>

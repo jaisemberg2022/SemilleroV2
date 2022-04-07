@@ -1,0 +1,28 @@
+Esplicacion:Cambia la posición relativa de un elemento
+CSS trata cada elemento HTML como su propia caja, esto es a lo que usualmente se refiere como el Modelo de Caja de CSS. Los elementos bloque automáticamente empiezan en una nueva línea (piensa en las etiquetas título, párrafos y divs) mientras que los elementos en línea se ubican entre el contenido al rededor (como imágenes o spans). El diseño por defecto de los elementos en esta manera se llama el flujo normal de un documento, pero CSS ofrece la propiedad position para sobreescribirlo.
+
+Cuando la posición de un elemento se establece a relative, te permite especificar como CSS lo moverá relativo a su posición actual dentro del flujo normal de la página. Se empareja con las propiedades de desplazamiento CSS de left o right, y top o bottom. Estas dicen cuántos pixeles, porcentajes, o ems se debe mover el elemento lejos de donde esté normalmente posicionado. El siguiente ejemplo mueve el párrafo 10 pixeles lejos de la parte inferior:
+
+p {
+  position: relative;
+  bottom: 10px;
+}
+Cambiando la posición de un elemento a relative no lo quita del flujo normal; otros elementos a su alrededor aún se comportarán como si dicho elemento estuviera en su posición predeterminada.
+
+Nota: el posicionamiento te da mucha flexibilidad y poder sobre el diseño visual de una página. Es bueno recordar que no importa la posición de los elementos, el lenguaje de marcado HTML subyacente debe organizarse y tener sentido cuando se lee de arriba a abajo. Así es como los usuarios con discapacidades visuales (que dependen de dispositivos de asistencia como lectores de pantalla) acceden a tu contenido.
+
+
+
+
+<style>
+  h2 {
+position:relative;
+top:15px;
+
+  }
+</style>
+<body>
+  <h1>On Being Well-Positioned</h1>
+  <h2>Move me!</h2>
+  <p>I still think the h2 is where it normally sits.</p>
+</body>

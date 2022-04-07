@@ -1,0 +1,244 @@
+:root {
+  --border-radius: 20px;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c122c;
+  background-image: url(../images/Bg\(1\).png);
+  background-position: bottom;
+  background-size:contain;
+  background-repeat: no-repeat;
+  
+}
+
+#fylo {
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+.a {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  background-color: #0c122c;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+.a:hover{
+  background-color: #141f47;
+
+}
+#asd{
+  font-size: 9px;
+  color: white;
+  position: relative;
+  top: 32%;
+  left: 30px;
+  }
+#asb{
+  font-size: 9px;
+  color: white;
+  margin-right:31px ;
+  position: relative;
+  top: 15%;
+  left: 80%;
+}
+#left {
+  height: 187px;
+  width: 396px;
+  margin-right: 40px;
+  background-color: #1e2c69;
+  border-radius: 10px 120px 10px 10px;
+}
+#right {
+  position: relative;
+  top: 37px;
+  height: 112px;
+  width: 352px;
+  background-color: #1e2c69;
+  border-radius: 10px;
+}
+ /* #barra_progreso {
+  width: 300px;
+  height: 15px;
+  margin: 20px auto;
+  border-color: #141f47;
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  background-color: #141f47;
+  overflow: hidden;
+}
+.progreso {
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 11px;
+  width: 0;
+  background: linear-gradient(267.9deg, #fa4d91 21.63%, #fe9e97 77.12%);
+  position: absolute;
+  border-radius: var(--border-radius);
+  color: white;
+} 
+
+*/
+.porcentaje {
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 50px;
+  transform: translateY(30px);
+  color: white;
+}   
+
+.bar{
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  width: 288px;
+  margin-left: 30px;
+  height: 12px;
+  background-color: #151e49;
+  border-radius: 20px;
+  transform: translateY(40px);
+}
+.progress-bar{
+  z-index: 4;
+  width: 80%;
+  height: 10px;
+  background: linear-gradient(267.9deg, #fa4d91 21.63%, #fe9e97 77.12%);
+  border-radius: 20px;
+  position: relative;
+  margin-top: 1px;
+  margin-left: 1px;
+  animation: smooth 10s;
+}
+@keyframes smooth {
+from {width: 0%;}
+to {width: 80%;}
+}
+.progres-bar::after{
+  content: '';
+  width: 10%;
+  height: 10px;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+  right: 3px;
+  top: 2px;
+}
+.pin{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 2px;
+} 
+
+@media(max-width:360px){
+  
+  span p{
+    font-size: 6px;
+  }
+  
+  body{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  background-image: url(../images/bg-mobile.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+  }
+  #left, #right{
+    position: relative;
+    top: 150px;
+    left: 15px;
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  .a{
+    position: relative;
+    top: 50px;
+    left: 25px;
+    height: 20px;
+    width: 20px;
+  }
+  #fylo {
+    position: relative;
+    top: 30px;
+    left: 25px;
+  }
+  .porcentaje {
+    margin-left: 1px;
+    font-size: 9px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    transform: translateY(30px);
+    color: white;
+  }
+  .bar{
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    width: 250px;
+    margin-left: 30px;
+    height: 12px;
+    background-color: #151e49;
+    border-radius: 20px;
+    transform: translateY(40px);
+  }
+  .progress-bar{
+    z-index: 4;
+    width: 80%;
+    height: 9px;
+    background: linear-gradient(267.9deg, #fa4d91 21.63%, #fe9e97 77.12%);
+    border-radius: 20px;
+    position: relative;
+    margin-top: 1px;
+    margin-left: 1px;
+    animation: smooth 10s;
+  }
+  @keyframes smooth {
+  from {width: 0%;}
+  to {width: 80%;}
+  }
+  .progres-bar::after{
+    content: '';
+    width: 10%;
+    height: 10px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    right: 3px;
+    top: 2px;
+  }
+  .pin{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 2px;
+    
+  } 
+  
+}
+
