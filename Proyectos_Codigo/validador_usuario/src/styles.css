@@ -1,0 +1,105 @@
+body{
+    display: flex;
+  justify-content:left;
+  align-items:center;
+  width: 10%;
+  height: 100vh;
+  background-image: url("../images/bg-pattern-desktop.svg");  
+  margin-top: 100px;
+  margin-left: 10%;
+background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+img{
+    /* hero-desktop 1 */
+position: absolute;
+width: 729px;
+height: 787px;
+left: 760px;
+top: 0px;
+}
+h1{
+    /* WE’RE COMING SOON */
+width: 308px;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 64px;
+color: #CE9DA0;
+}
+span{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    color: #000;
+}
+p{
+    /* Hello fellow shoppers! We´re currently building our new fashion store. Add your email below to stay up-tp-date with announcements and our launch deals. */
+width: 519px;
+height: 135px;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 40px;
+color: #CE9DA0;
+}
+input[type=email]{
+    /* Rectangle 2 */
+position: relative;
+width: 518px;
+height: 74px;
+border: 3px solid #D9C9CC;
+box-sizing: border-box;
+border-radius: 50px;
+background-color: transparent;
+}
+input[type=email]::placeholder{
+    /* Email Address */
+position: absolute;
+left: 5%;
+top:20%;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 40px;
+z-index: 2;
+/* identical to box height, or 222% */
+display: flex;
+color: #DECECF;
+}
+
+
+
+input[type=submit] {
+    /* Rectangle 3 */
+position: absolute;
+width: 129.5px;
+height: 74px;
+left: 38.8%;
+background: linear-gradient(#F19797, rgba(244, 183, 182, 0.34) 90.15%);
+border-radius: 50px;
+border: 1px;
+}
+input[type=submit]:hover{
+    /* Rectangle 3 */
+background: linear-gradient(250.83deg, #FACECF 40.03%, #FFECEC 77.27%);
+box-shadow: -1px 10px 25px 2px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+}
+.error_email{
+    /* please privade a valid email */
+
+position: absolute;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 40px;
+margin-left: 2%;
+}
