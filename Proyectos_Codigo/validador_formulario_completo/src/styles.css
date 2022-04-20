@@ -1,0 +1,256 @@
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: #FF7978;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+
+#left{
+    display:flex;
+    justify-content: center;
+    width: 40%;
+    height: 30%; 
+    /* background-color: red; */
+}
+
+div{
+    display:flex;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items:center;
+    width:  70%;
+    height: auto;
+    /* background-color: lime; */
+    text-align: left;
+}
+
+#left>div>h1{
+    /* Learn to code by watching others see how experienced developers solve problems in real-time watching scripted tutorials is great. but understanding how developers think is invaluable. */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 60px;
+color: #FFFFFF;
+
+}
+
+#left>div>p{
+    /* Learn to code by watching others see how experienced developers solve problems in real-time watching scripted tutorials is great. but understanding how developers think is invaluable. */
+
+font-family: 'Roboto';
+font-style:normal;
+font-weight:lighter;
+font-size: 15px;
+/* or 150% */
+
+color: #FFFFFF;
+}
+
+
+#right{
+
+    display:flex;
+    justify-content: flex-start;
+  width: 40%;
+  height: 90%; 
+  /* background-color: blue; */
+}
+
+form{
+    display: flex;
+    flex-direction:column ;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+#right>form>header{
+/* Rectangle 1 */
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 50px;
+background: #5D54A3;
+border-radius: 10px 10px 0px 0px;
+font-family: 'Roboto';
+text-align: center;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+margin-bottom: 30px;
+color: #FFFFFF;
+}
+
+#right>form>header>span{
+    font-weight: 100;
+    font-size: 12px;
+}
+#right>form>#fn{
+    align-self: flex-end;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+#right>form>input{
+    outline: none;
+width: 90%;
+height: 50px;
+background: #FFFFFF;
+border: 1px solid #DEDEDE;
+border-radius: 10px;    
+padding-left: 20px;
+}
+
+
+input::placeholder{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 200;
+font-size: 12px;
+line-height: 19px;
+color: #3F3E46;
+}
+
+
+#right>form>button{
+    /* Rectangle 5 */
+width: 90%;
+height: 50px;
+background: #37CC8A;
+border: 1px solid #5CB78E;
+border-radius: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+/* identical to box height */
+color: #FFFFFF;
+}
+
+#right>form>button:hover{
+    background: #45ffab;
+}
+
+#right>form>.mesage{
+    /* By clicking the button you are agreeing to our Terms and services */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #BBB9C4;
+}
+
+
+#right>form>p>span{
+
+    color: red;
+    font-weight: 550;
+}
+
+
+@media (max-width:375px) 
+{
+
+    body{
+        background-image: url("../images/bg-intro-mobile.png");
+    }
+
+    main{
+
+        flex-direction:column;
+
+        
+    }
+
+    main{
+    
+        align-items: center;
+        
+    }
+    
+    
+    #left{
+ 
+        width: auto;
+        height: auto;
+      
+    }
+    
+    div{
+        width: 90%;
+        height: 100%;
+    }
+    
+    #left>div>h1{
+        text-align: center;
+        font-size: 30px;
+        line-height: 20px;
+    }
+    #left>div>p{
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        /* or 167% */
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+    
+    #right{
+    
+     
+        width: auto;
+        height: auto;
+      
+    }
+    
+    form{
+        width: 99%;
+        height: 90%;
+    
+    }
+    
+    #right>form>p{
+        /* By clicking the button you are agreeing to our Terms and services */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #BBB9C4;
+    }
+    
+    
+    #right>form>p>span{
+    
+        color: red;
+        font-weight: 550;
+    }
+    
+    
+
+}

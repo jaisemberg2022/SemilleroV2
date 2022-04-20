@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<main>
+    <section id="left">
+        <div class="container">
+            <h1>Learn to code by watching others</h1>
+            <p id="aa"> see how experienced developers solve problems in real-time watching scripted tutorials is great. but understanding how developers think is invaluable.</p>
+        </div> 
+    </section>
+
+    <section id="right"> 
+        <form>
+
+           <header>Try it free 7 days then_<span class="asa">$20/mo. thereafter </span> </header>
+
+            <input id="first_name" type="text" placeholder="First Name" onkeyup="validate_first_Name()" >
+            <p id="fn" class="first_name_error_mesage"></p> 
+
+            <input id="last-name" type="text" placeholder="last-name" onkeyup="validate_Last_Name()">
+            <p id="fn" class="last_name_error_mesage"></p>
+
+            <input id="email" type="email" placeholder="Email Address" onkeyup="validate_Email()">
+            <p id="fn" class="error_email" ></p>   
+
+            <input id="password" type="password" placeholder="password" onkeyup="validate_Password()">
+            <p id="fn" class="error_mesage_password"></p> 
+
+            <button type="submit">CLAIM YOUR FREE TRIAL</button>
+            <p class="mesage">By clicking the button you are agreeing to our <span> Terms and services<span></span></p>
+             
+        </form> 
+    </section>
+</main>
+    
+
+    
+
+<script>
+    //validacion del primer nombre
+    let  first_name = document.getElementById('first_name')
+    let  first_name_error_mesage = document.getElementsByClassName('first_name_error_mesage')
+     function validate_first_Name()
+    {
+        const regular_exprecion_first_name = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
+            if (regular_exprecion_first_name.test(first_name.value) || (regular_exprecion_first_name.test(first_name.value)))
+            {
+                first_name_error_mesage[0].innerText = "correct name";
+                first_name_error_mesage[0].style.color = 'lime';
+                document.getElementById('first_name').style.borderColor="lime"; 
+            }
+            else
+            {
+                first_name_error_mesage[0].innerText = "incorrect name";
+                first_name_error_mesage[0].style.color = 'red';  
+                document.getElementById('first_name').style.borderColor="red";
+            }
+    }
+    
+    //validacion del segundo nombre
+    let  last_name = document.getElementById('last-name')
+    let  last_name_error_mesage = document.getElementsByClassName('last_name_error_mesage')
+     function validate_Last_Name()
+    {
+        const regular_exprecion_last_name = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
+            if (regular_exprecion_last_name.test(last_name.value) || (regular_exprecion_last_name.test(last_name.value)))
+            {
+                last_name_error_mesage[0].innerText = "correct name";
+                last_name_error_mesage[0].style.color = 'lime';
+                document.getElementById('last-name').style.borderColor="lime" ;
+            }
+            else
+            {
+                last_name_error_mesage[0].innerText = "incorrect name";
+                last_name_error_mesage[0].style.color = 'red';  
+                document.getElementById('last-name').style.borderColor="red";
+            }
+    }
+    //validacion del correo electronico
+    let email = document.getElementById('email')
+    let error_email_mesage = document.getElementsByClassName('error_email')
+     function validate_Email()
+    {
+        const regular_exprecion_email = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+            if (regular_exprecion_email.test(email.value) || (regular_exprecion_email.test(email.value)))
+            {
+                error_email_mesage[0].innerText = "correct email";
+                error_email_mesage[0].style.color = 'lime';
+                document.getElementById('email').style.borderColor="lime" 
+                document.getElementById('email').style.fontSize="small" 
+            }
+            else
+            {
+                error_email_mesage[0].innerText = "please privade a valid email";
+                error_email_mesage[0].style.color = 'red';  
+                document.getElementById('email').style.borderColor="red";
+                            
+            }
+    }
+    
+    //validacion contraseña 
+    let password = document.getElementById('password')
+    let error_mesage_password = document.getElementsByClassName('error_mesage_password')
+     function validate_Password()
+    {
+        const regular_exprecion_password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+            if (regular_exprecion_password.test(password.value) || (regular_exprecion_password.test(password.value)))
+            {
+                error_mesage_password[0].innerText = "valid password";
+                error_mesage_password[0].style.color = 'lime';
+                document.getElementById('password').style.borderColor="lime" 
+                document.getElementById('password').style.fontSize="small" 
+            }
+            else
+            {
+                error_mesage_password[0].innerText = "writhe another password";
+                error_mesage_password[0].style.color = 'red';  
+                document.getElementById('password').style.borderColor="red";
+                            
+            }
+    }
+
+
+</script>
+
+</body>
+</html>
