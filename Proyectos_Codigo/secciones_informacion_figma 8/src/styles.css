@@ -1,0 +1,647 @@
+body {
+    display: flex;
+    justify-content: center;
+    /*horisontal*/
+    align-items: flex-start;
+    /*vertical*/
+    width: 100%;
+    height: 100%;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 3021px;
+
+}
+
+section,
+footer {
+    margin-top: 50px;
+}
+
+.img_responsive {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #edfbfe;
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+header>#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*horisontal*/
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 1px;
+    width: 50%;
+    height: 95%;
+
+}
+
+header>#left img {
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+}
+
+header>#left img,
+h1,
+button {
+    margin-left: 50px;
+}
+
+
+
+header>#left>h1 {
+    /* Build The Community Your fans Will Love */
+
+    font-style: normal;
+    font-size: 32px;
+    color: #000000;
+    width: 437px;
+}
+
+header>#left>p {
+    /* Huddle re-images the way we build communities. You have a voice, but so does your audience. Create connentions with your users as you engage in genuine discussion. */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 50px;
+    line-height: 24px;
+    letter-spacing: 0.035em;
+    color: #8B98A3;
+    width: 440px;
+}
+
+header>#left>button {
+    /* Rectangle 5 */
+
+
+    width: 50%;
+    height: 61px;
+    background: #FF52BF;
+    border-radius: 40px;
+    border: 1px;
+    /* Get Started For Free */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: white;
+
+}
+
+header>#left>button:active {
+    background: #f97dcb;
+}
+
+
+header>#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 1px;
+    width: 50%;
+    height: 95%;
+
+}
+
+header>#right>button {
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 20%;
+    height: 31px;
+    background: white;
+    border-radius: 20px;
+    border: 1px;
+    /* Get Started For Free */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: black;
+}
+
+header>#right>button:active {
+    background-color: rgb(223, 223, 223);
+}
+
+header>#right>img {
+    width: 100%;
+    height: auto;
+}
+
+#two {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+#two>#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 1px;
+    width: 60%;
+    height: 95%;
+
+}
+
+#two>#left p {
+    margin-left: 50px;
+}
+
+
+#two>#left p {
+    width: 423px;
+    font-size: 22px;
+    /* Generate meaningful discussions with your audience and build a strong loyal community. Think of the insightful conversations you mis out on with a feedback form */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0.035em;
+    z-index: 1;
+    color: #908D99;
+
+
+}
+
+#two>#left h2 {
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+#two>#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 1px;
+    width: 40%;
+    height: 95%;
+
+}
+
+
+
+
+#tree {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+#tree>#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 1px;
+    width: 40%;
+    height: 95%;
+
+}
+
+#tree>#left img {
+    margin-left: 50px;
+}
+
+
+#tree>#right {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 1px;
+    width: 60%;
+    height: 95%;
+
+}
+
+#tree>#right,
+p {
+    margin-left: 50px;
+}
+
+#tree>#right>h2 {
+    /* Flowing Conversation */
+
+
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.035em;
+    color: #000000;
+    margin-left: 50px;
+}
+
+#tree>#right>p {
+    width: 464px;
+    text-align: left;
+    /* You wouln’t paginate a conversation in real life, so why do it online? Our Threads have just-in-time loading for a more nature flow */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0.035em;
+
+    color: #85929F;
+}
+
+#four {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+#four>#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 1px;
+    width: 60%;
+    height: 95%;
+
+}
+
+#four>#left h2,
+p {
+    margin-left: 50px;
+}
+
+#four>#left h2 {
+
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.035em;
+    color: #000000;
+}
+
+#four>#left p {
+    /* IT takes no time at all to integrate Huddle with you app´s authentication solution. This means, once signed in to your app , your users can star chatting immediately. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.035em;
+    color: #85929F;
+    width: 451px;
+    z-index: 1;
+
+}
+
+#four>#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 1px;
+    width: 40%;
+    height: 95%;
+
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #00252e;
+    box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+
+}
+
+#container_1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 33.3%;
+    height: 95%;
+    margin-left: 5px;
+    margin-right: 1px;
+
+}
+
+footer>#container_1>.one_img_logo {
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+
+.container_logo {
+    display: flex;
+    position: relative;
+    color: white;
+    margin-left: 30px;
+
+}
+
+.container_logo>p {
+    bottom: 29px;
+    margin-left: 15px;
+    position: relative;
+    font-size: 14px;
+    width: 308px;
+}
+
+
+
+#container_2 {
+    display: flex;
+    width: 33.3%;
+    height: 95%;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+
+#container_2>.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    margin-right: 1px;
+    margin-top: 5px;
+    margin-left: 3px;
+
+}
+
+#container_2>.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 3px;
+
+}
+
+#container_2>.left>.container_text>p,
+#container_2>.right>.container_text_two>p {
+    position: relative;
+    color: white;
+    margin-left: 90px;
+    font-size: 14px;
+}
+
+#container_3 {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    height: 95%;
+    margin-left: 1px;
+    margin-right: 5px;
+}
+
+#container_3>.container_logo_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50%;
+    width: 95%;
+    margin-top: 1px;
+    margin-left: 5px;
+
+}
+
+#container_3>.container_logo_3>.container_social_logo {
+    position: relative;
+    bottom: 40px;
+    margin-right: 10px
+}
+
+#container_3>.container_logo_3>.container_social_logo>img {
+    margin-right: 15px;
+
+
+}
+
+#container_3>.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50%;
+    width: 95%;
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+#container_3>.text>p {
+    font-size: 10px;
+    margin-right: 30px;
+    text-align: right;
+    color: white;
+}
+
+@media (max-width:375px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("../images/bg-hero-mobile.svg");
+        width: 100%;
+        height: auto;
+    }
+
+    header>#right{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+    }
+ 
+    #two,#four{
+        display: flex;
+        flex-direction: column;
+    }
+    #two>#right{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+    }
+    #tree{
+        display: flex;
+        flex-direction:column-reverse ;
+    }
+
+    #tree>#left{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+    }
+    #tree>#left img {
+        margin-left: 5px;
+    }
+    #four>#right{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    #container_1 {
+
+        width: 100%;
+        height: auto;
+    }
+
+
+    footer>#container_1>.one_img_logo {
+        margin-left: 10px;
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+    
+    .container_logo {
+ 
+        margin-left: 10px;
+    
+    }
+    
+    .container_logo>p {
+        bottom: 29px;
+        margin-left: 15px;
+        font-size: 12px;
+        width: 228px;
+    }
+    #container_2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #container_2>.right{
+        width: 100%;
+        height: auto;
+
+    }
+    #container_3{
+        width: 100%;
+        height: auto;
+        background-color: lime;
+    }
+
+    .container_logo_3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+    }
+    .text{
+        display: flex;
+        width: auto;
+        height: auto;
+        background-color: blue;
+    }
+
+  
+
+    #container_3>.container_logo_3>.container_social_logo {
+        display: flex;
+        align-self: center;
+        justify-self: end;
+        position: relative;
+        
+    }
+    
+    #container_3>.container_logo_3>.container_social_logo>img {
+        margin-right: 15px;
+    
+    
+    }
+
+    #container_2>.left>.container_text>p,
+#container_2>.right>.container_text_two>p {
+    position: relative;
+    color: white;
+    margin-left:10px;
+    font-size: 14px;
+}
+}
