@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles.css">
     <script src="./src/script.js"></script>
+
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <main>
 
         <header>
             <div id="left">
-                <p>Rock
-                    Paper
-                    Scissors</p>
+                <p>Rock Paper Scissors
+                </p>
             </div>
 
             <div id="right">
 
                 <div id="container_right">
-                    <p>score</p>     
+                    <p>score</p>
                     <span>12</span>
                 </div>
             </div>
         </header>
-       
+
         <section id="one">
 
             <div id="a_1">
-                    <div id="left">
-                        <span class="dot" style="background-color: #506cf4;" ><button id="button_paper" style="background-image: url(./images/icon-paper.svg); background-repeat: no-repeat; background-position: center;"></button></span>
-                    </div>
+                <div id="left">
+                    <span class="dot" style="background-color: #506cf4;"><button id="button_paper" style="background-image: url(./images/icon-paper.svg); background-repeat: no-repeat; background-position: center; background-size: 40%;"></button></span>
+                </div>
 
-                    <div id="right">
-                        <span class="dot" style="background-color: #e8a91c;"><button id="scissors" style="background-image: url(./images/icon-scissors.svg);background-repeat: no-repeat; background-position: center;"></button></span>
-                    </div>
+                <div id="right">
+                    <span class="dot" style="background-color: #e8a91c;"><button id="scissors" style="background-image: url(./images/icon-scissors.svg);background-repeat: no-repeat; background-position: center; background-size: 40%;"></button></span>
+                </div>
             </div>
 
             <div id="a_2">
-                <span class="dot" style="background-color: #de3f5b;"><button id="rock" style="background-image: url(./images/icon-rock.svg); background-repeat: no-repeat; background-position: center;"></button></span>
+                <span class="dot" style="background-color: #de3f5b;"><button id="rock" style="background-image: url(./images/icon-rock.svg); background-repeat: no-repeat; background-position: center; background-size: 40%;" ></button></span>
             </div>
         </section>
 
-        
+
         <footer>
-            <div class="container">
-                <span>rules </span>
-            </div>
+            <button onclick="open_Modal()">Rules</button>
+            <dialog id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="Close_Modal()">&times;</span>
+                    <img src="./images/mobile-rules-modal.jpg" y>
+                </div>
+            </dialog>
         </footer>
     </main>
+
+    <script>
+        let modal = document.getElementById("myModal");
+
+        function open_Modal() {
+            modal.style.display = "flex";
+        }
+
+        function Close_Modal() {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
+
 </html>
