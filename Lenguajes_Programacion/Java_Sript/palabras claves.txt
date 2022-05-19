@@ -1,0 +1,18 @@
+push = metodo de arreglo se encarga de agregar en la ultima posicion de la fila un elemento
+
+splice = cambia el contendio de un array eliminando o agregando elementos existentes o nuevos
+
+include = determina si una matris devuelve true o false en caso de que se haya algun elemento
+
+event listener = sirve para escuchar un evento
+
+e.target = propiedad de un evento que permite teaer el elemento donde este ejecutado 
+
+dom = modelo de objeto de documento
+
+keyup= es un evento que se ejecuta cuando se ya deja de presionar una tecla en especifico del teclado
+
+.length  -1 = viaja hasta la ultima poscion de una cadena de arreglo
+
+
+
