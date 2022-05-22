@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Reference VS Copy</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body>
+    <div>
+        <p>Ingrese jugadores</p>
+        <form>
+            <input id="nombre" type="text" placeholder="Ingrese Nombre">
+            <input id="puntos" type="number" placeholder="Ingrese Puntos">
+            <button id="agregar" type="reset" onclick="capturar()">Agregar</button>
+        </form>
+    </div>
+    <br/>
+    <div>
+        <table border=1>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!--  -->
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="./src/script.js"></script>
+
+</html>

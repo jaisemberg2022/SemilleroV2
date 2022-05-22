@@ -1,0 +1,33 @@
+p {
+    font-weight: 900;
+    text-align: left;
+    font-size: 25px;
+    color: #1c99ad;
+}
+
+button {
+    margin: 4px 0px 4px 0px;
+    background: #1c99ad;
+    color: white;
+    padding: 8px;
+    border: none;
+}
+
+input {
+    margin: 4px 0px 4px 0px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    color: #1c99ad;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+}

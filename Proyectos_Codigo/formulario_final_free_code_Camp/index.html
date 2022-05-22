@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Document</title>
+</head>
+
+<header>
+    <h1 id="title">Formulario de suscribcion</h1>
+    <p id="description">llene las casillas del formulario para verificar si es apto para adquirir nuestro servicio</p>
+</header>
+
+<body>
+
+    <main id="main">
+        <form id="survey-form" action="">
+
+            <label for="name" id="name-label">mi nombre</label>
+            <input type="text" id="name" name="name" placeholder="nombre" required>
+            <br>
+            <label for="email" id="email-label">correo electronico</label>
+            <input type="email" id="email" name="email" placeholder="correo" required>
+            <br>
+            <label for="number" id="number-label">Numero</label>
+            <input type="number" id="number" name="number" min="10" max="100" placeholder="Numero">
+            <br>
+            <label for="dropdown" id="label-menu ">menu</label>
+            <select id="dropdown">
+                <option value="ferrary">ferrary</option>
+                <option value="mazda">ferrary</option>
+                <option value="ford">ferrary</option>
+                <option value="chevrolete">ferrary</option>
+            </select>
+            <br>
+            <label for="red" id="label-red">red</label>
+            <input type="radio" name="color" id="red" value="red">
+            <label for="yellow" id="label-yellow">yellow</label>
+            <input type="radio" name="color" id="yellow" value="yewllow">
+            <label for="blue" id="label-blue">blue</label>
+            <input type="radio" name="color" id="blue" value="blue">
+
+            <fieldset id="asp">
+                <legend>cual es tu mascota favorita?</legend>
+                <label for="Cats" id="label-cats">cats</label>
+                <input type="checkbox" name="favorite_pet" id="cats" value="Cats">
+                <label for="dogs" id="label-dogs">dogs</label>
+                <input type="checkbox" name="favorite_pet" id="dogs" value="Dogs">
+                <label for="birds" id="label-cats">birds</label>
+                <input type="checkbox" name="favorite_pet" id="birds" value="Birds">
+            </fieldset>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+</body>
+<script src="./src/main.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</html>
