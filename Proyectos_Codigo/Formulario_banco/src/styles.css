@@ -1,0 +1,190 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    background-color: white;
+}
+
+main>header {
+    width: 99%;
+    height: auto;
+    background-color: aqua;
+    margin: auto;
+}
+
+main>header h1 {
+    margin: 10px;
+    font-size: 3.07vw;
+    /* Subir extracto bancario */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51px;
+    color: #667788;
+}
+
+main>header>.container {
+    width: 99%;
+    height: auto;
+    background-color: yellow;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+main>header>.container p,
+span {
+    margin: 10px;
+    font-size: 1.6vw;
+}
+
+main>section {
+    display: flex;
+    width: 90%;
+    height: auto;
+    background-color: lime;
+    margin: 2px;
+}
+
+#img_button {
+    width: 50%;
+    height: 20px;
+    background-image: url("../images/no.png");
+    background-repeat: no-repeat;
+}
+
+#img_button.active {
+    width: 50%;
+    height: 20px;
+    background-image: url("../images/si.png");
+    background-repeat: no-repeat;
+}
+
+main>section>form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: auto;
+    background-color: orangered;
+    margin: 2px;
+}
+
+main>section>form table {
+    border: 1px solid black;
+    width: 60%;
+    height: auto;
+    background-color: purple;
+    margin: 2px;
+}
+
+main>section>form>table tr,
+td {
+    width: 10%;
+    height: auto;
+    border: 1px solid black;
+    background-color: palevioletred;
+    font-size: 1vw;
+    /* Archivo en ceros */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2.04vw;
+    line-height: 34px;
+    color: #000000;
+}
+
+main>section>form>table>input,
+select,
+option {
+    width: 50%;
+    background-color: white;
+    height: auto;
+    font-size: 1vw;
+    /* 2022/06/06 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4vw;
+    line-height: 24px;
+    color: #AAAAAA;
+}
+
+main>section>form>#myfile {
+    width: 30%;
+    height: auto;
+    background-color: yellow;
+}
+
+main>section>form>#myfile::placeholder {
+    opacity: 0;
+}
+
+@media (max-width:375px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        background-color: white;
+    }
+    main>header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 99%;
+        height: auto;
+        background-color: aqua;
+    }
+    main>header>.container {
+        width: 100%;
+        height: auto;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+    }
+    hr {
+        width: 99%;
+    }
+    main>section {
+        width: 90%;
+        height: auto;
+        background-color: lime;
+        margin: 2px
+    }
+    main>section>form {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        background-color: orangered;
+        margin: 2px
+    }
+    main>section>form table {
+        border: 1px solid black;
+        width: 90%;
+        height: auto;
+        background-color: purple;
+        margin: 2px;
+    }
+}

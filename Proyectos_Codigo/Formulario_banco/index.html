@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Subir extracto bancario</h1>
+            <hr>
+            <div class="container">
+                <span>DEMO SAS NIT 85,133,458-9</span>
+                <p>Fecha:
+                    <span id="fecha"></span>
+                </p>
+            </div>
+        </header>
+        <br>
+        <section>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label>Archivo a procesar</label></td>
+                        <td><input type="file" id="boton" name="boton" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Archivo en ceros</label></td>
+                        <td>
+                            <div id="img_button">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fecha">Fecha</label></td>
+                        <td><input type="date" id="fecha" name="fecha" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="select_bank_dropdown">Banco</label></td>
+                        <td>
+                            <select id="select_bank_dropdown" name="banco" required>
+                                <optgroup>                                <option value="Bancolombia">Bancolombia</option>
+                                <option value="Banco_Av_villlas">Banco AV Villas</option>
+                                <option value="Banco_Bogota">Banco de Bogotá</option>
+                                <option value="Banco_popular">Banco popular</option>
+                                <option value="Banco_BBVA">Banco BBVA</option>
+                                <option value="Banco_Agrario">Banco Agrario</option>
+                                <option value="Banco_Caja_Social">Banco Caja Social</option>
+                                <option value="Banco_Davivienda">Banco Davivienda</option>
+                                <option value="Banco_Itau">Banco Itau</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="select_Acount_dropdown">Cuenta</label></td>
+                        <td>
+                            <select id="select_Acount_dropdown" name="cuenta">
+                                <option value="Cuenta_Ahorro">cuenta de ahorros</option>
+                                <option value="Cuenta_Corriente">Cuenta corriente</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="select_moneda_dropdown">moneda conciliacion</label></td>
+                        <td>
+                            <select id="select_moneda_dropdown " name="moneda">
+                                <option value="Cuenta_Ahorro">cuenta de ahorros</option>
+                                <option value="Cuenta_Corriente">Cuenta corriente</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <input type="submit" id="myfile" name="myfile">
+                </table>
+            </form>
+        </section>
+        <br>
+        <br>
+    </main>
+
+</body>
+<script src="./src/main.js "></script>
+
+</html>

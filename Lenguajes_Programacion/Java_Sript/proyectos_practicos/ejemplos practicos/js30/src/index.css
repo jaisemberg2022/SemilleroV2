@@ -1,0 +1,95 @@
+html
+{
+    box-sizing: border-box;
+    font-size: 10px;
+    background: #8E24AA;
+    background: linear-gradient(45deg, #42A5F5 0%, #478ED1 50%, #0D47A1 100%);
+}
+
+*, *::before, *::after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    margin: 0;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.pantallatiempoRestante
+{
+    font-weight: 100;
+    font-size: 20rem;
+    margin: 0;
+    color: white;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.temporizador
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.controles_temporizador
+{
+    display: flex;
+}
+
+.controles_temporizador > *
+{
+    flex: 1;
+} 
+
+.controles_temporizador form
+{
+    flex: 1;
+    display: flex;
+}
+
+.controles_temporizador input
+{
+    flex: 1;
+    border: 0;
+    padding: 2rem;
+}
+
+.boton_temporizador
+{
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.1);
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+    border-right: 1px solid rgba(0,0,0,0.2);
+    padding: 1rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+.boton_temporizador:hover,
+.boton_temporizador:focus 
+{
+    background: rgba(0,0,0,0.2);
+    outline: 0;
+}
+
+.pantallaTemporizador 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pantallaTiempoFinal 
+{
+    font-size: 4rem;
+    color: white;
+}
