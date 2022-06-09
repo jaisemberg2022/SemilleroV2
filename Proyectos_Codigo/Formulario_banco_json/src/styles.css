@@ -21,7 +21,7 @@ main {
 main>header {
     width: 99%;
     height: auto;
-    background-color: aqua;
+    background-color: transparent;
     margin: auto;
 }
 
@@ -39,7 +39,7 @@ main>header h1 {
 main>header>.container {
     width: 99%;
     height: auto;
-    background-color: yellow;
+    background-color: transparent;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -51,13 +51,15 @@ main>header>.container p,
 span {
     margin: 10px;
     font-size: 1.6vw;
+    color: #667788;
+    font-weight: 100;
 }
 
 main>section {
     display: flex;
     width: 90%;
     height: auto;
-    background-color: lime;
+    background-color: transparent;
     margin: 2px;
 }
 
@@ -66,6 +68,7 @@ main>section {
     height: 20px;
     background-image: url("../images/no.png");
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #img_button.active {
@@ -82,7 +85,7 @@ main>section>form {
     flex-direction: row-reverse;
     width: 100%;
     height: auto;
-    background-color: orangered;
+    background-color: transparent;
     margin: 2px;
 }
 
@@ -90,16 +93,16 @@ main>section>form table {
     border: 1px solid black;
     width: 60%;
     height: auto;
-    background-color: purple;
+    background-color: transparent;
     margin: 2px;
 }
 
 main>section>form>table tr,
 td {
-    width: 10%;
+    width: 50%;
     height: auto;
     border: 1px solid black;
-    background-color: palevioletred;
+    background-color: white;
     font-size: 1vw;
     /* Archivo en ceros */
     font-family: 'Inter';
@@ -107,7 +110,13 @@ td {
     font-weight: 100;
     font-size: 2.04vw;
     line-height: 34px;
-    color: #000000;
+    color: #000000;  
+}
+
+
+
+main>section>form>table .left{
+    background-color: #c8c8c8;
 }
 
 main>section>form>table>input,
@@ -124,12 +133,29 @@ option {
     font-size: 1.4vw;
     line-height: 24px;
     color: #AAAAAA;
+    cursor: pointer;
 }
 
 main>section>form>#myfile {
     width: 30%;
     height: auto;
     background-color: yellow;
+    cursor: pointer;
+    /* Rectangle 11 */
+    background: #667788;
+    border-radius: 10px;
+    border:none;
+    /* Subir archivo */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75vw;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+main>section>form>#myfile:hover{
+    background-color: #93adc7;
 }
 
 main>section>form>#myfile::placeholder {
@@ -152,12 +178,12 @@ main>section>form>#myfile::placeholder {
         align-items: center;
         width: 99%;
         height: auto;
-        background-color: aqua;
+        background-color: transparent;
     }
     main>header>.container {
         width: 100%;
         height: auto;
-        background-color: yellow;
+        background-color: transparent;
         display: flex;
         flex-direction: column;
     }
@@ -165,26 +191,26 @@ main>section>form>#myfile::placeholder {
         width: 99%;
     }
     main>section {
-        width: 90%;
+        width: 99%;
         height: auto;
-        background-color: lime;
+        background-color: transparent;
         margin: 2px
     }
     main>section>form {
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
         flex-direction: column-reverse;
-        width: 100%;
+        width: 99%;
         height: auto;
-        background-color: orangered;
+        background-color: transparent;
         margin: 2px
     }
     main>section>form table {
         border: 1px solid black;
-        width: 90%;
+        width: 80%;
         height: auto;
-        background-color: purple;
+        background-color: transparent;
         margin: 2px;
     }
 }
