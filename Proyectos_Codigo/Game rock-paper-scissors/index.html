@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div><img src="./images/logo.svg" /></div>
+        <div id="left">
+            <p>score</p>
+            <span class="score"></span>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="container_Buttons">
+            <section class="paper_rock">
+                <div>
+                    <button class=" a paper" onclick="star_Game(1)">
+              <img src="./images/choice-1.svg" />
+            </button></div>
+
+                <div>
+                    <button class=" a scissors" onclick="star_Game(3)">
+                    <img src="./images/choice-3.svg" />
+            </button></div>
+
+            </section>
+            <div>
+                <button class=" a rock" onclick="star_Game(2)">
+              <img src="./images/choice-2.svg"/>
+          </button></div>
+            </div>
+
+    </main>
+    <section class="selection">
+        <aside style="text-align: center;">
+            <h2>You Picked</h2>
+            <div>
+                <button class="b" id="one">
+    <img id="player" /></button>
+        </aside>
+        </div>
+        <div class="finish">
+            <span id="win"> </span>
+            <button id="reset" onclick="reset_Game()">Play Again</button>
+        </div>
+        <aside style="text-align: center;">
+            <h2>THe House Picked</h2>
+            <div>
+                <button class="b" id="two">
+    <img  id="computer" />
+  </button></div>
+        </aside>
+    </section>
+    <footer>
+        <button id="btn_rules" onclick="display_rules()">RULES</button>
+
+        <div id="modal">
+            <div class="content_rules">
+                <h2>RULES</h2>
+                <img src="./images/image-rules.svg" alt="" class="rules-img" />
+            </div>
+            <button id="close_btn" onclick="close_rules()">
+              <img src="./images/icon-close.svg"
+               alt=""  />
+        </div>
+       </button>
+
+            <script src="./src/script.js"></script>
+    </footer>
+</body>
+
+</html>

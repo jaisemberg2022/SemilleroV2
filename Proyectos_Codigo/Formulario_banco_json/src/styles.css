@@ -90,18 +90,19 @@ main>section>form {
 }
 
 main>section>form table {
-    border: 1px solid black;
+    
     width: 60%;
     height: auto;
     background-color: transparent;
+    border-collapse:collapse;
     margin: 2px;
 }
 
-main>section>form>table tr,
+main>section>form>table>tr,
 td {
     width: 50%;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(119, 119, 119);
     background-color: white;
     font-size: 1vw;
     /* Archivo en ceros */

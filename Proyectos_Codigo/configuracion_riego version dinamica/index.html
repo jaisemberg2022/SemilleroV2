@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Config de Riesgo</title>
+  </head>
+  <body class="flex">
+    <main class="flex">
+      <h1>CONFIGUARCION DE RIESGOS</h1>
+      <div class="flex">
+        <section id="left" class="flex">
+          <aside class="options">IMPACTOS</aside>
+          <aside class="options">PROBABILIDADES</aside>
+          <aside class="options">TIPOS DE RIESGO</aside>
+          <aside class="options">EVALUACION DE RIESGO</aside>
+        </section>
+        <section id="right" class="flex">
+          <header id="topRight" class="flex">
+            <h2 id="tableHeader">IMPACTOS</h2>
+            <button id="newBtn">Nueva</button>
+          </header>
+          <table>
+            <thead>
+              <th>Condigo</th>
+              <th>Descripcion</th>
+              <th>Valor</th>
+              <th>Accion</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>February</td>
+                <td>$80</td>
+                <td>February</td>
+                <td>
+                  <img src="./images/editar.svg" class="pencil" alt="" />
+                  <img src="./images/eliminar.svg" class="trash" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <form id="module" class="flex hidden">
+            <header> <b id="moduleHeader">"EVALUACION DE RIESGO"</b> <img id="x" src="./images/cerrar.svg" alt=""></header>
+            <div>
+              <label for="descripcion">Descripcion</label>
+              <input id="desc" name="descripcion" type="text">
+            </div>
+            <div>
+              <label id="val1Label" for="val1">Valor Minimo</label>
+              <input id="val1" name="val1" type="text">
+            </div>
+            <div id="val2Container">
+              <label for="val2">Valor Maximo</label>
+              <input id="val2" name="val2" type="text">
+            </div>
+            <input id="moduleBtn" type="submit" placeholder="asp">
+          </form>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>
