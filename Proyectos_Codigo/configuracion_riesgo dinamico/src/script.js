@@ -1,22 +1,25 @@
 //variables
 const optionsArray = [...document.querySelectorAll("aside")],
-    thArray = [...document.querySelectorAll("th")],
-    thead = document.querySelector("thead"),
-    tbody = document.querySelector("tbody"),
-    newBtn = document.getElementById("newBtn"),
-    module = document.getElementById("module"),
-    xBtn = document.getElementById("x"),
-    moduleHeader = document.getElementById("moduleHeader"),
-    tableHeader = document.getElementById("tableHeader"),
-    val1Label = document.getElementById("val1Label"), 
-    val2Container = document.getElementById("val2Container"),
-    moduleBtn = document.getElementById("moduleBtn"),
-    desc = document.getElementById("desc"),
-    val1 = document.getElementById("val1"),
-    val2 = document.getElementById("val2"),
-    trash = document.querySelector(".trash"), 
-    pencil = document.querySelector(".pencil");
-let impactArray = [], probArray = [], typeArray = [], evalArray = [];
+  thArray = [...document.querySelectorAll("th")],
+  thead = document.querySelector("thead"),
+  tbody = document.querySelector("tbody"),
+  module = document.getElementById("module"),
+  newBtn = document.getElementById("newBtn"),
+  xBtn = document.getElementById("x"),
+  moduleHeader = document.getElementById("moduleHeader"),
+  tableHeader = document.getElementById("tableHeader"),
+  val1Label = document.getElementById("val1Label"),
+  val2Container = document.getElementById("val2Container"),
+  moduleBtn = document.getElementById("moduleBtn"),
+  desc = document.getElementById("desc"),
+  val1 = document.getElementById("val1"),
+  val2 = document.getElementById("val2"),
+  trash = document.querySelector(".trash"),
+  pencil = document.querySelector(".pencil");
+let impactArray = [],
+  probArray = [],
+  typeArray = [],
+  evalArray = [];
 //fucniones
 window.onload = function filters()
 {
@@ -26,21 +29,23 @@ window.onload = function filters()
         {
             let currentData = getData(e.target.innerText);
             tHeadMaker(e.target);
-            tbodyMaker(currentData, e.target.innerText);
+            tbodyMaker(e.target.innerText);
             let icons = [...document.querySelectorAll('img')];
+            console.log(icons);
             icons.forEach(icon => 
             (
                 icon.addEventListener('click', () => 
                 {
-                    if (icon.classList.contains('trash')) 
-                    {
-                        deleteData(icon.id);
-                    }
-                    else
+                    if (icon.classList.contains('pencil') ) 
                     {
                         module.classList.toggle('hidden');
                         editData(icon.id);
                         xBtn.onclick = () => module.classList.toggle('hidden');
+                    }
+                    else if(icon.classList.contains('trash'))
+                    {        
+                        deleteData(icon.id);
+                
                     }
                 })
             ));
@@ -58,14 +63,12 @@ document.body.addEventListener('click', (e)=>
     val2.value = "";
     module.classList.toggle('hidden');
 });
-module.addEventListener("submit" , (e)=>
+moduleBtn.addEventListener('click' , (e)=>
 {
     e.preventDefault();
     createData();
     module.reset();
-    location.reload();
-
-});
+})
 function getData()
 {
     let tableData = localStorage.getItem(document.querySelector('#tableHeader').innerText);
@@ -146,61 +149,64 @@ function otherTables(option)
         thArray[3].innerText = "accion";
     });
 };
-function tbodyMaker(currentData,currentOption)
+function tbodyMaker(target)
 {
-    currentData.map(data=>
+   if (target === "EVALUACION DE RIESGOS") 
+   {
+    getData(target.innerText).map((currentObj)=>
     {
-        if (currentOption == "EVALUACION DE RIESGO") 
-        {
-            tbody.innerHTML += `
-            <tr>
-                <td>
-                    ${data.code}
-                </td>
+        tbody.innerHTML += `
+        <tr>
+            <td>
+                ${currentObj.code}
+            </td>
 
-                <td>
-                    ${data.desc}
-                </td>
+            <td>
+                ${currentObj.desc}
+            </td>
 
-                <td>
-                    ${data.val1}
-                </td>
+            <td>
+                ${currentObj.val1}
+            </td>
 
-                <td>
-                    ${data.val2}
-                </td>
+            <td>
+                ${currentObj.val2}
+            </td>
 
-                <td>
-                    <img src="./images/editar.svg" id="${data.code}" class="editar">
-                    <img src="./images/eliminar.svg" id="${data.code}" class="eliminar">
-                </td>
-            </tr> 
-            `;
-        }
-        else
-        {
-            tbody.innerHTML += `
-            <tr>
-                <td>
-                    ${data.code}
-                </td>
-
-                <td>
-                    ${data.desc}
-                </td>
-
-                <td>
-                    ${data.val1}
-                </td>
-
-                <td>
-                    <img src="./images/editar.svg" id="${data.code}" class="editar">
-                    <img src="./images/eliminar.svg" id="${data.code}" class="eliminar">
-                </td>
-            </tr> 
-            `;
-        }
+            <td>
+                <img src="./images/editar.svg" id="${currentObj.code}" class="editar">
+                <img src="./images/eliminar.svg" id="${currentObj.code}" class="eliminar">
+            </td>
+        </tr> 
+        `;
     });
+   }
+   else
+   {
+    getData(target.innerText).map((currentObj)=>
+    {
+        tbody.innerHTML += `
+        <tr>
+            <td>
+                ${currentObj.code}
+            </td>
+
+            <td>
+                ${currentObj.desc}
+            </td>
+
+            <td>
+                ${currentObj.val1}
+            </td>
+            <td>
+                <img src="./images/editar.svg" id="${currentObj.code}" class="editar">
+                <img src="./images/eliminar.svg" id="${currentObj.code}" class="eliminar">
+            </td>
+        </tr> 
+        `;
+    });
+
+   }
 };
 function deleteData(id)
 {
@@ -219,16 +225,14 @@ function editData(id)
         case "EVALUACION DE RIESGO":
             desc.value = currentObject.desc;
             val1.value = currentObject.val1;
-            val2.value = currentObject.val2;   
-
+            val2.value = currentObject.val2;                
             break;  
         default:
             desc.value = currentObject.desc;
-            val1.value = currentObject.val1;  
+            val1.value = currentObject.val1;
             break;
-
     }
-}
+};
 function createData()
 {
     switch(moduleHeader.innerText)
@@ -238,41 +242,40 @@ function createData()
                 ({
                     code:Math.floor(Math.random()*100),
                     desc : desc.value,
-                    val1 : val1.value,
-                    val2 : val2.value
+                    val1: val1.value
+                    
                 });
-            localStorage.setItem('IMPACTOS' , JSON.stringify(impactArray))
+            localStorage.setItem(`${moduleHeader.innerText}` , JSON.stringify(impactArray))
             break;
             case "PROBABILIDADES":
                 impactArray.push
                 ({
                     code:Math.floor(Math.random()*100),
                     desc : desc.value,
-                    val1 : val1.value,
-                    val2 : val2.value
+                    val1: val1.value
+              
                 });
-            localStorage.setItem('PROBABILIDADES' , JSON.stringify(impactArray))
+            localStorage.setItem(`${moduleHeader.innerText}` , JSON.stringify(impactArray))
             break;
             case "TIPOS DE RIESGO":
                 impactArray.push
                 ({
                     code:Math.floor(Math.random()*100),
                     desc : desc.value,
-                    val1 : val1.value,
-                    val2 : val2.value
+                    val1: val1.value
                 });
-            localStorage.setItem('TIPOS DE RIESGO' , JSON.stringify(impactArray))
+            localStorage.setItem(`${moduleHeader.innerText}` , JSON.stringify(impactArray))
             break;
             case "EVALUACION DE RIESGO":
                 impactArray.push
                 ({
                     code:Math.floor(Math.random()*100),
                     desc : desc.value,
-                    val1 : val1.value,
+                    val1: val1.value,
                     val2 : val2.value
                 });
-            localStorage.setItem('EVALUACION DE RIESGO' , JSON.stringify(impactArray))
+            localStorage.setItem(`${moduleHeader.innerText}` , JSON.stringify(impactArray))
             break;
     }
-}
+};
 //eventos

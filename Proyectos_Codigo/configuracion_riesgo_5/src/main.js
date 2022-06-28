@@ -12,7 +12,8 @@ let elBtns = [];
 let edBtns = [];
 
 //funciones
-function createNav(tagName, id, texto, parent) {
+function createNav(tagName, id, texto, parent) 
+{
   if (parent.querySelector(tagName)) {
     parent.querySelector(tagName).remove();
   }
@@ -31,12 +32,16 @@ function createTbody(tagName, id, parent) {
   element.id = `${id}`;
   parent.append(element);
 };
+
+
 function display_form() {
   container_form.style.display = "flex";
 };
 function close_form() {
   container_form.style.display = "none";
 };
+
+
 function deleteRows({target}) {
 let datosActuales = document.querySelector('h3').innerText;
   let datosRecibidos = [...JSON.parse(localStorage.getItem(`${datosActuales.toLowerCase()}`))] || [];
@@ -57,7 +62,8 @@ function editElement({target})
   document.getElementById('valor_impacto').value=`${fila.children[3].innerText}`;
 
   console.log(fila.children[0],fila.children[1],fila.children[2],fila.children[3]);
-}
+};
+
 
 function nuevoImpacto() {
   let id_impacto;
@@ -99,6 +105,7 @@ function nuevoImpacto() {
   }
   addForm(form_container);
   let form_impacto = document.querySelector("#form_impacto");
+
   function mapItemsImpactos(elements, tbody) {
     tbody.innerHTML = elements.map((element) => {
         return `
@@ -157,11 +164,14 @@ function nuevoImpacto() {
   }
   createNav("h3", "impactos", "IMPACTOS", nav);
   createNav("button", "nuevo_impacto", "nuevo", nav);
+
   let new_botton_impacto = document.getElementById("nuevo_impacto");
   new_botton_impacto.addEventListener("click", display_form);
   close_button.addEventListener("click", close_form);
+  
   CreateThead(thead);
   createTbody("tbody", "tbody", table);
+  
   let tbody = document.getElementById("tbody");
   mapItemsImpactos(impactos, tbody);
   form_impacto.addEventListener("submit", (e) => {
