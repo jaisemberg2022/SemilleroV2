@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Gugi&family=Inter:wght@500;700&family=Karla:wght@600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <header id="header">
+        <h2 class="titulo-1">charades online game</h2>
+        <p class="subtitulo-1">guess the word</p>
+    </header>
+
+    <main id="main">
+        <section >
+                <img src="./images/start_icon.svg" alt="Icon start" id="game_settings" >
+        </section>
+        <article>
+            <img src="./images/rules-IMG.svg" alt="Img rules">
+        </article>
+    </main>
+    
+    <section id="setting">
+        <aside class="option" id="categories ">
+            <img src="./images/categoria.svg" alt="Icon-categories" class="imgSetting" >
+                <form>
+                    <div class="container_category">
+                        <input type="radio" id="englishWords" name="option">
+                        <label for="englishWords" class="option categoryLabel" style="display: flex;flex-direction: row;align-items: center;justify-content: center; "><img src="./images/english_icon.svg" alt="Icon" class="iconCategory"><p style="padding-left: 15px;">English sentences</p></label>
+                    </div>
+                    <div class="container_category">
+                        <input type="radio" id="codeWords" name="option" >
+                        <label for="codeWords" class="option categoryLabel" style="display: flex;flex-direction: row;align-items: center;justify-content: space-around; "><img src="./images/code_icon.svg" alt="Icon code" class="iconCategory"> <p style="padding-right: 10px;">Code snipped</p></label>
+                    </div>
+                </form> 
+        </aside>
+        <aside class="option" id="groupNames">
+            <img src="./images/groups.png" alt="Icon-groups" class="imgSetting">
+            <form>
+              
+                    <label for="firstGroup" class="option categoryLabel" style="padding-right: 100px;color: white;">First team</label>
+                    <input type="text" id="firstGroup" name="firstGroup" placeholder="Write a teamname..." style="background-color:#182547;padding-left: 10px; margin-bottom: 10px;">
+            
+                    <label for="secondGroup"class="option categoryLabel" style="padding-right: 95px;color: white;">Second team</label>
+                    <input type="text" id="secondGroup" name="secondGroup" placeholder="Write a teamname..." style="color:white;padding-left: 10px;margin-bottom: 10px;">
+             
+            </form>
+            
+        </aside>
+        <aside class="option" id="time">
+            <img src="./images/time.png" alt="Icon-time" class="imgSetting" >
+           <form action="">
+
+            <div class="container_category" style="display: flex; justify-content:space-around;width: 130px;">
+                <input type="radio" id="oneMinute" name="optionTime" >
+                <label for="" class=""style="padding-right:25px;color:white;"> 1 minute</label>
+            </div>
+            <div class="container_category" style="display: flex; justify-content:space-around;width: 130px;">
+                <input type="radio" id="thirtySecond" name="optionTime">
+                <label for="" class="" style="color:white;"> 30 seconds</label>
+            </div>
+            <div class="container_category" style="display: flex; justify-content:space-around;width: 130px;">
+                <input type="radio" id="fifteenSecond" name="optionTime" required>
+                <label for="" class="" style="color:white;"> 15 Seconds</label>
+            </div>
+
+           </form>
+        </aside>
+        <aside class="option" id="points">
+            <img src="./images/points.png" alt="Icon-points" class="imgSetting" >
+            
+          <form action="">
+            <label for="points" class="option categoryLabel" style="margin-bottom:5px ;">Points limit</label>
+            <input type="number" id="points" name="pointsLimit" placeholder="Write a points limit..." style="background-color: #182547;border-radius: 5px;border: none;height: 30px;padding-left: 10px;">
+          </form>
+        </aside>
+    </section>
+    <footer>
+        <button id="btnRules" onclick="">?</button>
+        <button type="" name="starGame" id="buttonStarGame">Start Game</button>
+        <div class="modal" id="poop">
+            <div id="rulesPop">
+                <div class="containerRules">
+                    <div class="headerCloseRules">
+                        <h2> Rules </h2>
+                    <img src="./images/close.png"  class="closeRules" alt="Rules">  
+                
+                </div>    
+                <img src="./images/reglas_section.png"> 
+            </div>
+        </div>
+    </footer>
+<script src="./src/main.js"></script>
+</body>
+</html>
