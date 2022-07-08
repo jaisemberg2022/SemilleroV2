@@ -1,3 +1,6 @@
+*{
+    font-size: 15px;
+}
 html{
     margin: auto;
     padding: auto;
@@ -27,6 +30,7 @@ header{
     margin-bottom: 45px;
     line-height: 1px;
 
+
 }
 header>h2{
     /* charades online game */
@@ -41,20 +45,25 @@ line-height: 1px;
 
 }
 main{
-    display: none;
+    display: flex;
 justify-content: center;
+flex-direction: row;
 width: 90%;
 height: auto;
 
+padding: 10px;
 
 }
 main>section{
 display: flex;
 justify-content: center;
 align-items: center;
+border-radius: 20px;
+margin: 5px;
+
 }
 main>section>img{
-    width: 90%;
+    width: 100%;
     height: auto;
     cursor: pointer;
 }
@@ -62,6 +71,9 @@ main>article{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
 }
 
 .imgSetting{
@@ -70,7 +82,7 @@ main>article{
     
 }
 #setting{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -186,7 +198,6 @@ font-size: 10px;
 }
 #setting>aside>form>.categoryLabel{
     /* English words */
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
@@ -195,7 +206,6 @@ font-size: 10px;
     text-align: left;
     border-radius: 5px;
     color: white;
-    
 }
 #setting>aside>form input[type="text"],input[type="number"]{
     width: 60%;
@@ -216,25 +226,20 @@ font-size: 10px;
     font-size: 10px;
     padding-left:10px ;
 }
-
-
 #setting>aside>form input[type="radio"]{
 margin-right: 10px;
-
 }
 
 footer{
     margin: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
     height: auto;
-
 }
-
-#buttonStarGame{
+.buttonStarGame{
 width: 25%;
 height: 10vh;
 background-color: #07D603;
@@ -253,7 +258,7 @@ color: #FFFFFF;
 
 
 }
-#buttonStarGame:hover{
+.buttonStarGame:hover{
     background-color: limegreen;
 }
 #openModalBtn{
@@ -390,12 +395,13 @@ margin: auto;
     /* identical to box height */
     color: #FFFFFF;
 }
-.startGame{
+#startGameSection{
 
     display: none;
-flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .headerStarGame{
     font-size: 15px;

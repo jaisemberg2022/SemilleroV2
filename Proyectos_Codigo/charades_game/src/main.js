@@ -4,8 +4,15 @@ const main = document.querySelector('main')
 const footer = document.querySelector('footer')
 const rulesBtn = document.querySelector('#btnRules')
 const sectionSettings = document.getElementById('setting')
-const rulesPoopUp = document.querySelector('#poop')
-const closePopup = document.querySelector('.closeRules')
+
+const modalScore = document.getElementById('poopScore')
+
+const modalRules = document.getElementById('poop');
+
+
+
+
+
 //funciones
 function displaySettings()
 {
@@ -13,16 +20,34 @@ function displaySettings()
     main.style.display = "none";
     footer.style.display="flex";
 }
+function display()
+{
 
-function displayRules()
-{
-    rulesPoopUp.style.display = "flex";
+    const openPoopUp = [...document.querySelectorAll('#openModalBtn')]
+
+    openPoopUp.forEach(btn => 
+    {
+        btn.addEventListener('click',() =>
+        {
+            if(btn.classList.contains('openRules'))
+            {       
+                modalRules.style.display = "flex";
+            }
+            else if(btn.classList.contains('openScore'))
+            {
+                modalScore.style.display = "flex";
+            }
+
+        })    
+    })
+
 }
-function closeRules()
+
+
+display()
+
+function close()
 {
-    rulesPoopUp .style.display = "none";
+   
 }
 //eventos
-indexGame.addEventListener('click',displaySettings)
-rulesBtn.addEventListener('click',displayRules)
-closePopup.addEventListener('click',closeRules)
