@@ -16,74 +16,76 @@
 
     <main id="main">
         <section >
-                <img src="./images/start_icon.svg" alt="Icon start" id="game_settings" >
+                <img src="./images/start_icon.svg" alt="Icon start" id="nextPart" class="toSettings" >
         </section>
         <article>
             <img src="./images/rules-IMG.svg" alt="Img rules">
         </article>
     </main>
-    
+
     <section id="setting">
         <aside class="option" id="categories ">
             <img src="./images/categoria.svg" alt="Icon-categories" class="imgSetting" >
-                <form>
-                    <div class="container_category">
+                <form >
+                    <div class="container_category" >
                         <input type="radio" id="englishWords" name="option">
-                        <label for="englishWords" class="option categoryLabel"> <img src="./images/english_icon.svg" alt=""> <p>English sentences</p></label>
+                        <label for="englishWords" class="option categoryLabel"><img src="./images/english_icon.svg" alt="" > <p>English sentences</p></label>
                     </div>
                     <div class="container_category">
-                        <input type="radio" id="codeWords" name="option" >
-                        <label for="codeWords" class="option categoryLabel" ><img src="./images/code_icon.svg" alt="Icon code" class="iconCategory"> <p>Code snipped</p></label>
+                        <input type="radio" id="codeWords" name="option">
+                        <label for="codeWords" class="option categoryLabel"><img src="./images/code.svg" alt="Icon code" class="iconCategory" > <p>Code snipped</p></label>
                     </div>
                 </form> 
         </aside>
         <aside class="option" id="groupNames">
             <img src="./images/groups.png" alt="Icon-groups" class="imgSetting">
             <form>
-              
+
                     <div class="groups_container">
                         <label for="firstGroup" class="option categoryLabel" >First team:</label>
-                        <input type="text" id="firstGroup" name="firstGroup" placeholder="Write a team name...">
+                        <input type="text" id="firstGroup" name="teamName" placeholder="Write a team name..." required="required"> 
                     </div>
                     <br>
                     <div class="groups_container">
                         <label for="secondGroup"class="option categoryLabel">Second team:</label>
-                        <input type="text" id="secondGroup" name="secondGroup" placeholder="Write a team name..." >    
+                        <input type="text" id="secondGroup" name="teamName" placeholder="Write a team name..." required="required">    
                     </div>
             </form>
-            
+
         </aside>
         <aside class="option" id="time">
             <img src="./images/time.png" alt="Icon-time" class="imgSetting" >
-           <form action="">
+           <form action="" required>
 
             <div class="time_container" >
-                <input type="radio" id="oneMinute" name="optionTime" >
-                <label for="oneMinute" class=""style="padding-right:25px;color:white;"> <p>1 minute</p></label>
+                <input type="radio" id="oneMinute" name="optionTime" value="60" required="required">
+                <label for="oneMinute" class="label_time"> <p>1 minute</p></label>
             </div>
             <div class="time_container">
-                <input type="radio" id="thirtySecond" name="optionTime">
-                <label for="thirtySecond" class="" style="color:white;"> <p>30 seconds</p></label>
+                <input type="radio" id="thirtySecond" name="optionTime" value="30" required="required">
+                <label for="thirtySecond" class="label_time" ><p>30 seconds</p></label>
             </div>
             <div class="time_container">
-                <input type="radio" id="thirtySecond" name="optionTime" required>
-                <label for="thirtySecond" class="" style="color:white;"> <p>15 Seconds</p></label>
+                <input type="radio" id="fiftenSecond" class="radio fiftenSecond" name="optionTime" value="15" required>
+                <label for="fiftenSecond" class=""> <p>15 Seconds</p></label>
             </div>
 
            </form>
         </aside>
         <aside class="option" id="points">
             <img src="./images/points.png" alt="Icon-points" class="imgSetting" >  
-          <form action="">
+          <form action="" required>
             <div class="points_container">
                 <label for="points" class="option categoryLabel" >Points limit</label>
-                <input type="number" id="points" name="pointsLimit" placeholder="Write a points limit...">
+                <input type="number" id="points" name="pointsLimit" min="1" max="99" placeholder="Write a points limit..." >
             </div>
         </form>
         </aside>
+
+        <input type="submit" name="starGame" id="nextPart" class="buttonStarGame toStartGame" value="Start Game" required="required">
     </section>
 
-    <section class="startGame">
+    <section id="startGameSection" >
         <div class="headerStarGame">
             <h2 class="nameTeam"></h2>
         </div>
@@ -95,14 +97,14 @@
                     <img src="./images/correct.svg" alt="Icon Incorrect" class="buttonIncorrect">
                 </div>
                 <button class="buttonNextWord">Next Word</button>
-                
+
                 <button id="openModalBtn" class="openScore" >Score</button>
 
                 <div class="modalScore" id="poopScore">
                     <div id="scorePop">
                             <header class="headerScore">
                                 <h3> Score </h3>
-                                <img src="./images/close.svg" id="closePopup" class="closeScore"  alt="Score">    
+                                <img src="./images/close.svg" id="closePopup" class="closeScore"  alt="Score" onclick="close()">    
                             </header>  
                     <table >
                         <thead>
@@ -110,6 +112,7 @@
                             <th class="headerFristGroup" style="background-color: #FF5C00;">first group</th>   
                             <th class="headerSecondGroup" style="background-color: #006DF0;">second group</th>  
                           </tr>
+
                         </thead>
                         <tbody>
                           <tr>
@@ -124,20 +127,20 @@
     </section>
 
     <footer>
-        
-        <button type="" name="starGame" id="buttonStarGame">Start Game</button>
-        <button id="openModalBtn" class="openRules" onclick="">?</button>
+
+
+        <button id="openModalBtn" class="openRules">?</button>
 
         <div class="modal" id="poop">
             <div id="rulesPop">
                 <header class="headerCloseRules">
                     <h3> Rules </h3>
-                    <img src="./images/close.svg" id="closePopup"  class="closeRules"  alt="Rules">
+                    <img src="./images/close.svg" id="closePopup"  class="closeRules"  alt="Rules" onclick="close()">
             </header>  
             <img src="./images/reglas_section.png" alt="Rules">
             </div>     
         </div>
-       
+
     </footer>
 <script src="./src/main.js"></script>
 </body>
