@@ -1,0 +1,668 @@
+html{
+    margin: auto;
+    padding: auto;
+    background-color: #182339;
+}
+body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: 'Gugi', cursive;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 18.58vh;
+    /* guess the word */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.48vw;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+    line-height: 1px;
+
+
+}
+header>h2{
+    /* charades online game */
+font-family: 'Gugi';
+font-style: normal;
+font-weight: 400;
+font-size: 4.16vw;
+line-height: 71px;
+text-align: center;
+color: #FFFFFF;
+line-height: 1px;
+
+}
+
+main{
+    display: flex;
+justify-content: center;
+flex-direction: row;
+width: 80%;
+height: auto;
+padding: 10px;
+
+}
+.burbuja{
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    animation: burbujas  10s linear normal infinite;
+  
+  }
+  @keyframes burbujas {
+      0% { transform: translateY(100vh) ;
+      } 
+      100% {  transform: translateY(-100vh);
+
+      }
+  }
+.reboteAbajo {
+    font-family: Arial;
+    text-align: center;
+    font-weight: bolder;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    left: 1rem;
+    margin: 100px 50px;
+    line-height: 150px;
+
+    z-index: 1;
+  }
+  .reboteAbajo {
+    animation: reboteOut_abajo 3s infinite;
+  }
+  @keyframes reboteOut_abajo {
+    10% {
+        transform: translateY(-10px);
+      }
+    25% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+main>section{
+width: 50%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+margin: 5px;
+background: rgb(26, 42, 75);
+
+}
+main>section:hover{
+background: rgba(40, 60, 100, 0.62);
+}
+
+
+main>section>img{
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+}
+  
+main>article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #314366;
+}
+main>article>img{
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+}
+.imgSetting{
+    width: 7rem;
+    height: 7rem;
+
+}
+
+
+#setting{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height:auto;
+    border: 1px solid red;
+
+}
+#setting>form{
+    width: 99%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border:1px solid skyblue;
+    margin: 1px;
+}
+#setting>form>aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 21%;
+    height: auto;
+    background:#212f4d;
+    border-radius: 9.39937px;
+    margin: 5px;
+    list-style: none;
+    padding: 15px;
+    border: 1px solid yellow;
+}
+#setting>form>aside:hover{
+    background: rgba(48, 72, 120, 0.62);
+}
+#setting>form>aside>.imgSetting{
+    width: 100%;
+    height: auto;
+
+}
+#setting>form>aside>.time_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: center;
+    width: 9.92vw;
+    height:  3.39vh;
+    background-color: #182339;
+    /* English words */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 0.732vw;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 5px;
+    padding: 5px;
+}
+#setting>form>aside>.time_container:hover{
+    background-color: #182339ad;
+    cursor: pointer;
+}
+#setting>form>aside>.time_container>label:hover{
+    cursor: pointer;
+}
+#setting>form>aside>.points_container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    font-weight:400;
+    font-size: 0.732vw;
+}
+#setting>form>aside>.container_category{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+#setting>form>aside>.container_category>.option{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 11.92vw;
+    height:  5.39vh;
+    background-color: #182339;
+    /* English words */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size:  0.732vw;
+    line-height: 16px;
+    text-align: left;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin: 10px;
+    padding: 5px;
+}
+#setting>form>aside>.container_category>.option:hover{
+    background-color: #182339ad;
+    cursor: pointer;
+}
+#setting>form>aside>.container_category img{
+   margin-right: 10px;
+}
+#setting>form>aside:hover{
+    background: rgba(48, 72, 120, 0.62);
+}
+#setting>form>aside>.imgSetting{
+    width: 20%;
+    height: auto;
+
+}
+#setting>form>aside>.groups_container{
+display: flex;
+flex-direction: row;
+width: 90%;
+height: auto;
+align-items: center;
+justify-content: space-between;
+color:#fff;
+font-weight:400;
+font-size: 0.732vw;
+
+}
+#setting>form>aside>.categoryLabel{
+    /* English words */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.951vw;
+    line-height: 1px;
+    text-align: left;
+    border-radius: 5px;
+    color: white;
+}
+#setting>form>aside input[type="text"],input[type="number"]{
+    width: 60%;
+    height:  5.39vh;
+    background-color: #182339;
+    color:#FFFFFF;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+#setting>form>aside input[type="text"]:hover,input[type="number"]:hover{
+    background-color: #182339ad;
+}
+#setting>form>aside input[type="text"]::placeholder,input[type="number"]::placeholder{
+    font-size: 0.732vw;
+    padding-left:1px ;
+
+}
+#setting>form>aside input[type="radio"]{
+margin-right: 10px;
+cursor: pointer;
+}
+
+
+footer{
+    margin: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+.toStartGame {
+    position: absolute;
+    bottom: 2.5rem;
+    width: 15%;
+    height: 9vh;
+    background-color: #07d603;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "Gugi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.464vw;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .toStarGame:hover {
+    background-color: limegreen;
+  }
+
+
+
+#openModalBtn{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgba(66, 92, 119, 0.68);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+#openModalBtn:hover{background-color:#0d71dbad ;}
+.iconCategory{
+width: 23px;
+height: 23px;
+}
+
+.modal,#poopScore {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+#scorePop{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+    height:auto;
+    background-color: #182547;
+    border-radius: 10px;
+    box-shadow: 0px 0px 105.649px 14.5008px rgba(60, 60, 60, 0.81);
+    font-family: 'Gugi', cursive;
+
+}
+#scorePop>header{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: row;
+    width: 100%;
+    height: 9vh;
+    color: white;
+    background-color: rgb(0, 111, 202);
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+#scorePop>header>p
+{
+    margin: auto;
+    text-align: center;
+
+}
+#scorePop>header>img{
+    padding-right: 25px;
+    width: 2%;
+    height: auto;
+}
+#scorePop>aside
+{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    border: 1px solid #FFFFFF;
+    margin: 30px;
+}
+#scorePop>aside>header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #344D7A;
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+#scorePop>aside>form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 30vh;
+
+    margin: auto;
+}
+#scorePop>aside>form>.score_body_Section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 32%;
+    height: 25vh;
+}
+#scorePop>aside>form>.left,.right{
+    border: 1px solid #FFFFFF;
+    font-size: 70px;
+    font-family: 'DotGothic16', sans-serif;
+    color: #F5B231;
+
+}
+#scorePop>aside>form>.score_body_Section>header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:4vh;
+    border-bottom: 1px solid #FFFFFF;
+    font-family: 'Gugi', cursive;
+    font-size:  1.1713vw;
+}
+#scorePop>aside>form>.left>header{
+    background-color: #F44336;
+    font-size:  20px;
+    color: #FFFFFF
+}
+#scorePop>aside>form>.right>header{
+    background-color: #006DF0;
+    font-size:  20px;
+    color: #FFFFFF;
+}
+#scorePop>aside>form>.score_body_Section>p{
+    margin: auto;
+}
+#scorePop>aside>form>.score_body_Section>.data_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    border: 1px solid white;
+    font-size:   1.1713vw;
+}
+
+#scorePop>aside>form>.score_body_Section>.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #8ABE47;
+}
+
+#scorePop>aside>form>.score_body_Section>.two
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../images/incorrect.svg');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: center;
+    border: none;
+}
+#scorePop>aside>form>.score_body_Section>.two>span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#D83932;
+    border: 1px solid white ;
+    width: 30%;
+    height:  4vh;
+    font-size: 22px;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#scorePop>aside>form>.score_body_Section>.return{
+    background-color: lime;
+    width: 40%;
+    height: 4vh;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    border: none;
+}
+
+@media (max-width:375px) {
+
+    
+
+    #scorePop>aside>form{
+        display: flex;
+        flex-direction: column;
+
+    
+    }
+
+    #scorePop>aside>form>.score_body_Section{
+        width: 90%;
+        height: 10vh;
+        margin: 5px;
+    }
+    
+}
+
+#startGameSection{
+
+    width: 90%;
+    border: 1px solid red;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.headerStarGame{
+    font-size: 1.09vw;
+    font-style: normal;
+    font-family: 'Inter';
+    color: #FFF;
+}
+
+
+.game{
+    width: 50%;
+    height:auto;
+    font-size: 13px; 
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-style: normal;
+      color: #FFF;
+      background-color: #212f4d;   
+}
+
+.game>header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height:auto;
+    background-color:#3f5688;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 14px;
+
+
+}
+
+.game>#randomWord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    height: 7vh;
+    background-color: #182339;
+    border-radius: 5px;
+    margin: 30px;
+}
+.game>#buttonCorrect{
+    display: flex;
+}
+.game>#buttonIncorrect{
+    display: none;
+}
+.game>#buttonNextWord{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 8vh;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 20px;
+    background:#3f5688;
+    cursor: pointer;
+    border: none;
+}
+.buttonsCheck
+{display:flex; 
+    justify-content: space-evenly;
+flex-direction: row;
+width:  66px;
+height: 66px;
+
+}
+.buttonNextWord{
+    width: 300px;
+    height: 65px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 20px;
+    background: rgba(0, 109, 240, 0.96);
+    cursor: pointer;
+    border: none;
+} 
+input.incomplete{
+    border:2px solid red;
+    background-image: url('../images/incorrect.svg');
+    background-color: rgba(243, 171, 171, 0.445);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y:center;
+    background-size: 20%;
+}
+.buttonHome{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 3em;
+    width: 85px;
+    height: 5vh;
+    background-color: #07d603;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "Gugi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.464vw;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff; 
+}
