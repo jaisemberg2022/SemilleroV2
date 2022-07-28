@@ -1,0 +1,178 @@
+@import url('../css/mediaQueries.css');
+html{
+background-color: #dadada;
+width: 100%;
+height: auto;
+}
+/* didier Martínez */
+body{
+width: 100%;
+height:  100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+    body>header{
+        display: flex;
+    align-items: center;
+    width: 100%;
+    height: 12.17vh;
+    background-color: #141D29;
+    z-index: 1;
+    box-shadow: 0px 7px 11px rgba(65, 65, 65, 0.8);
+    }
+    body>aside{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25.72vh;
+    background-color: #e5e9ec;
+    box-shadow: 0px 10px 11px rgba(113, 113, 113, 0.7);
+    }
+    body>section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height:  auto;
+    background-color: white;
+    margin: auto;
+    border-radius:5px 5px 5px 5px  ;
+    }
+        body>section>header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height:  auto;
+        background-color: #D2D2D2;
+        border-radius:5px 5px 0px 0px ;
+        padding: 30px;
+        }
+            body>section>header>h2{
+                font-family: 'Inter';
+                font-style: normal;
+                font-size: 1.517vw;
+                color: #082143;
+            }
+            body>section>header>.toggleViwerTime{
+                /* ordenar bitacora */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size:   1vw;
+                line-height: 16px;
+                color: #857F7E;
+                width: 25%;
+                height: auto;
+            }
+                body>section>header>.toggleViwerTime>input[type=checkbox] {
+                    height: 0;
+                    width: 0;
+                    visibility: hidden;
+                }
+                body>section>header>.toggleViwerTime>label {
+                    content: '1';
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    justify-content: end;
+                    padding: 5px;
+                    width: 30%;
+                    height: 4vh;
+                    background: #8ED948;
+                    background-image: url('/images/Meses.png');
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    background-position-x: 70%;
+                    border: 1px solid #60992a;
+                    border-radius: 4px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    font-size: 10px;
+                    margin: auto;
+                    filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+
+                    
+                }
+                body>section>header>.toggleViwerTime>label:after {
+                    content: '';
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    text-align: center;
+                    color: #8ED948;
+                    border: 1px solid #60992a;
+                    font-weight:800;
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                    width: 32%;
+                    height: 3vh;
+                    background: #fbfbfb;
+                    border-radius: 2px;
+                    transition: 0.3s;
+                   
+                }
+                body>section>header>.toggleViwerTime>input:checked+label {
+                    background-color: #3674A3;
+                    border: 1px solid #0a4c7e;
+                    display: flex;
+                    justify-content: start;   
+                    background-image: url('/images/Periodos.png');
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    background-position-x: 16%;
+                    
+                }
+                body>section>header>.toggleViwerTime>input:checked+label:after {
+                    left: calc(100% - 1px);
+                    transform: translateX(-100%);
+                    color: #6891B0;
+                    border: 1px solid #0a4c7e;
+                }
+            body>section>header>.toggleSlide{
+                width: 20%;
+                height: auto;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size:   1vw;
+                line-height: 16px;
+                color: #857F7E;
+                }
+                body>section>header>.toggleSlide>button{
+                    width: 15%;
+                    height: 4vh;
+                    cursor: pointer;
+                    border :1px solid #3674A3;
+                }
+                body>section>header>.toggleSlide>.after{
+                    background-image: url('/images/after.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                body>section>header>.toggleSlide>.next{
+                    background-image: url('/images/next.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+        body>section>article{
+            width: 90%;
+            height: auto;
+            border: 1px solid red ;
+            margin: auto;
+        }
+            
+
