@@ -1,0 +1,47 @@
+"idItem": "SAL1", //Código que debe aparecer en la banderita
+      "item": "Salario Básico", //Descripción del ítem que se ve debajo de la banderita
+      "evento": {
+        "guid": "93ac6392-7200-47bc-ad59-0494c6fa7237", //No se usa
+        "tipoEntidad": { //Si es Vacaciones, la bandera y las cajas deben ser amarillas.
+          "id": 13,
+          "descripcion": "Salario"
+        }
+      },
+      "dias": 27, // Valor que se muestra en la caja gris de días a la derecha
+      "totalPorItem": { //Valor mensual que se muestra en la bandera gris a la derecha del ítem
+        "valor": 1800000.0,
+        "moneda": 0
+      },
+      "orden": -10000.0, //Criterio de ordenamiento de las líneas
+      "observacion": null, //Mensaje que se muestra con fondo rosado al lado del nombre del ítem
+      "agrupacionBitacora": { //Devengados se pintan en AZUL, Deducidos en ROJO
+        "id": 1,
+        "descripcion": "Devengado"
+      },
+      "detalles": { //Con cada elemento se pinta una cajita por cada día. Cuando el día no está en el listado, se debe mostrar una caja gris
+        "1": { //Número del día en el que se debe pintar el pago
+          "dinero": {
+            "valor": 66666.666666666672, // se muestra en el hover, se debe redondear a dos decimales
+            "moneda": 0
+          },
+          "esPeriodoActual": false, // Si es periodo actual, se muestra el color firme, de lo contrario, se muestra el color claro
+          "estado": { //Si Estado es Pagado, se debe mostrar el chulo dentro de la caja
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null // No se usa
+        },
+        "2": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        
+	
