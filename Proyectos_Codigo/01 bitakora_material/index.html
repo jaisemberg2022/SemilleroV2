@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <aside></aside>
+    <!-- calendaries -->
+        <article id="calendariesSection">
+            <!-- potions heder  -->
+            <header>
+                <h2>Bitacora del empleado</h2>
+                <div class="toggleViwerTime">
+                    Visualizar bitacora por:
+                    <input type="checkbox" id="switch"/>
+                    <label for="switch"></label>  
+                </div>
+                <div class="toggleSlide">
+                    Marzo de 2022:
+                    <button class="after"></button>
+                    <button class="next" ></button>
+                </div>
+            </header>
+            <!-- body calendar -->
+            <span class="calendar">
+                <div class="container" id="categories">
+                    <p>Concepto</p>
+                    <p>Valor mensual</p>
+                </div>
+                <div class="container center firstCalendar" id="firstCalendar"></div>
+                <div class="container diasTitulo">Dias</div>
+            </span>
+
+        </article>
+   
+    <script src="src/prueba.js"></script>
+    <script src="src/main.js" type="module"></script>
+</body>
+</html>
