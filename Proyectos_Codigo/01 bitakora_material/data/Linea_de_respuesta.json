@@ -1,0 +1,1606 @@
+{
+  "causacionesPorItems": [
+    {
+      "idItem": "SAL1",
+      "item": "Salario Básico",
+      "evento": {
+        "guid": "93ac6392-7200-47bc-ad59-0494c6fa7237",
+        "tipoEntidad": {
+          "id": 13,
+          "descripcion": "Salario"
+        }
+      },
+      "dias": 27,
+      "totalPorItem": {
+        "valor": 1800000.0,
+        "moneda": 0
+      },
+      "orden": -10000.0,
+      "observacion": null,
+      "agrupacionBitacora": {
+        "id": 1,
+        "descripcion": "Devengado"
+      },
+      "detalles": {
+        "1": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "2": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "3": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "4": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "5": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "6": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "7": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "8": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "9": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "10": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "11": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "12": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "13": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "14": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "15": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "16": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "17": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "18": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "19": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "20": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "21": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "22": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "23": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "24": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "28": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "29": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "30": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        }
+      }
+    },
+    {
+      "idItem": "VAC1",
+      "item": "Vacaciones Días Hábiles",
+      "evento": {
+        "guid": "8a578359-48f8-4a10-a27b-41b1900c0452",
+        "tipoEntidad": {
+          "id": 1,
+          "descripcion": "Vacaciones"
+        }
+      },
+      "dias": 1,
+      "totalPorItem": {
+        "valor": 66667.0,
+        "moneda": 0
+      },
+      "orden": -9990.0,
+      "observacion": "Base diaria: 66,666.67",
+      "agrupacionBitacora": {
+        "id": 1,
+        "descripcion": "Devengado"
+      },
+      "detalles": {
+        "25": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "Base diaria: 66,666.67"
+        }
+      }
+    },
+    {
+      "idItem": "VAC2",
+      "item": "Vacaciones Días Festivos",
+      "evento": {
+        "guid": "8a578359-48f8-4a10-a27b-41b1900c0452",
+        "tipoEntidad": {
+          "id": 1,
+          "descripcion": "Vacaciones"
+        }
+      },
+      "dias": 2,
+      "totalPorItem": {
+        "valor": 133333.0,
+        "moneda": 0
+      },
+      "orden": -9988.0,
+      "observacion": "Base diaria: 66,666.67",
+      "agrupacionBitacora": {
+        "id": 1,
+        "descripcion": "Devengado"
+      },
+      "detalles": {
+        "26": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "Base diaria: 66,666.67"
+        },
+        "27": {
+          "dinero": {
+            "valor": 66666.666666666672,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "Base diaria: 66,666.67"
+        }
+      }
+    },
+    {
+      "idItem": "TRA1",
+      "item": "Subsidio de Transporte",
+      "evento": {
+        "guid": "e13b0ed4-08e3-4040-9847-e15275a76dbf",
+        "tipoEntidad": {
+          "id": 16,
+          "descripcion": "Subsidio de transporte"
+        }
+      },
+      "dias": 27,
+      "totalPorItem": {
+        "valor": 105455.0,
+        "moneda": 0
+      },
+      "orden": 100000.0,
+      "observacion": null,
+      "agrupacionBitacora": {
+        "id": 1,
+        "descripcion": "Devengado"
+      },
+      "detalles": {
+        "1": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "2": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "3": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "4": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "5": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "6": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "7": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "8": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "9": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "10": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "11": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "12": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "13": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "14": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "15": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": null
+        },
+        "16": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "17": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "18": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "19": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "20": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "21": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "22": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "23": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "24": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "28": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "29": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        },
+        "30": {
+          "dinero": {
+            "valor": 3905.7333333333331,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": null
+        }
+      }
+    },
+    {
+      "idItem": "SEG1",
+      "item": "Salud",
+      "evento": {
+        "guid": "24b8844f-b592-44b8-a72f-c51a60c43d05",
+        "tipoEntidad": {
+          "id": 12,
+          "descripcion": "Seguridad social"
+        }
+      },
+      "dias": 15,
+      "totalPorItem": {
+        "valor": -40000.0,
+        "moneda": 0
+      },
+      "orden": -9980.0,
+      "observacion": "Base = 1,000,000 / Porc.: 4.00 %",
+      "agrupacionBitacora": {
+        "id": 2,
+        "descripcion": "Deducido"
+      },
+      "detalles": {
+        "1": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "2": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "3": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "4": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "5": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "6": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "7": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "8": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "9": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "10": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "11": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "12": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "13": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "14": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "15": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        }
+      }
+    },
+    {
+      "idItem": "SEG1",
+      "item": "Salud",
+      "evento": {
+        "guid": "df4ea62f-7491-4ed9-867d-5a62a56e898f",
+        "tipoEntidad": {
+          "id": 12,
+          "descripcion": "Seguridad social"
+        }
+      },
+      "dias": 15,
+      "totalPorItem": {
+        "valor": -40000.0,
+        "moneda": 0
+      },
+      "orden": -9980.0,
+      "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)",
+      "agrupacionBitacora": {
+        "id": 2,
+        "descripcion": "Deducido"
+      },
+      "detalles": {
+        "16": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "17": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "18": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "19": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "20": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "21": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "22": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "23": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "24": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "25": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "26": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "27": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "28": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "29": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "30": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        }
+      }
+    },
+
+
+
+
+
+    {
+      "idItem": "SEG2",
+      "item": "Pensión",
+      "evento": {
+        "guid": "13d0a887-5d38-4906-9249-8d963bb39de0",
+        "tipoEntidad": {
+          "id": 12,
+          "descripcion": "Seguridad social"
+        }
+      },
+      "dias": 15,
+      "totalPorItem": {
+        "valor": -40000.0,
+        "moneda": 0
+      },
+      "orden": -9979.0,
+      "observacion": "Base = 1,000,000 / Porc.: 4.00 %",
+      "agrupacionBitacora": {
+        "id": 2,
+        "descripcion": "Deducido"
+      },
+      "detalles": {
+        "1": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "2": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "3": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "4": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "5": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "6": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "7": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "8": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "9": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "10": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "11": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "12": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "13": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "14": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        },
+        "15": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": false,
+          "estado": {
+            "id": 2,
+            "descripcion": "Pagado"
+          },
+          "observacion": "Base = 1,000,000 / Porc.: 4.00 %"
+        }
+      }
+    },
+
+    {
+      "idItem": "SEG2",
+      "item": "Pensión",
+      "evento": {
+        "guid": "c887c241-bf05-4e38-81e8-66b225d8917c",
+        "tipoEntidad": {
+          "id": 12,
+          "descripcion": "Seguridad social"
+        }
+      },
+      "dias": 15,
+      "totalPorItem": {
+        "valor": -40000.0,
+        "moneda": 0
+      },
+      "orden": -9979.0,
+      "observacion": " (*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000) ",
+      "agrupacionBitacora": {
+        "id": 2,
+        "descripcion": "Deducido"
+      },
+      "detalles": {
+        "16": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "17": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "18": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "19": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "20": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "21": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "22": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "23": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "24": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "25": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "26": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "27": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "28": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "29": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        },
+        "30": {
+          "dinero": {
+            "valor": -2666.6666666666665,
+            "moneda": 0
+          },
+          "esPeriodoActual": true,
+          "estado": {
+            "id": 1,
+            "descripcion": "En liquidación"
+          },
+          "observacion": "(*) Base = 2,000,000 (Salarial: 1,800,000 VAC: 200,000) / Porc.: 4.00 % (aporte periodo anterior: 40,000)"
+        }
+      }
+    }
+  ]
+}
