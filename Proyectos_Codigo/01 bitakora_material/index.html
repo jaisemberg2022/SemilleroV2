@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/01_body.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <section>
+        <div class="info" id="info">
+            <aside class="one" id="one">
+                    <div class="firstContainer">
+                        <img src="/images/judas_tadeo.png" alt="">
+                        <span class="epmloyeeData" id="first">  
+                        </span>
+                    </div>
+                    <form>
+                        <label for="search"><img src="/images/menu-lines.svg" alt="menu"> Gestionar</label>
+                        <input type="search" name="search" id="search" placeholder="Incapacidades,prima,modificacion,salario etc.">
+                        <input type="button">
+                    </form>
+            </aside>
+            <aside class="two">
+                <span class="epmloyeeData" id="second">
+                      
+                </span>
+            </aside>
+            <aside class="tree">
+                <span class="epmloyeeData" id="tree">
+                </span>
+                <div class="options">
+                    <p class="liquidacion"><img src="/images/circular-diagram.svg" alt=""> <a href="">Liquidacion</a></p>
+                    <p class="liquidacion"><img src="/images/circular-diagram.svg" alt=""> <a href="">Bitakora</a></p>
+                </div>
+            </aside>
+        </div>
+        <span id="togle">
+            <img src="./images/up.svg" alt="">
+            <p>Ocultar Perfil</p>
+        </span>
+    </section>
+    
+    <!-- calendaries -->
+        <article id="calendariesSection">
+            <!-- potions heder  -->
+            <header>
+                <h2>Bitacora del empleado</h2>
+                <div class="toggleViwerTime">
+                    Visualizar bitacora por:
+                    <input type="checkbox" id="switch"/>
+                    <label for="switch"></label>  
+                </div>
+                <div class="toggleSlide">
+                    Marzo de 2022:
+                    <button class="after"></button>
+                    <button class="next" ></button>
+                </div>
+            </header>
+            <!-- body calendar -->
+            <span class="calendar">
+                <div class="container" id="categories">
+                    <p>Concepto</p>
+                    <p>Valor mensual</p>
+                </div>
+                <div class="container center firstCalendar" id="firstCalendar"></div>
+                <div class="container diasTitulo">Dias</div>
+            </span>
+
+        </article>
+        <script src="src/js/personalInfo.js"></script>
+    <script src="src/js/mapFlags.js"></script>
+    <script src="src/js/mapBitakora.js"></script>
+    <script src="src/js/main.js" type="module"></script>
+</body>
+</html>

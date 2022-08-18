@@ -1,0 +1,88 @@
+@import url('../css/01_body.css');
+article>span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    height: 8vh;
+    padding: 1px;
+    margin: 3px;
+    background-repeat: no-repeat;
+}
+/* seccion del primer calendario*/
+article>span>.container{
+height: 8vh;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size:  0.956vw;
+line-height: 16px;
+
+}
+/* left */
+article>span>#categories{
+width: 20%;
+font-size:  0.95vw;
+font-weight: 300;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+font-weight: 400;
+font-size: 1.147vw;
+padding: 10px;
+color: #4581b0;
+}
+/* center */
+article>span>#firstCalendar{
+display: flex;
+width: 75%;
+display: flex;
+align-items: center;
+justify-content: center;
+} 
+article>span>#firstCalendar>span{    
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 3.19%;
+height: auto;
+border-bottom: 0.5px solid #afafaf;
+border-right: 0.5px solid #afafaf;
+cursor: pointer;
+color: #8c8d8f;
+}
+article>span>#firstCalendar>.V{
+border-bottom: 1.5px solid #b47a1b;
+background-color:#f3b6542a;
+cursor: pointer;
+color: #8c8d8f;
+font-size: 1.2vw;
+color: #f3b754;
+font-weight: 600;
+
+}
+article>span>#firstCalendar>.D{
+font-weight: 500;
+color: black;
+font-size: 1.2vw;
+border-bottom:1.5px solid black;
+background-color:rgba(238, 238, 238, 0.712);
+}
+/* right */
+article>span>.diasTitulo{
+width: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size:  0.986vw;
+line-height: 16px;
+color: #6594B8;
+
+}
+/* seccion del primer calendario*/   
