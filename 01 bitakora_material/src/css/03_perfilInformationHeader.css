@@ -1,0 +1,132 @@
+@import url('../css/01_body.css');
+body>header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #e5e9ec;
+    box-shadow: 0px 6px 4px #717171;
+    }
+    header>main{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+    }
+        header>main>section{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            width: 90%;
+            height: auto;
+            border: 1px solid blue;;
+        
+        }
+            header>main>section>article{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                width: 33%;
+                height: auto;
+                margin: 1px;    
+            }
+            header>main>section>article>img{
+                width: 20%;
+                height: auto;
+                z-index: 1;
+                margin: 10px;
+                filter: drop-shadow(-1px 0px 5px rgba(0, 0, 0, 0.69));
+            }
+                header>main>section>article>aside{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 60%;
+                    height: auto;
+                    border: 1px solid lime;
+                }
+                header>main>section>article>#second,#tree{
+                    margin: auto;
+                }
+                    header>main>section>article>aside>header{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+                        height: auto;
+                        border: 1px solid purple;
+                     
+                    }
+                        aside .nombre,.valorSalario{
+
+                            font-style: normal;
+                            font-weight: 600;
+                            /* identical to box height */
+                            color: #082143;
+                            font-size: 18px;
+                        }
+                        aside .cargo,.tipoSalario{
+
+                            font-style: normal;
+                            font-weight: 300;
+                            color: #8C8C8C;
+                            font-size: 14px;
+                        }
+                        /* body aside */
+                        aside .title,.salario{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;          
+                            font-style: normal;
+                            font-weight: 500;
+                            width: 100%;
+                            height: auto;
+                            color: #4988BE;
+                            margin: 1px;
+                            font-size: 12px;
+                        }
+                        aside .descripction{
+                            width: 50%;
+                            height: auto;
+                            font-style: normal;
+                            font-weight: 200;
+                            font-size: 10px;
+                            text-align: left;
+                            color: #51697E;
+                        }
+                        aside a{
+                            display: flex;
+                            align-items: center;
+                        }
+                        aside a>img{
+                            width: 20%;
+                            height: auto;
+                            margin: 3px;
+                        }
+        header>main>nav{
+            width: 30%;
+            height: 5vh;
+            border:1px solid purple;
+        }
+
+    header>span{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        margin: 10px;
+        color: #6a8b3d;
+        font-size: 15px;
+        font-weight:600 ;
+        cursor: pointer;
+    }
+        header>span>img{
+            width: 13%;
+            height: auto;
+        }
