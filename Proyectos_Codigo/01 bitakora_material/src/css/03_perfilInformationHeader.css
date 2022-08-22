@@ -1,0 +1,139 @@
+@import url('../css/01_body.css');
+body>header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #e5e9ec;
+    box-shadow: 0px 6px 4px #717171;
+    }
+    header>main{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    
+    }
+        header>main>section{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 95%;
+            height: auto;
+            padding-top: 10px;
+        }
+            header>main>section>article{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                height: auto;
+                margin: 1px;    
+                /* flex: 1; */
+            }
+                header>main>section>#left{
+                    flex-basis: 50%;
+                }
+                header>main>section>#center,#right{
+                    flex-basis: 25%;
+                }
+            header>main>section>article>img{
+                width: 15%;
+                height: auto;
+                z-index: 1;
+                margin: 10px;
+                filter: drop-shadow(-1px 0px 5px rgba(0, 0, 0, 0.69));
+            }
+                header>main>section>article>aside{
+                    display: flex;
+                    justify-content: space-between;
+                    width: auto;
+                    height: auto;
+                   
+                }
+                header>main>section>article>#second,#tree{
+                    margin: auto;
+                }
+                    header>main>section>article>aside>header{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+                        height: auto;
+                    }
+                        aside .nombre,.valorSalario{
+
+                            font-style: normal;
+                            font-weight: 600;
+                            /* identical to box height */
+                            color: #082143;
+                        }
+                        aside .cargo,.tipoSalario{
+
+                            font-style: normal;
+                            font-weight: 300;
+                            color: #8C8C8C;
+                        }
+                        aside .container{
+                            display: flex;
+                            align-items: center;
+                            justify-content: auto;
+                            width: 100%;
+                            height: auto;
+                        }
+                        /* body aside */
+                        aside .title,.salario{
+                            display: flex;
+                            align-items: center;   
+                            justify-content: space-between;       
+                            font-style: normal;
+                            font-weight: 600;
+                            color: #4988BE;
+                            margin: 1px;
+                        }
+                        aside .descripction{
+                            display: flex;
+                            flex-basis: auto;
+                            height: auto;
+                            font-style: normal;
+                            font-weight: 500;
+                            color: #51697E;
+                            font-size:0.8vw;
+                            font-size-adjust: 1;
+                        }
+                        aside a{
+                            display: flex;
+                            align-items: center;
+                            font-size-adjust: 1;
+                            font-size: 0.9vw;
+                        }
+                        aside a>img{
+                            width: 20%;
+                            height: auto;
+                            margin: 3px;
+                        }
+        header>main>nav{
+            width: 85%;
+            height: 5vh;
+            border:1px solid purple;
+        }
+    header>span{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        margin: 10px;
+        color: #6a8b3d;
+        font-size: 15px;
+        font-weight:600 ;
+        cursor: pointer;
+    }
+        header>span>img{
+            width: 13%;
+            height: auto;
+        }
