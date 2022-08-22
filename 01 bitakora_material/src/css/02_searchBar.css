@@ -1,9 +1,0 @@
-@import url('../css/01_body.css');
-body>nav{
-    display: flex;
-align-items: center;
-width: 100%;
-height: 12.17vh;
-background-color: #141D29;
-z-index: 1;
-}
