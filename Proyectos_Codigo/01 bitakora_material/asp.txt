@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 function filterAnotherCalendaries(lineaRespuesta,calendaries)
 {
@@ -12,3 +13,19 @@ function filterAnotherCalendaries(lineaRespuesta,calendaries)
             })
     });
 }
+=======
+
+function filterAnotherCalendaries(lineaRespuesta,calendaries)
+{
+    calendaries.forEach(element => 
+    {
+        lineaRespuesta.causacionesPorItems.forEach(categorias =>
+            {
+                if( element.id  == categorias.idItem )
+                {
+                    console.log(`${categorias.idItem} ++ ${element.id}`)            
+                }
+            })
+    });
+}
+>>>>>>> 6fa215a4b52bb2e9f718239580c91641fea0f878
