@@ -92,16 +92,17 @@ list-style-type: square; */
     top: 25px;
     right: -322px;
     background-image: url(../images/bShare.svg);
-    background-color: yellow;
   }
   .share:hover {
     background-image: url(../images/aShare.svg);
+    border: 1px solid lime;
   }
   .desktopHover {
     position: relative;
     top: -70px;
     left: -110px;
     display: none;
+
   }
   .share:hover .desktopHover {
     display: flex;
