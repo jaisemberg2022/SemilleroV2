@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="./src/css/01_body.css">
     <title>Document</title>
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <section id="a">
+            <img src="/images/bitakora.svg" alt="">
+        </section>
+        <section id="b"></section>
+        <section id="c"></section>
+    </nav>
     <header>
         <main class="info" id="info">
             <section>
@@ -39,7 +45,16 @@
             </section>
 
             <nav>
-                    
+                <label class="mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id">Your Name</span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
             </nav>
 
         </main>
@@ -75,92 +90,17 @@
             </span>
 
         </article>
-        <script src="src/js/personalInfo.js"></script>
+
+
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- Instantiate single textfield component rendered in the document -->
+    <script>
+    mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+    </script>
+    <script src="src/js/personalInfo.js"></script>
     <script src="src/js/mapFlags.js"></script>
     <script src="src/js/mapBitakora.js"></script>
     <script src="src/js/main.js" type="module"></script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/01_body.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav></nav>
-    <header>
-        <main class="info" id="info">
-            <section>
-
-                <article  id="left">
-                    <img src="/images/judas_tadeo.png" alt="">
-                    <aside class="epmloyeeData" id="first">
-                        
-                    </aside>
-                </article>
-
-                <article  id="center">
-                    <aside class="epmloyeeData" id="second">
-
-                    </aside>
-                </article>
-
-                <article  id="right">
-                    <aside class="epmloyeeData" id="tree">
-
-                    </aside>
-                </article>
-
-            </section>
-
-            <nav>
-                    
-            </nav>
-
-        </main>
-        <span id="togle">
-            <img src="./images/up.svg" alt="up row">
-            <p>Ocultar Perfil</p>
-        </span>
-    </header>
-    <!-- calendaries -->
-        <article id="calendariesSection">
-            <!-- potions heder  -->
-            <header>
-                <h2>Bitacora del empleado</h2>
-                <div class="toggleViwerTime">
-                    Visualizar bitacora por:
-                    <input type="checkbox" id="switch"/>
-                    <label for="switch"></label>  
-                </div>
-                <div class="toggleSlide">
-                    Marzo de 2022:
-                    <button class="after"></button>
-                    <button class="next" ></button>
-                </div>
-            </header>
-            <!-- body calendar -->
-            <span class="calendar">
-                <div class="container" id="categories">
-                    <p>Concepto</p>
-                    <p>Valor mensual</p>
-                </div>
-                <div class="container center firstCalendar" id="firstCalendar"></div>
-                <div class="container diasTitulo">Dias</div>
-            </span>
-
-        </article>
-        <script src="src/js/personalInfo.js"></script>
-    <script src="src/js/mapFlags.js"></script>
-    <script src="src/js/mapBitakora.js"></script>
-    <script src="src/js/main.js" type="module"></script>
-</body>
->>>>>>> 6fa215a4b52bb2e9f718239580c91641fea0f878
 </html>

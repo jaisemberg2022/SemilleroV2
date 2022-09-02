@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 // function Filter(array, key, value,) {
@@ -12,19 +11,4 @@
 // }
 
 
-=======
-
-
-// function Filter(array, key, value,) {
-//   var arrayObjFind = [];
-//   for (var i = 0; i < array.length; i++) {
-//       if (array[i][key] != undefined && array[i][key].toString().toUpperCase().trim().indexOf(value.toString().toUpperCase().trim()) >= 0) {
-//           arrayObjFind.push(array[i]);
-//       }
-//   }
-//   return arrayObjFind;
-// }
-
-
->>>>>>> 6fa215a4b52bb2e9f718239580c91641fea0f878
 // let filertDiasV = Filter(dataDays,"evento","D")

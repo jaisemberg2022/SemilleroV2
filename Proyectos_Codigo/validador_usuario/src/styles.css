@@ -1,105 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    display: flex;
-  justify-content:left;
-  align-items:center;
-  width: 10%;
+display: flex;
+justify-content:space-between;
+align-items:center;
+  width: 100%;
   height: 100vh;
-  background-image: url("../images/bg-pattern-desktop.svg");  
-  margin-top: 100px;
-  margin-left: 10%;
-background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
 }
-img{
-    /* hero-desktop 1 */
-position: absolute;
-width: 729px;
-height: 787px;
-left: 760px;
-top: 0px;
+body>img{
+    width: 40%;
+    height: 100vmin;
 }
-h1{
+body>section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height:  100%;
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-position: center;
+}
+body>section>aside>img{
+    margin-bottom: 5%;
+    width: 30%;
+    height: auto;
+}
+body>section>aside{
+    width: 60%;
+    height: auto;
+}
+body>section>aside>h1{
     /* WE’RE COMING SOON */
-width: 308px;
+width: 40%;
 font-family: 'Josefin Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 64px;
-line-height: 64px;
+font-size: 4.68vw;
 color: #CE9DA0;
 }
-span{
+body>section>aside>h1>span{
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 4.68vw;
     color: #000;
 }
-p{
+body>section>aside>p{
     /* Hello fellow shoppers! We´re currently building our new fashion store. Add your email below to stay up-tp-date with announcements and our launch deals. */
-width: 519px;
-height: 135px;
 font-family: 'Josefin Sans';
 font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 40px;
+font-weight: 300;
+font-size: 1.31vw;
 color: #CE9DA0;
+width: 90%;
 }
-input[type=email]{
+body>section>aside>h1,p{
+    margin-top: 1%;
+}
+body>section>form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    margin-top: 5%;
+}
+body>section>form>div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+body>section>form>div>input[type=email]{
     /* Rectangle 2 */
 position: relative;
-width: 518px;
-height: 74px;
+width: 100%;
+height: 10vmin;
 border: 3px solid #D9C9CC;
 box-sizing: border-box;
 border-radius: 50px;
 background-color: transparent;
+outline: none;
+padding-left: 25px;
+font-weight: 600;
+font-size: 1.09vw;
+color: black;
+font-style: normal;
+
 }
-input[type=email]::placeholder{
+body>section>form>div>.error{
+    border-color: #e2706f !important;
+    background-image: url('/images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 75%;
+    color: #a04f4e !important;
+    
+}
+body>section>form>div>.correct{
+    border-color: #6fe28c !important;
+    background-image: url('/images/icon-correct.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 75%;
+    color: #6fe2a9 !important;
+}
+body>section>form>div>input[type=email]::placeholder{
     /* Email Address */
-position: absolute;
-left: 5%;
-top:20%;
 font-family: 'Josefin Sans';
 font-style: normal;
 font-weight: 600;
-font-size: 18px;
-line-height: 40px;
-z-index: 2;
-/* identical to box height, or 222% */
-display: flex;
-color: #DECECF;
+font-size: 1.09vw;
+color: #d6caca;
 }
-
-
-
-input[type=submit] {
-    /* Rectangle 3 */
-position: absolute;
-width: 129.5px;
-height: 74px;
-left: 38.8%;
-background: linear-gradient(#F19797, rgba(244, 183, 182, 0.34) 90.15%);
+body>section>form>div>input[type=submit] {
+width: 8%;
+height: 10vmin;
+background:url('/images/icon-arrow.svg')  no-repeat center , linear-gradient(#F19797, rgba(255, 210, 209, 0.623) 90.15%) ;
 border-radius: 50px;
+background-size: 10%;
 border: 1px;
+cursor: pointer;
+position: absolute;
+display: flex;
 }
-input[type=submit]:hover{
-    /* Rectangle 3 */
-background: linear-gradient(250.83deg, #FACECF 40.03%, #FFECEC 77.27%);
-box-shadow: -1px 10px 25px 2px rgba(0, 0, 0, 0.25);
+body>section>form>div>input[type=submit]:hover{
+background:url('/images/icon-arrow.svg') no-repeat center, linear-gradient(250.83deg, #FACECF 40.03%, #FFECEC 77.27%);
+box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
 border-radius: 50px;
 }
-.error_email{
+body>section>form>.error_email{
     /* please privade a valid email */
-
-position: absolute;
 font-family: 'Josefin Sans';
 font-style: normal;
 font-weight: 600;
-font-size: 16px;
-line-height: 40px;
-margin-left: 2%;
+font-size:1.13vw;
+margin-top: 2%;
+margin-left:25px;
 }
