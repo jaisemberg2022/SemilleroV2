@@ -100,7 +100,6 @@ function star_Game(type) {
 const update_Score = (result) => {
     document.querySelector(".score").innerText = counter;
 };
-
 function reset_Game() {
     selection.classList.toggle("show") && selection.classList.toggle("hide");
     mainView.classList.toggle("hide") && mainView.classList.toggle("show");

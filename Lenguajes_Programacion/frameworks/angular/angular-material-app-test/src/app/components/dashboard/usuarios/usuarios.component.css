@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  th{
+    width: 20%;
+  }
+
+  .buscar{
+    color: #1878b0 ;
+  }
+  .editar{
+    color: #1f516f ;
+  }
+  .eliminar{
+    color: #e15639;
+  }
+
+  /* Structure */
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

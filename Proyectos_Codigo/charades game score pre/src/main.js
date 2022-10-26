@@ -337,10 +337,8 @@ function change()
     header.innerHTML = `<h1>${firstTeam ? newValues[4] : newValues[5]}</h1`;
     
 }
-
 function points(newValues)
 {
-
  newValues[0] =  pointG1;
  newValues[1] =  pointG2;
   btnPoint.forEach(btn =>
@@ -366,11 +364,8 @@ function points(newValues)
           console.log(` ${newValues[5]} obtuvo un punto , ${pointG2}`)
         }
       })
-
       })
-
 }
-
 function finishGame(newValues)
 {
   let game_container = document.getElementById('game_container')
