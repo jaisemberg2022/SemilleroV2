@@ -1,0 +1,26 @@
+.mat-tab-group {
+    width: 90%;
+    border: 1px solid line;
+    margin: 1rem auto;
+    .mat-tab-body-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: .5rem .5rem;
+        padding: 0rem 1rem;
+        height: 20vh;
+    }
+}
+
+.mat-tab-group.mat-success .mat-ink-bar{
+    background-color: $success-color !important;
+}
+.mat-tab-group.mat-error-color .mat-ink-bar{
+    background-color: $error-color !important;
+}
+.mat-tab-group.mat-warning .mat-ink-bar{
+    background-color: $warning-color !important;
+}
+.mat-tab-group.mat-info .mat-ink-bar{
+    background-color: $info-color !important;
+}

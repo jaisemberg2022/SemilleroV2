@@ -1,0 +1,32 @@
+@use '@angular/material' as mat;
+
+@import "@angular/material/theming";
+
+@include mat.core();
+
+
+//GAMA DE COLORES
+// PALETA DE COLORES
+
+    //paleta oscura
+    $angular-primary-dark-palette:mat.define-palette(mat.$indigo-palette,A200);
+    $angular-accent-dark-palette:mat.define-palette(mat.$pink-palette,A200);
+    $angular-warn-dark-palette:mat.define-palette(mat.$red-palette, A200);
+
+// TEMA PROPIO
+
+    //tema oscuro
+    $angular-original-dark-theme:mat.define-dark-theme((
+        color:(
+            primary:$angular-primary-dark-palette,
+            accent:$angular-accent-dark-palette,
+            warn:$angular-warn-dark-palette,
+        )
+    ));
+
+// APLICAR NUESTRO TEMA A ANGULAR
+
+    // forma(1) en una clase propia
+    .dark-theme-one{
+        @include mat.all-component-colors($angular-original-dark-theme)
+    }

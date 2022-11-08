@@ -1,0 +1,17 @@
+
+        .mat-raised-button.mat-error-color,
+        .mat-flat-button.mat-error-color,
+        .mat-fab.mat-error-color,
+        .mat-mini-fab.mat-error-color
+        {
+            background-color:$error-color !important;
+            color: $color-white ;
+            margin: .5rem;
+        }
+        .mat-button.mat-error-color,
+        .mat-stroked-button.mat-error-color,
+        .mat-icon-button.mat-error-color
+        {
+            color: $error-color !important;
+            margin:.5rem ;
+        }

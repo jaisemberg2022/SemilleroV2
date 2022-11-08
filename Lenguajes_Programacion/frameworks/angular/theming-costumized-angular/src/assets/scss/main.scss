@@ -1,0 +1,50 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typografy';
+@import 'base/utilities';
+
+// @import 'utilities/bootstrap';
+// @import 'vendors/jquery-ui';
+
+// @import 'base/reset';
+// @import 'base/typo';
+
+// @import 'layout/navigation';
+// @import 'layout/grid';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'layout/forms';
+
+@import 'components/containers';
+@import 'components/mat-tab-group';
+
+@import 'components/succes-colors-components/buttons-success';
+@import 'components/succes-colors-components/inputs-success';
+@import 'components/succes-colors-components/check-boxs-success';
+@import 'components/succes-colors-components/tool-Bar-success';
+@import 'components/succes-colors-components/progress-bar-success';
+
+@import 'components/error-color-components/buttons-error';
+@import 'components/error-color-components/inputs-error';
+@import 'components/error-color-components/check-box-error';
+@import 'components/error-color-components/progress-bar-error';
+
+@import 'components/warning-colors-components/buttons-warning';
+@import 'components/warning-colors-components/inputs-waring';
+@import 'components/warning-colors-components/check-box';
+@import 'components/warning-colors-components/toolBar';
+@import 'components/warning-colors-components/progress-bar-warning';
+
+@import 'components/info-colors-components/info-buttons';
+@import 'components/info-colors-components/inputs-info';
+@import 'components/info-colors-components/-check-box.scss';
+@import 'components/info-colors-components/progress-bar-info';
+
+// @import 'pages/home';
+// @import 'pages/contact';
+ @import 'themes/dark-theme';
+// @import 'themes/admin';

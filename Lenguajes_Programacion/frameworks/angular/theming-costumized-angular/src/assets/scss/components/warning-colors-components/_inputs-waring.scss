@@ -1,0 +1,10 @@
+
+        .mat-form-field.mat-focused.mat-warning .mat-form-field-ripple{
+            background-color: $warning-color !important;
+        }
+        .mat-form-field.mat-focused.mat-warning .mat-form-field-label{
+            color: $warning-color !important;
+        }
+        .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate, .mat-warning .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate{
+            background-color: $warning-color !important;
+        }

@@ -1,0 +1,13 @@
+        .mat-form-field.mat-focused.mat-info .mat-form-field-ripple{
+            background-color: $info-color !important;
+        }
+        .mat-form-field.mat-focused.mat-info .mat-form-field-label{
+            color: $info-color;
+        }
+        .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate, .mat-info .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate{
+            background-color: $info-color !important;
+        }
+        .mat-toolbar.mat-info{
+            background-color: $info-color !important;
+            color: $color-white;
+        }

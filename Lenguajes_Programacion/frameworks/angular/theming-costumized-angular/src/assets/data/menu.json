@@ -1,0 +1,17 @@
+[
+    {
+        "nombre":"inicio",
+        "redirect":"/dashboard/inicio"
+    },
+
+    {
+        "nombre":"colores",
+        "redirect":"/dashboard/colores"
+    },
+
+    {
+        "nombre":"mensajes",
+        "redirect":"/dashboard/mensajes"
+    }
+    
+]

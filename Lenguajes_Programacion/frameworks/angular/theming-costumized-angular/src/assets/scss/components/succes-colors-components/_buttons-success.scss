@@ -1,0 +1,18 @@
+// success
+        // botones
+        .mat-raised-button.mat-success,
+        .mat-flat-button.mat-success,
+        .mat-fab.mat-success,
+        .mat-mini-fab.mat-success
+        {
+            background-color:$success-color !important ;
+            color: $color-white;
+            margin: .5rem;
+        }
+        .mat-button.mat-success,
+        .mat-stroked-button.mat-success,
+        .mat-icon-button.mat-success
+        {
+            color: $success-color !important;
+            margin:.5rem ;
+        }

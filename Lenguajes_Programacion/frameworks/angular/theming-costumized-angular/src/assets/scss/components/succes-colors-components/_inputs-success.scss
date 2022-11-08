@@ -1,0 +1,10 @@
+ //inputs
+ .mat-form-field.mat-focused.mat-success .mat-form-field-ripple{
+    background-color: $success-color !important;
+}
+.mat-form-field.mat-focused.mat-success .mat-form-field-label{
+    color: $success-color !important;
+}
+.mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate, .mat-success .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate{
+    background-color: $success-color !important;
+}

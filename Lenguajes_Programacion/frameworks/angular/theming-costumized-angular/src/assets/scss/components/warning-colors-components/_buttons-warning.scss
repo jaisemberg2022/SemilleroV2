@@ -1,0 +1,17 @@
+
+        .mat-raised-button.mat-warning,
+        .mat-flat-button.mat-warning,
+        .mat-fab.mat-warning,
+        .mat-mini-fab.mat-warning
+        {
+            background-color:$warning-color !important;
+            color: $color-white;
+            margin: .5rem;
+        }
+        .mat-button.mat-warning,
+        .mat-stroked-button.mat-warning,
+        .mat-icon-button.mat-warning
+        {
+            color: $warning-color !important;
+            margin:.5rem ;
+        }
