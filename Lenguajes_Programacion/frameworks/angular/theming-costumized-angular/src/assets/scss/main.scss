@@ -27,7 +27,7 @@
 @import 'components/cuztomized-colors/succes-colors-components/check-boxs-success';
 @import 'components/cuztomized-colors/succes-colors-components/tool-Bar-success';
 @import 'components/cuztomized-colors/succes-colors-components/progress-bar-success';
-@import 'components/cuztomized-colors/succes-colors-components/succes-alert-messagge';
+@import 'components/cuztomized-colors/succes-colors-components/tab-group';
 //alerta de mensajes color success
     @import 'components/cuztomized-colors/succes-colors-components/alert-succes-messages/filled-success-snackBar'; 
     @import 'components/cuztomized-colors/succes-colors-components/alert-succes-messages/outlined-success-snackbar'; 
@@ -38,6 +38,7 @@
 @import 'components/cuztomized-colors/error-color-components/check-box-error';
 @import 'components/cuztomized-colors/error-color-components/progress-bar-error';
 @import 'components/cuztomized-colors/error-color-components/tolBar-error';
+@import 'components/cuztomized-colors/error-color-components/tab-group';
 //alerta de mensajes color error
     @import 'components/cuztomized-colors/error-color-components/alert-error-messages/basic-alerts-error-snackBar';    
     @import 'components/cuztomized-colors/error-color-components/alert-error-messages/filled-error-color-snackBar';
@@ -48,6 +49,7 @@
 @import 'components/cuztomized-colors/warning-colors-components/check-box';
 @import 'components/cuztomized-colors/warning-colors-components/toolBar';
 @import 'components/cuztomized-colors/warning-colors-components/progress-bar-warning';
+@import 'components/cuztomized-colors/warning-colors-components/tab-group';
 //alerta de mensajes color warning
     @import 'components/cuztomized-colors/warning-colors-components/alert-warning-messages/basic-alerts-warning-snackBar';
     @import 'components/cuztomized-colors/warning-colors-components/alert-warning-messages/filled-warning-snackBar';
@@ -58,6 +60,7 @@
 @import 'components/cuztomized-colors/info-colors-components/-check-box.scss';
 @import 'components/cuztomized-colors/info-colors-components/progress-bar-info';
 @import 'components/cuztomized-colors/info-colors-components/toolBar';
+@import 'components/cuztomized-colors/info-colors-components/tab-group';
 //alerta de mensajes color info
     @import 'components/cuztomized-colors/info-colors-components/alert-info-messages/basic-alert-info-snackBar';
     @import 'components/cuztomized-colors/info-colors-components/alert-info-messages/filled-info-snackBar';
@@ -67,3 +70,8 @@
 // @import 'pages/contact';
  @import 'themes/dark-theme';
 // @import 'themes/admin';
+
+
+.whatever {
+    background-color: light-blue;
+  }

@@ -4,7 +4,7 @@
         .mat-fab.mat-error-color,
         .mat-mini-fab.mat-error-color
         {
-            background-color:$error-color !important;
+            background-color:mat-color($error-color,500) !important;
             color: $color-white ;
             margin: .5rem;
         }
@@ -12,6 +12,23 @@
         .mat-stroked-button.mat-error-color,
         .mat-icon-button.mat-error-color
         {
-            color: $error-color !important;
+            color: mat-color($error-color,500);
             margin:.5rem ;
+        }
+
+
+        
+        // botones raised,flat,fab,mini-fab
+        .dark-theme-one .mat-flat-button.mat-error-color,
+         .dark-theme-one .mat-raised-button.mat-error-color,
+          .dark-theme-one .mat-fab.mat-error-color,
+           .dark-theme-one .mat-mini-fab.mat-error-color{
+            background-color: mat-color($error-color, 300)!important;
+            color: currentColor;
+        }
+        //botones basic,stroked icon
+        .dark-theme-one .mat-button.mat-error-color,
+         .dark-theme-one .mat-icon-button.mat-error-color,
+          .dark-theme-one .mat-stroked-button.mat-error-color{
+            color:mat-color($error-color, 300)!important;
         }

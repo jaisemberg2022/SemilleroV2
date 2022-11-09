@@ -1,4 +1,9 @@
-        //check-boxx
-        .mat-checkbox-checked.mat-success .mat-checkbox-background {
-            background-color: $success-color !important;
-        }
+//check-boxx
+    .mat-checkbox-checked.mat-success .mat-checkbox-background {
+        background-color:  mat-color($success-color, 500) ;
+    }
+
+//dark theme
+    .dark-theme-one .mat-checkbox-checked.mat-success .mat-checkbox-background {
+        background-color:  mat-color($success-color, 300) ;
+    }

@@ -1,0 +1,10 @@
+
+.mat-tab-group.mat-info .mat-ink-bar{
+    background-color: mat-color($info-color,500);
+}
+
+
+.dark-theme-one .mat-tab-group.mat-info .mat-ink-bar{
+    background-color: mat-color($info-color,300)!important;
+}
+

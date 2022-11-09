@@ -1,4 +1,9 @@
 .filled-error-color.mat-snack-bar-container{
-    background-color: $error-color !important;
+    background-color:mat-color($error-color,500);
     color: $color-white;
+}
+
+.dark-theme-one .filled-error-color.mat-snack-bar-container{
+    background-color:mat-color($error-color,300);
+    color: currentColor;
 }

@@ -1,4 +1,9 @@
 .mat-toolbar.mat-info{
-    background-color: $info-color !important;
+    background-color: mat-color($info-color,500); ;
     color: $color-white;
+}
+
+.dark-theme-one .mat-toolbar.mat-info{
+    background-color: mat-color($info-color,300); 
+    color: currentColor;
 }

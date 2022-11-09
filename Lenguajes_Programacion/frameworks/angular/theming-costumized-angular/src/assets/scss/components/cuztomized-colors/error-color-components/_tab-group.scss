@@ -1,0 +1,7 @@
+.mat-tab-group.mat-error-color .mat-ink-bar{
+    background-color: mat-color($error-color,500);  
+}
+
+.dark-theme-one .mat-tab-group.mat-error-color .mat-ink-bar{
+    background-color: mat-color($error-color,300)!important; 
+}

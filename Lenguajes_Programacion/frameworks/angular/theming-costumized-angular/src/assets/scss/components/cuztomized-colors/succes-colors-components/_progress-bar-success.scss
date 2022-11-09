@@ -1,6 +1,16 @@
-.mat-progress-bar.mat-success .mat-progress-bar-buffer{
-    background-color: lighten($success-color, 40);
-}
-.mat-progress-bar.mat-success .mat-progress-bar-fill::after{
-    background-color: $success-color;
-}
+
+//progress bar
+    .mat-progress-bar.mat-success .mat-progress-bar-buffer{
+        background-color:  mat-color($success-color, 200) ;
+    }
+    .mat-progress-bar.mat-success .mat-progress-bar-fill::after{
+        background-color:  mat-color($success-color, 500) ;
+    }
+
+//dark theme
+    .dark-theme-one .mat-progress-bar.mat-success .mat-progress-bar-buffer{
+        background-color:  mat-color($success-color, 200) ;
+    }
+    .dark-theme-one  .mat-progress-bar.mat-success .mat-progress-bar-fill::after{
+        background-color:  mat-color($success-color, 300) ;
+    }

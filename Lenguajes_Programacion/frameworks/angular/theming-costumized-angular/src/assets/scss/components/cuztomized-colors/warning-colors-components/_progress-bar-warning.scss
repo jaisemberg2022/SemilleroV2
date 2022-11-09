@@ -1,6 +1,14 @@
 .mat-progress-bar.mat-warning .mat-progress-bar-buffer{
-    background-color: lighten($warning-color, 25);
+    background-color: mat-color($warning-color,200);
 }
 .mat-progress-bar.mat-warning .mat-progress-bar-fill::after{
-    background-color: $warning-color;
+    background-color: mat-color($warning-color,500);
+}
+
+
+.dark-theme-one .mat-progress-bar.mat-warning .mat-progress-bar-buffer{
+    background-color: mat-color($warning-color,200);
+}
+.dark-theme-one .mat-progress-bar.mat-warning .mat-progress-bar-fill::after{
+    background-color: mat-color($warning-color,300);
 }

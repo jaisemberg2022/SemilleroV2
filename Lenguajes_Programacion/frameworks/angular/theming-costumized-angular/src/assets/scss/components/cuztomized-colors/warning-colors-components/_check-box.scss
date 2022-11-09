@@ -1,5 +1,12 @@
 
         //check-boxs
         .mat-checkbox-checked.mat-warning .mat-checkbox-background {
-            background-color: $warning-color !important;
+            background-color: mat-color($warning-color,500);
         }
+
+
+        
+        //check-boxs
+        .dark-theme-one .mat-checkbox-checked.mat-warning .mat-checkbox-background {
+                background-color: mat-color($warning-color,300);
+            }

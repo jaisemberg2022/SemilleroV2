@@ -6,12 +6,15 @@
 
 
 //GAMA DE COLORES
+
 // PALETA DE COLORES
 
     //paleta oscura
-    $angular-primary-dark-palette:mat.define-palette(mat.$indigo-palette,A200);
-    $angular-accent-dark-palette:mat.define-palette(mat.$pink-palette,200);
-    $angular-warn-dark-palette:mat.define-palette(mat.$red-palette, 200);
+    $angular-primary-dark-palette:mat.define-palette(mat.$indigo-palette,300);
+    $angular-accent-dark-palette:mat.define-palette(mat.$pink-palette,A200);
+    $angular-warn-dark-palette:mat.define-palette(mat.$red-palette);
+
+
 
 // TEMA PROPIO
 
@@ -28,5 +31,6 @@
 
     // forma(1) en una clase propia
     .dark-theme-one{
-        @include mat.all-component-colors($angular-original-dark-theme)
+        @include mat.all-component-colors($angular-original-dark-theme);
+
     }

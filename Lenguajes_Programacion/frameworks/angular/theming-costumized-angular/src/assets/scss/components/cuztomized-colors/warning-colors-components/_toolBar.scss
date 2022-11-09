@@ -1,5 +1,12 @@
         .mat-toolbar.mat-warning{
-            background-color: $warning-color !important;
+            background-color: mat-color($warning-color,500);
             color: $color-white;
             display: flex;
         }
+
+
+        .dark-theme-one .mat-toolbar.mat-warning{
+                background-color: mat-color($warning-color,300)!important;
+                color: currentColor;
+                display: flex;
+            }

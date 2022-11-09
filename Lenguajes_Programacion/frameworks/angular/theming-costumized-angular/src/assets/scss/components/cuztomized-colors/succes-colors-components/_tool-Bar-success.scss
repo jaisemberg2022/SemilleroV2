@@ -1,5 +1,10 @@
  //tolbar
  .mat-toolbar.mat-success{
-    background-color: $success-color !important;
+    background-color: mat-color($success-color, 500) ;
     color: $color-white;
+}
+//dark theme
+.dark-theme-one .mat-toolbar.mat-success{
+    background-color: mat-color($success-color,300);
+    color: currentColor;
 }
