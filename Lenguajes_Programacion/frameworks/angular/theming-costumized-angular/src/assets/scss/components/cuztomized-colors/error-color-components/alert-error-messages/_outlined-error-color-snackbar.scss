@@ -1,0 +1,6 @@
+.outlined-error-color.mat-snack-bar-container{
+    background-color: transparent !important;
+    border: 1px solid $error-color;
+    color: darken($error-color, 10);
+    font-weight: 400;
+}

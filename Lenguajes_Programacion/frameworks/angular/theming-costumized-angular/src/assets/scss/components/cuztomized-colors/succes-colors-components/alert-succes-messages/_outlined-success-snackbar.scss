@@ -1,0 +1,6 @@
+.outlined-success.mat-snack-bar-container{
+    background-color: transparent !important;
+    border: 1px solid $success-color;
+    color: darken($success-color, 10);
+    font-weight: 400;
+}

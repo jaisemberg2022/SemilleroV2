@@ -1,14 +1,14 @@
 .mat-tab-group {
     width: 90%;
     border: 1px solid line;
-    margin: 1rem auto;
+    margin: auto;
     .mat-tab-body-content {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: .5rem .5rem;
-        padding: 0rem 1rem;
-        height: 20vh;
+        margin: 1rem auto;
+        padding: .5rem 1rem;
+        height: auto;
     }
 }
 

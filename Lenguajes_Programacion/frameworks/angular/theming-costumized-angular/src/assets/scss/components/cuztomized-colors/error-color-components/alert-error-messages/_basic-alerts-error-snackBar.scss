@@ -1,0 +1,4 @@
+.basic-alerts-error-color.mat-snack-bar-container{
+    background-color: lighten($error-color , 40)!important;
+    color: darken($error-color, 20) !important;
+}

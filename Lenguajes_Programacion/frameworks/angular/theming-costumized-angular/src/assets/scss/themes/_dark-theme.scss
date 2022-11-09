@@ -10,8 +10,8 @@
 
     //paleta oscura
     $angular-primary-dark-palette:mat.define-palette(mat.$indigo-palette,A200);
-    $angular-accent-dark-palette:mat.define-palette(mat.$pink-palette,A200);
-    $angular-warn-dark-palette:mat.define-palette(mat.$red-palette, A200);
+    $angular-accent-dark-palette:mat.define-palette(mat.$pink-palette,200);
+    $angular-warn-dark-palette:mat.define-palette(mat.$red-palette, 200);
 
 // TEMA PROPIO
 

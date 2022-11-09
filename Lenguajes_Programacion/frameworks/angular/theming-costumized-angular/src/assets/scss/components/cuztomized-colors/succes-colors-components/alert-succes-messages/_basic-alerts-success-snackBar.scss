@@ -1,0 +1,4 @@
+.basic-alerts-success.mat-snack-bar-container{
+    background-color: lighten($success-color , 40)!important;
+    color: darken($success-color, 20) !important;
+}

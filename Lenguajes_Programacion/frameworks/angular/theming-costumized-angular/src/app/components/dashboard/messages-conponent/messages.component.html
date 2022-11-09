@@ -1,8 +1,114 @@
-<div class="container mat-elevation-z3">
-    <mat-toolbar color="accent">
-        <span class="example-spacer"></span>
-        <h2>Alerta de mensajes perzonalizada</h2>
-        <span class="example-spacer"></span>
-      </mat-toolbar>
-      
+<div class="container-components  mat-elevation-z5 " >
+
+  <mat-toolbar  color="accent">
+    <span>mensajes de alerta</span>
+  </mat-toolbar>
+
+    <mat-tab-group mat-align-tabs="start" class="mat-elevation-z2 "color="">
+      <!-- success -->
+        <mat-tab label="success color">
+            <div class="container-mat-tab-group mat-elevation-z2">
+              <!-- header -->
+                <mat-toolbar color="success">
+                <span class="example-spacer"></span>
+                <h2>alert success</h2>
+                <span class="example-spacer"></span>
+                </mat-toolbar>
+              <!-- content -->
+                <mat-tab-group mat-align-tabs="center" color="success">
+                  <!-- filled style -->
+                    <mat-tab label="Filled">
+                      <button mat-raised-button class="filled" color="success" (click)="openSnackBar($event)">boton</button>
+                    </mat-tab>
+                  <!-- Outlined style -->
+                    <mat-tab label="Outlined">
+                      <button mat-stroked-button class="outlined" color="success" (click)="openSnackBar($event)">boton</button>
+                    </mat-tab>
+                  <!-- Basic alerts style -->
+                    <mat-tab label="Basic alerts">
+                      <button mat-stroked-button class="basic-alerts" color="success" (click)="openSnackBar($event)">boton</button>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </mat-tab>
+      <!-- error-color -->
+        <mat-tab label="error color">
+          <div class="container-mat-tab-group mat-elevation-z2">
+            <!-- header -->
+              <mat-toolbar color="error-color">
+                    <span class="example-spacer"></span>
+                    <h2>alert error</h2>
+                    <span class="example-spacer"></span>
+              </mat-toolbar>
+            <!-- content -->
+              <mat-tab-group mat-align-tabs="center" color="error-color">
+                    <!-- filled style -->
+                      <mat-tab label="Filled">
+                        <button mat-raised-button class="filled" color="error-color" (click)="openSnackBar($event)">boton</button>
+                      </mat-tab>
+                    <!-- Outlined style -->
+                      <mat-tab label="Outlined">
+                        <button mat-stroked-button class="outlined" color="error-color" (click)="openSnackBar($event)">boton</button>
+                      </mat-tab>
+                    <!-- Basic alerts style -->
+                      <mat-tab label="Basic alerts">
+                        <button mat-stroked-button class="basic-alerts" color="error-color" (click)="openSnackBar($event)">boton</button>
+                      </mat-tab>
+              </mat-tab-group>
+          </div>
+        </mat-tab>
+      <!-- warning-color -->
+        <mat-tab label="warning color">
+          <div class="container-mat-tab-group mat-elevation-z2">
+            <!-- header -->
+              <mat-toolbar color="warning">
+                    <span class="example-spacer"></span>
+                    <h2>alert warning</h2>
+                    <span class="example-spacer"></span>
+              </mat-toolbar>
+            <!-- content -->
+              <mat-tab-group mat-align-tabs="center" color="warning">
+                <!-- filled style -->
+                  <mat-tab label="Filled">
+                     <button mat-raised-button class="filled" color="warning" (click)="openSnackBar($event)">boton</button> 
+                  </mat-tab>
+                <!-- Outlined style -->
+                  <mat-tab label="Outlined">
+                    <button mat-stroked-button color="warning" class="outlined" (click)="openSnackBar($event)">boton</button>
+                  </mat-tab>
+                <!-- Basic alerts style -->
+                  <mat-tab label="Basic alerts">
+                    <button mat-stroked-button class="basic-alerts" color="warning" (click)="openSnackBar($event)">boton</button>
+                  </mat-tab>
+              </mat-tab-group>
+          </div>
+        </mat-tab>
+      <!-- info-color -->
+        <mat-tab label="info color">
+          <div class="container-mat-tab-group mat-elevation-z2">
+            <!-- header -->
+              <mat-toolbar color="info">
+                    <span class="example-spacer"></span>
+                    <h2>alert info</h2>
+                    <span class="example-spacer"></span>
+              </mat-toolbar>
+            <!-- content -->
+              <mat-tab-group mat-align-tabs="center" color="info">
+              <!-- filled style -->
+                <mat-tab label="Filled">
+                  <button mat-raised-button color="info" class="filled" (click)="openSnackBar($event)">boton</button>
+                </mat-tab>
+              <!-- Outlined style -->
+                <mat-tab label="Outlined">
+                  <button mat-stroked-button color="info" class="outlined" (click)="openSnackBar($event)">boton</button>
+                </mat-tab>
+              <!-- Basic alerts style -->
+                <mat-tab label="Basic alerts">
+                  <button mat-stroked-button color="info" class="basic-alerts" (click)="openSnackBar($event)">boton</button>
+                </mat-tab>
+              </mat-tab-group>
+          </div>
+        </mat-tab>
+    </mat-tab-group>
+  
 </div>

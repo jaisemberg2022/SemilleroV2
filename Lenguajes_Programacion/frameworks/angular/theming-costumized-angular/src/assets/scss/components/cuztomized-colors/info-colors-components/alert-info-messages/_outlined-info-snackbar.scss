@@ -1,0 +1,6 @@
+.outlined-info.mat-snack-bar-container{
+    background-color: transparent !important;
+    border: 1px solid $info-color;
+    color: darken($info-color, 10);
+    font-weight: 400;
+}

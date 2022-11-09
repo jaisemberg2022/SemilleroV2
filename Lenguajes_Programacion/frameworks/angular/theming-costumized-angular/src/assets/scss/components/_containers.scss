@@ -1,7 +1,18 @@
-.container{
+
+.container-components{
     width: 75%;
-    height: 70vh;
     margin: 3rem auto;
     display: flex;
     flex-wrap:wrap ;
+    &>:not(:last-child  :first-child){
+        margin-top: 2rem !important;
+    }
+    &>:last-child{
+        margin-bottom: 2rem !important;
+    }
+}
+
+.container-mat-tab-group{
+    margin: auto ;
+    width: 90%;
 }

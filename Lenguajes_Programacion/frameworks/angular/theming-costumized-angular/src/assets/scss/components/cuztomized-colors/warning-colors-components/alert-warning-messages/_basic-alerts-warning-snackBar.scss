@@ -1,0 +1,4 @@
+.basic-alerts-warning.mat-snack-bar-container{
+    background-color: lighten($warning-color ,40)!important;
+    color: darken($warning-color, 20) !important;
+}

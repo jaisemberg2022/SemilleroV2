@@ -1,0 +1,6 @@
+.outlined-warning.mat-snack-bar-container{
+    background-color: transparent !important;
+    border: 1px solid $warning-color;
+    color: darken($warning-color, 10);
+    font-weight: 400;
+}
