@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './components/shared/shared.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from "@angular/material/form-field";
-import { MAT_RADIO_DEFAULT_OPTIONS } from '@angular/material/radio';
 
 
 @NgModule({
@@ -20,8 +19,9 @@ import { MAT_RADIO_DEFAULT_OPTIONS } from '@angular/material/radio';
     BrowserAnimationsModule,
     SharedModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
   ],
+
   providers: [
   ],
   bootstrap: [AppComponent]

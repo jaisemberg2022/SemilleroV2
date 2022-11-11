@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ColorsComponent } from './colors-cuztomized/colors.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MessagesComponent } from './messages-conponent/messages.component';
+import { SizeComponent } from './size/size.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MessagesComponent } from './messages-conponent/messages.component';
     NavBarComponent,
     ColorsComponent,
     InicioComponent,
-    MessagesComponent
+    MessagesComponent,
+    SizeComponent,
   ],
   imports: [
     CommonModule,

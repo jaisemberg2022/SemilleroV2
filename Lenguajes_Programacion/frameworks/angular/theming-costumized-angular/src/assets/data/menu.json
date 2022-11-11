@@ -12,6 +12,12 @@
     {
         "nombre":"mensajes",
         "redirect":"/dashboard/mensajes"
+    },
+
+    {
+        "nombre":"tamaños",
+        "redirect":"/dashboard/tamaños"
     }
-    
+       
+        
 ]

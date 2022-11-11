@@ -17,9 +17,15 @@ import { MatInputModule} from '@angular/material/input';
 import { MatCheckboxModule} from '@angular/material/checkbox';
 import { MatProgressBarModule} from '@angular/material/progress-bar';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatCardModule} from '@angular/material/card';
+import { SizeDirective } from './directives/size.directive';
+
+
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    SizeDirective
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -36,7 +42,8 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
     MatInputModule,
     MatCheckboxModule,
     MatProgressBarModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule,
   ],
   exports:[
     MatToolbarModule,
@@ -53,7 +60,8 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
     MatInputModule,
     MatCheckboxModule,
     MatProgressBarModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    SizeDirective
   ]
 })
 export class SharedModule { }

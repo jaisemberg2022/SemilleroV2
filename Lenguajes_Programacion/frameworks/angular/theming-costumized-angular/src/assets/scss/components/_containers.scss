@@ -4,15 +4,18 @@
     margin: 3rem auto;
     display: flex;
     flex-wrap:wrap ;
-    &>:not(:last-child  :first-child){
-        margin-top: 2rem ;
-    }
+    &>:not(:last-child :first-child){
+        margin-top: 2rem ;    }
     &>:last-child{
-        margin-bottom: 2rem ;
+        margin: 2rem auto;
     }
 }
-
 .container-mat-tab-group{
     margin: auto ;
     width: 90%;
+}
+
+.container-text{
+    width: 75%;
+    margin: 3rem auto;
 }

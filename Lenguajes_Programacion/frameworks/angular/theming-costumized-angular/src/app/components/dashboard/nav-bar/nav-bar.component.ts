@@ -20,7 +20,7 @@ export class NavBarComponent implements OnInit {
 
   cargarMenu(){
     this._menuService.getMenu().subscribe(data => {
-      console.log(data)
+      // console.log(data)
       this.menu = data
     })
   }
