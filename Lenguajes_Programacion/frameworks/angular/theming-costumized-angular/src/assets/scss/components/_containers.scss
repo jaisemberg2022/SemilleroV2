@@ -18,4 +18,8 @@
 .container-text{
     width: 75%;
     margin: 3rem auto;
+    display: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+    align-items: inherit;
 }

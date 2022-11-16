@@ -5,9 +5,11 @@
     .mat-tab-body-content {
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
         margin: 1rem auto;
-        padding: .5rem 1rem;
+        padding: 1rem;
         height: auto;
+        flex-wrap: wrap;
     }
 }
 

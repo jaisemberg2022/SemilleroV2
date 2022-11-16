@@ -19,6 +19,7 @@ import { MatProgressBarModule} from '@angular/material/progress-bar';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatCardModule} from '@angular/material/card';
 import { SizeDirective } from './directives/size.directive';
+import { MatTableModule} from '@angular/material/table';
 
 
 
@@ -44,6 +45,7 @@ import { SizeDirective } from './directives/size.directive';
     MatProgressBarModule,
     MatSnackBarModule,
     MatCardModule,
+    MatTableModule
   ],
   exports:[
     MatToolbarModule,
@@ -61,7 +63,9 @@ import { SizeDirective } from './directives/size.directive';
     MatCheckboxModule,
     MatProgressBarModule,
     MatSnackBarModule,
-    SizeDirective
+    SizeDirective,
+    MatCardModule,
+    MatTableModule
   ]
 })
 export class SharedModule { }

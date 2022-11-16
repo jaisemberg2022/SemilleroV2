@@ -1,36 +1,39 @@
-import { Directive, ElementRef, Input } from '@angular/core';
+import { Directive, ElementRef, Input, OnChanges } from '@angular/core';
 
 //tablas botones ,inputs y text areas
 @Directive({
-  selector: 'input,button,table[Size]'
+  selector: '[size]',
 })
-export class SizeDirective {
-
-  
-  size:string = "";
-
-  @Input() set Size(value:string){
-    this.size = value ;
-  }
-  
-  constructor(private elemento: ElementRef) {
-  }
-  ngOnInit(): void {
-   this.Change(this.size);
+export class SizeDirective implements OnChanges {
+  valueElemet:string = ""
+  @Input() set size(value:string){
+    this.valueElemet = value;
   }
 
-    Change(size:string)
-    {
-        switch (size) 
-        {
-          case 'small':
-            return this.elemento.nativeElement.style.transform = "scale(.8)"
-          case 'medium':
-            return this.elemento.nativeElement.style.transform = "scale(1)"
-          case 'large':
-            return this.elemento.nativeElement.style.transform = "scale(1.2)"
-          default:
-            return ;
-        }
+  constructor(private el: ElementRef) {}
+
+  changeZise(){
+    this.el.nativeElement.style.lineHeight = "1.75";
+    switch (this.valueElemet) {
+      case 'small':
+        this.el.nativeElement.style.fontSize ='1.3rem';
+        this.el.nativeElement.style.padding ='.3rem .9rem';
+        return
+      case 'medium':
+        this.el.nativeElement.style.fontSize ='1.4rem';
+        this.el.nativeElement.style.padding ='.5rem 1.5rem';
+        return 
+      case 'large':
+        this.el.nativeElement.style.fontSize ='1.5rem';
+        this.el.nativeElement.style.padding ='.8rem 2.2rem';
+        return 
+      default:
+        return;
     }
+  }
+
+
+  ngOnChanges() {
+    this.changeZise();
+  }
 }
