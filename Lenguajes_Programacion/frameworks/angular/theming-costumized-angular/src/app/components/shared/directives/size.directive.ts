@@ -1,23 +1,34 @@
-import { Directive, ElementRef, Input, OnChanges } from '@angular/core';
+import { Directive, ElementRef, Input, OnChanges,Renderer2,HostListener } from '@angular/core';
 
 //tablas botones ,inputs y text areas
 @Directive({
   selector: '[size]',
 })
 export class SizeDirective implements OnChanges {
-  valueElemet:string = ""
+  valueElemet:string = "";
   @Input() set size(value:string){
     this.valueElemet = value;
-  }
+  };
 
+  sizeProperties:object = {
+      0:'small',
+      1:'medium',
+      2:'large'
+  };
+  specificsElements:Object ={
+    0:'TABLE'
+  };
+  
   constructor(private el: ElementRef) {}
 
   changeZise(){
+   
     this.el.nativeElement.style.lineHeight = "1.75";
     switch (this.valueElemet) {
       case 'small':
         this.el.nativeElement.style.fontSize ='1.3rem';
-        this.el.nativeElement.style.padding ='.3rem .9rem';
+        this.el.nativeElement.style.padding ='.3rem .9rem';  
+        this.editSpecificElement(this.el.nativeElement);        
         return
       case 'medium':
         this.el.nativeElement.style.fontSize ='1.4rem';
@@ -31,9 +42,25 @@ export class SizeDirective implements OnChanges {
         return;
     }
   }
+  editSpecificElement(el:HTMLElement)
+  {   
+    if(el.tagName === "TABLE")
+    {
+        let tr:any = el.querySelectorAll('tr ');
+        for(let i=0;i<tr.length;i++){
+          tr[i].style.height = "3.8rem";
+        }
+        let p:any = el.querySelectorAll('p');
+        for(let i=0;i<p.length;i++){
+          p[i].style.fontSize = "1.3rem";
+          p[i].style.margin = "auto";
+        }
+    }
+  }
 
-
-  ngOnChanges() {
+  ngAfterViewInit(){
     this.changeZise();
+  }
+  ngOnChanges() {
   }
 }

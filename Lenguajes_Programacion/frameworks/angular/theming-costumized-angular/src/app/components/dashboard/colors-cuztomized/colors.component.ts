@@ -12,9 +12,6 @@ export class ColorsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  
-
   //select options
   toppings = new FormControl('');
   toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];

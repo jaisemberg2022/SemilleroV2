@@ -1,23 +1,38 @@
-<div class="container-components scroll-left mat-elevation-z3 height-container" >
-
+<div class="container-components scroll-left mat-elevation-z3 height-container">
   <mat-toolbar color="accent">
     <span>Componentes</span>
   </mat-toolbar>
 
-  <mat-tab-group mat-align-tabs="center" class="mat-elevation-z3 " color="success">
+  <mat-tab-group
+    mat-align-tabs="center"
+    class="mat-elevation-z3"
+    color="success"
+  >
     <!-- buttons -->
     <mat-tab label="buttons" color="accent">
       <button mat-button color="success">basic</button>
-      <button mat-raised-button color="success" >raised</button>
+      <button mat-raised-button color="success">raised</button>
       <button mat-stroked-button color="success">stroked</button>
       <button mat-flat-button color="success">flat</button>
-      <button mat-icon-button color="success" aria-label="Example icon button with a open in new tab icon">
+      <button
+        mat-icon-button
+        color="success"
+        aria-label="Example icon button with a open in new tab icon"
+      >
         <mat-icon>open_in_new</mat-icon>
       </button>
-      <button mat-fab color="success" aria-label="Example icon button with a heart icon">
+      <button
+        mat-fab
+        color="success"
+        aria-label="Example icon button with a heart icon"
+      >
         <mat-icon>favorite</mat-icon>
       </button>
-      <button mat-mini-fab color="success" aria-label="Example icon button with a menu icon">
+      <button
+        mat-mini-fab
+        color="success"
+        aria-label="Example icon button with a menu icon"
+      >
         <mat-icon>menu</mat-icon>
       </button>
     </mat-tab>
@@ -29,41 +44,73 @@
         <mat-select [formControl]="toppings" multiple>
           <mat-select-trigger>
             {{toppings.value?.[0] || ''}}
-            <span *ngIf="(toppings.value?.length || 0) > 1" class="example-additional-selection">
-              (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+            <span
+              *ngIf="(toppings.value?.length || 0) > 1"
+              class="example-additional-selection"
+            >
+              (+{{ (toppings.value?.length || 0) - 1 }}
+              {{ toppings.value?.length === 2 ? "other" : "others" }})
             </span>
           </mat-select-trigger>
-          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{
+            topping
+          }}</mat-option>
         </mat-select>
       </mat-form-field>
       <!-- input with clear button -->
-      <mat-form-field class="example-form-field" appearance="fill" color="success">
+      <mat-form-field
+        class="example-form-field"
+        appearance="fill"
+        color="success"
+      >
         <mat-label>Clearable input</mat-label>
-        <input matInput type="text" [(ngModel)]="value">
-        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <input matInput type="text" [(ngModel)]="value" />
+        <button
+          *ngIf="value"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="value = ''"
+        >
           <mat-icon>close</mat-icon>
         </button>
       </mat-form-field>
       <!-- Input with hints -->
-      <mat-form-field class="example-full-width" appearance="fill" color="success">
+      <mat-form-field
+        class="example-full-width"
+        appearance="fill"
+        color="success"
+      >
         <mat-label>Postal Code</mat-label>
-        <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
-        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+        <input
+          matInput
+          #postalCode
+          maxlength="5"
+          placeholder="Ex. 94105"
+          value="94043"
+        />
+        <mat-hint align="end">{{ postalCode.value.length }} / 5</mat-hint>
       </mat-form-field>
       <!-- input for coments -->
-      <mat-form-field class="example-full-width" appearance="fill" color="success">
+      <mat-form-field
+        class="example-full-width"
+        appearance="fill"
+        color="success"
+      >
         <mat-label>Address</mat-label>
-        <textarea matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+        <textarea matInput placeholder="Ex. 100 Main St">
+1600 Amphitheatre Pkwy</textarea
+        >
       </mat-form-field>
     </mat-tab>
     <!-- checks -->
-    <mat-tab  label="check-boxs">
+    <mat-tab label="check-boxs">
       <section class="example-section">
         <h4>Select your toppings:</h4>
-        <mat-checkbox checked color="success" formControlName="pepperoni">Pepperoni</mat-checkbox>
-        <br>
+        <mat-checkbox checked color="success">Pepperoni</mat-checkbox>
+        <br />
         <mat-checkbox checked color="success">Extra Cheese</mat-checkbox>
-        <br>
+        <br />
         <mat-checkbox checked color="success">Mushroom</mat-checkbox>
       </section>
     </mat-tab>
@@ -73,22 +120,38 @@
     </mat-tab>
   </mat-tab-group>
 
-  <mat-tab-group mat-align-tabs="center" class="mat-elevation-z3 " color="error-color">
+  <mat-tab-group
+    mat-align-tabs="center"
+    class="mat-elevation-z3"
+    color="error-color"
+  >
     <!-- buttons -->
-    <mat-tab label="buttons" >
-        <button  mat-button color="error-color">basic</button>
-        <button mat-raised-button color="error-color" >raised</button>
-        <button mat-stroked-button color="error-color">stroked</button>
-        <button mat-flat-button color="error-color">flat</button>
-        <button mat-icon-button color="error-color" aria-label="Example icon button with a open in new tab icon">
-          <mat-icon>open_in_new</mat-icon>
-        </button>
-        <button mat-fab color="error-color" aria-label="Example icon button with a heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-        <button mat-mini-fab color="error-color" aria-label="Example icon button with a menu icon">
-          <mat-icon>menu</mat-icon>
-        </button>
+    <mat-tab label="buttons">
+      <button mat-button color="error-color">basic</button>
+      <button mat-raised-button color="error-color">raised</button>
+      <button mat-stroked-button color="error-color">stroked</button>
+      <button mat-flat-button color="error-color">flat</button>
+      <button
+        mat-icon-button
+        color="error-color"
+        aria-label="Example icon button with a open in new tab icon"
+      >
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+      <button
+        mat-fab
+        color="error-color"
+        aria-label="Example icon button with a heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button
+        mat-mini-fab
+        color="error-color"
+        aria-label="Example icon button with a menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
     </mat-tab>
     <!-- inputs -->
     <mat-tab label="inputs">
@@ -98,66 +161,117 @@
         <mat-select [formControl]="toppings" multiple>
           <mat-select-trigger>
             {{toppings.value?.[0] || ''}}
-            <span *ngIf="(toppings.value?.length || 0) > 1" class="example-additional-selection">
-              (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+            <span
+              *ngIf="(toppings.value?.length || 0) > 1"
+              class="example-additional-selection"
+            >
+              (+{{ (toppings.value?.length || 0) - 1 }}
+              {{ toppings.value?.length === 2 ? "other" : "others" }})
             </span>
           </mat-select-trigger>
-          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{
+            topping
+          }}</mat-option>
         </mat-select>
       </mat-form-field>
       <!-- input with clear button -->
-      <mat-form-field class="example-form-field" appearance="fill" color="error-color">
+      <mat-form-field
+        class="example-form-field"
+        appearance="fill"
+        color="error-color"
+      >
         <mat-label>Clearable input</mat-label>
-        <input matInput type="text" [(ngModel)]="value">
-        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <input matInput type="text" [(ngModel)]="value" />
+        <button
+          *ngIf="value"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="value = ''"
+        >
           <mat-icon>close</mat-icon>
         </button>
       </mat-form-field>
       <!-- Input with hints -->
-      <mat-form-field class="example-full-width" appearance="fill" color="error-color">
+      <mat-form-field
+        class="example-full-width"
+        appearance="fill"
+        color="error-color"
+      >
         <mat-label>Postal Code</mat-label>
-        <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
-        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+        <input
+          matInput
+          #postalCode
+          maxlength="5"
+          placeholder="Ex. 94105"
+          value="94043"
+        />
+        <mat-hint align="end">{{ postalCode.value.length }} / 5</mat-hint>
       </mat-form-field>
       <!-- input for coments -->
-      <mat-form-field class="example-full-width" appearance="fill" color="error-color">
+      <mat-form-field
+        class="example-full-width"
+        appearance="fill"
+        color="error-color"
+      >
         <mat-label>Address</mat-label>
-        <textarea matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+        <textarea matInput placeholder="Ex. 100 Main St">
+1600 Amphitheatre Pkwy</textarea
+        >
       </mat-form-field>
     </mat-tab>
     <!-- cheks -->
     <mat-tab label="check-boxs">
       <section class="example-section">
         <h4>Select your toppings:</h4>
-        <mat-checkbox checked color="error-color" formControlName="pepperoni">Pepperoni</mat-checkbox>
-        <br>
+        <mat-checkbox checked color="error-color">Pepperoni</mat-checkbox>
+        <br />
         <mat-checkbox checked color="error-color">Extra Cheese</mat-checkbox>
-        <br>
+        <br />
         <mat-checkbox checked color="error-color">Mushroom</mat-checkbox>
       </section>
     </mat-tab>
     <!-- progress-bar -->
     <mat-tab label="progres bar">
-      <mat-progress-bar mode="indeterminate" color="error-color"></mat-progress-bar>
+      <mat-progress-bar
+        mode="indeterminate"
+        color="error-color"
+      ></mat-progress-bar>
     </mat-tab>
   </mat-tab-group>
 
-  <mat-tab-group mat-align-tabs="center" class="mat-elevation-z3 " color="warning">
+  <mat-tab-group
+    mat-align-tabs="center"
+    class="mat-elevation-z3"
+    color="warning"
+  >
     <!-- buttons -->
-    <mat-tab label="buttons" >
-        <button mat-button color="warning">basic</button>
-        <button mat-raised-button color="warning" >raised</button>
-        <button mat-stroked-button color="warning">stroked</button>
-        <button mat-flat-button color="warning">flat</button>
-        <button mat-icon-button color="warning" aria-label="Example icon button with a open in new tab icon">
-          <mat-icon>open_in_new</mat-icon>
-        </button>
-        <button mat-fab color="warning" aria-label="Example icon button with a heart icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-        <button mat-mini-fab color="warning" aria-label="Example icon button with a menu icon">
-          <mat-icon>menu</mat-icon>
-        </button>
+    <mat-tab label="buttons">
+      <button mat-button color="warning">basic</button>
+      <button mat-raised-button color="warning">raised</button>
+      <button mat-stroked-button color="warning">stroked</button>
+      <button mat-flat-button color="warning">flat</button>
+      <button
+        mat-icon-button
+        color="warning"
+        aria-label="Example icon button with a open in new tab icon"
+      >
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+      <button
+        mat-fab
+        color="warning"
+        aria-label="Example icon button with a heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button
+        mat-mini-fab
+        color="warning"
+        aria-label="Example icon button with a menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
     </mat-tab>
     <!-- inputs -->
     <mat-tab label="inputs">
@@ -167,41 +281,73 @@
         <mat-select [formControl]="toppings" multiple>
           <mat-select-trigger>
             {{toppings.value?.[0] || ''}}
-            <span *ngIf="(toppings.value?.length || 0) > 1" class="example-additional-selection">
-              (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+            <span
+              *ngIf="(toppings.value?.length || 0) > 1"
+              class="example-additional-selection"
+            >
+              (+{{ (toppings.value?.length || 0) - 1 }}
+              {{ toppings.value?.length === 2 ? "other" : "others" }})
             </span>
           </mat-select-trigger>
-          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{
+            topping
+          }}</mat-option>
         </mat-select>
       </mat-form-field>
       <!-- input with clear button -->
-      <mat-form-field class="example-form-field" appearance="fill" color="warning">
+      <mat-form-field
+        class="example-form-field"
+        appearance="fill"
+        color="warning"
+      >
         <mat-label>Clearable input</mat-label>
-        <input matInput type="text" [(ngModel)]="value">
-        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <input matInput type="text" [(ngModel)]="value" />
+        <button
+          *ngIf="value"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="value = ''"
+        >
           <mat-icon>close</mat-icon>
         </button>
       </mat-form-field>
       <!-- Input with hints -->
-      <mat-form-field class="example-full-width" appearance="fill" color="warning">
+      <mat-form-field
+        class="example-full-width"
+        appearance="fill"
+        color="warning"
+      >
         <mat-label>Postal Code</mat-label>
-        <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
-        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+        <input
+          matInput
+          #postalCode
+          maxlength="5"
+          placeholder="Ex. 94105"
+          value="94043"
+        />
+        <mat-hint align="end">{{ postalCode.value.length }} / 5</mat-hint>
       </mat-form-field>
       <!-- input for coments -->
-      <mat-form-field class="example-full-width" appearance="fill" color="warning">
+      <mat-form-field
+        class="example-full-width"
+        appearance="fill"
+        color="warning"
+      >
         <mat-label>Address</mat-label>
-        <textarea matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+        <textarea matInput placeholder="Ex. 100 Main St">
+1600 Amphitheatre Pkwy</textarea
+        >
       </mat-form-field>
     </mat-tab>
     <!-- cheks -->
     <mat-tab label="check-boxs">
       <section class="example-section">
         <h4>Select your toppings:</h4>
-        <mat-checkbox checked color="warning" formControlName="pepperoni">Pepperoni</mat-checkbox>
-        <br>
+        <mat-checkbox checked color="warning">Pepperoni</mat-checkbox>
+        <br />
         <mat-checkbox checked color="warning">Extra Cheese</mat-checkbox>
-        <br>
+        <br />
         <mat-checkbox checked color="warning">Mushroom</mat-checkbox>
       </section>
     </mat-tab>
@@ -209,69 +355,100 @@
     <mat-tab label="progres bar">
       <mat-progress-bar mode="indeterminate" color="warning"></mat-progress-bar>
     </mat-tab>
+  </mat-tab-group>
 
-  </mat-tab-group>   
-
-  <mat-tab-group mat-align-tabs="center" class="mat-elevation-z3 " color="info">
+  <mat-tab-group mat-align-tabs="center" class="mat-elevation-z3" color="info">
     <!-- buttons -->
-    <mat-tab label="buttons" >
+    <mat-tab label="buttons">
       <button mat-button color="info">basic</button>
-      <button mat-raised-button color="info" >raised</button>
+      <button mat-raised-button color="info">raised</button>
       <button mat-stroked-button color="info">stroked</button>
       <button mat-flat-button color="info">flat</button>
-      <button mat-icon-button color="info" aria-label="Example icon button with a open in new tab icon">
+      <button
+        mat-icon-button
+        color="info"
+        aria-label="Example icon button with a open in new tab icon"
+      >
         <mat-icon>open_in_new</mat-icon>
       </button>
-      <button mat-fab color="info" aria-label="Example icon button with a heart icon">
+      <button
+        mat-fab
+        color="info"
+        aria-label="Example icon button with a heart icon"
+      >
         <mat-icon>favorite</mat-icon>
       </button>
-      <button mat-mini-fab color="info" aria-label="Example icon button with a menu icon">
+      <button
+        mat-mini-fab
+        color="info"
+        aria-label="Example icon button with a menu icon"
+      >
         <mat-icon>menu</mat-icon>
       </button>
     </mat-tab>
     <!-- inputs -->
     <mat-tab label="inputs">
-    <!-- select -->
-    <mat-form-field appearance="fill" color="info">
-      <mat-label>Toppings</mat-label>
-      <mat-select [formControl]="toppings" multiple>
-        <mat-select-trigger>
-          {{toppings.value?.[0] || ''}}
-          <span *ngIf="(toppings.value?.length || 0) > 1" class="example-additional-selection">
-            (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
-          </span>
-        </mat-select-trigger>
-        <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <!-- input with clear button -->
-    <mat-form-field class="example-form-field" appearance="fill" color="info">
-      <mat-label>Clearable input</mat-label>
-      <input matInput type="text" [(ngModel)]="value">
-      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-form-field>
-    <!-- Input with hints -->
-    <mat-form-field class="example-full-width" appearance="fill" color="info">
-      <mat-label>Postal Code</mat-label>
-      <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
-      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
-    </mat-form-field>
-    <!-- input for coments -->
-    <mat-form-field class="example-full-width" appearance="fill" color="info">
-      <mat-label>Address</mat-label>
-      <textarea matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
-    </mat-form-field>
+      <!-- select -->
+      <mat-form-field appearance="fill" color="info">
+        <mat-label>Toppings</mat-label>
+        <mat-select [formControl]="toppings" multiple>
+          <mat-select-trigger>
+            {{toppings.value?.[0] || ''}}
+            <span
+              *ngIf="(toppings.value?.length || 0) > 1"
+              class="example-additional-selection"
+            >
+              (+{{ (toppings.value?.length || 0) - 1 }}
+              {{ toppings.value?.length === 2 ? "other" : "others" }})
+            </span>
+          </mat-select-trigger>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{
+            topping
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <!-- input with clear button -->
+      <mat-form-field class="example-form-field" appearance="fill" color="info">
+        <mat-label>Clearable input</mat-label>
+        <input matInput type="text" [(ngModel)]="value" />
+        <button
+          *ngIf="value"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="value = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <!-- Input with hints -->
+      <mat-form-field class="example-full-width" appearance="fill" color="info">
+        <mat-label>Postal Code</mat-label>
+        <input
+          matInput
+          #postalCode
+          maxlength="5"
+          placeholder="Ex. 94105"
+          value="94043"
+        />
+        <mat-hint align="end">{{ postalCode.value.length }} / 5</mat-hint>
+      </mat-form-field>
+      <!-- input for coments -->
+      <mat-form-field class="example-full-width" appearance="fill" color="info">
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="Ex. 100 Main St">
+1600 Amphitheatre Pkwy</textarea
+        >
+      </mat-form-field>
     </mat-tab>
     <!-- cheks -->
-      <mat-tab label="check-boxs">
+    <mat-tab label="check-boxs">
       <section class="example-section">
         <h4>Select your toppings:</h4>
-        <mat-checkbox checked color="info" formControlName="pepperoni">Pepperoni</mat-checkbox>
-        <br>
+        <mat-checkbox checked color="info">Pepperoni</mat-checkbox>
+        <br />
         <mat-checkbox checked color="info">Extra Cheese</mat-checkbox>
-        <br>
+        <br />
         <mat-checkbox checked color="info">Mushroom</mat-checkbox>
       </section>
     </mat-tab>
@@ -279,7 +456,5 @@
     <mat-tab label="progres bar">
       <mat-progress-bar mode="indeterminate" color="info"></mat-progress-bar>
     </mat-tab>
-
-  </mat-tab-group> 
-
+  </mat-tab-group>
 </div>

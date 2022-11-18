@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ViewEncapsulation } from '@angular/compiler';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { tableExample } from "src/app/interfaces/tableExample";
 
 
@@ -13,23 +14,31 @@ const ELEMENT_DATA: tableExample[] = [
   {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
   {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  
 ];
 
 @Component({
   selector: 'app-size',
   templateUrl: './size.component.html',
-  styleUrls: ['./size.component.scss']
+  styleUrls: ['./size.component.scss'] 
 })
 
 
-export class SizeComponent implements OnInit {
-
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+export class SizeComponent implements OnInit,OnChanges {
+  
+  displayedColumns: string[] = [];
+  dataSource : tableExample[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.displayedColumns =   ['position', 'name', 'weight', 'symbol'];
+    this.dataSource = ELEMENT_DATA;
+  
+  }
+
+  ngOnChanges(): void {
+
   }
 
 }
