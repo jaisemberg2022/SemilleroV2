@@ -1,23 +1,21 @@
 [
-    {
-        "nombre":"inicio",
-        "redirect":"/dashboard/inicio"
-    },
+  {
+    "nombre": "inicio",
+    "redirect": "/dashboard/inicio"
+  },
 
-    {
-        "nombre":"colores",
-        "redirect":"/dashboard/colores"
-    },
+  {
+    "nombre": "colores",
+    "redirect": "/dashboard/colores"
+  },
 
-    {
-        "nombre":"mensajes",
-        "redirect":"/dashboard/mensajes"
-    },
+  {
+    "nombre": "mensajes",
+    "redirect": "/dashboard/mensajes"
+  },
 
-    {
-        "nombre":"tamaños",
-        "redirect":"/dashboard/tamaños"
-    }
-       
-        
+  {
+    "nombre": "tamaños",
+    "redirect": "/dashboard/tamaños"
+  }
 ]
