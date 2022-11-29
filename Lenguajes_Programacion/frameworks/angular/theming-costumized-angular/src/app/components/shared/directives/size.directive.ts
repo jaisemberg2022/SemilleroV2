@@ -51,6 +51,7 @@ export class SizeDirective implements OnChanges {
   editSpecificElement(el: HTMLElement) {
     if (el.tagName === 'TABLE') 
     {
+      el.style.width = '70%'
       let tr: any = el.querySelectorAll('tr');
       for (let i = 0; i < tr.length; i++) 
       {
@@ -64,6 +65,7 @@ export class SizeDirective implements OnChanges {
       }
     }
   }
+
   ngAfterViewInit() {
     this.changeZise();
   }

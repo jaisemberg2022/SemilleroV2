@@ -14,8 +14,6 @@
     $angular-accent-dark-palette:mat.define-palette(mat.$pink-palette,A200);
     $angular-warn-dark-palette:mat.define-palette(mat.$red-palette);
 
-
-
 // TEMA PROPIO
 
     //tema oscuro
@@ -29,7 +27,7 @@
 
 // APLICAR NUESTRO TEMA A ANGULAR
 
-    // forma(1) en una clase propia
+// forma(1) en una clase propia
     .dark-theme-one{
         @include mat.all-component-colors($angular-original-dark-theme);
 
