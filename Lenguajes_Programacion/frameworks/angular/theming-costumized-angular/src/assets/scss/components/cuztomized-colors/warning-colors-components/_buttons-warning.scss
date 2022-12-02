@@ -1,33 +1,33 @@
 
-        .mat-raised-button.mat-warning,
-        .mat-flat-button.mat-warning,
-        .mat-fab.mat-warning,
-        .mat-mini-fab.mat-warning
-        {
-            background-color:mat-color($warning-color,500); 
-            color: $color-white;
-            margin: .5rem;
-        }
-        .mat-button.mat-warning,
-        .mat-stroked-button.mat-warning,
-        .mat-icon-button.mat-warning
-        {
-            color: mat-color($warning-color,500);
-            margin:.5rem ;
-        }
+        // .mat-raised-button.mat-warning,
+        // .mat-flat-button.mat-warning,
+        // .mat-fab.mat-warning,
+        // .mat-mini-fab.mat-warning
+        // {
+        //     background-color:mat-color($warning-color,500); 
+        //     color: $color-white;
+        //     margin: .5rem;
+        // }
+        // .mat-button.mat-warning,
+        // .mat-stroked-button.mat-warning,
+        // .mat-icon-button.mat-warning
+        // {
+        //     color: mat-color($warning-color,500);
+        //     margin:.5rem ;
+        // }
 
 
-                // botones raised,flat,fab,mini-fab
-                .dark-theme-one .mat-flat-button.mat-warning,
-                .dark-theme-one .mat-raised-button.mat-warning,
-                 .dark-theme-one .mat-fab.mat-warning,
-                  .dark-theme-one .mat-mini-fab.mat-warning{
-                   background-color: mat-color($warning-color, 300)!important;
-                   color: currentColor;
-               }
-               //botones basic,stroked icon
-               .dark-theme-one .mat-button.mat-warning,
-                .dark-theme-one .mat-icon-button.mat-warning,
-                 .dark-theme-one .mat-stroked-button.mat-warning{
-                   color:mat-color($warning-color, 300)!important;
-               }
+        //         // botones raised,flat,fab,mini-fab
+        //         .dark-theme-one .mat-flat-button.mat-warning,
+        //         .dark-theme-one .mat-raised-button.mat-warning,
+        //          .dark-theme-one .mat-fab.mat-warning,
+        //           .dark-theme-one .mat-mini-fab.mat-warning{
+        //            background-color: mat-color($warning-color, 300)!important;
+        //            color: currentColor;
+        //        }
+        //        //botones basic,stroked icon
+        //        .dark-theme-one .mat-button.mat-warning,
+        //         .dark-theme-one .mat-icon-button.mat-warning,
+        //          .dark-theme-one .mat-stroked-button.mat-warning{
+        //            color:mat-color($warning-color, 300)!important;
+        //        }

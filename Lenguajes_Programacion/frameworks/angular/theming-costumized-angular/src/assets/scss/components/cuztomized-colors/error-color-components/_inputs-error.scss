@@ -1,35 +1,35 @@
-.mat-form-field.mat-focused.mat-error-color .mat-form-field-ripple {
-  background-color: mat-color($error-color, 500);
-}
-.mat-form-field.mat-focused.mat-error-color .mat-form-field-label {
-  color: mat-color($error-color, 500);
-}
-.mat-error-color .mat-option.mat-selected:not(.mat-option-disabled) {
-  color: mat-color($error-color, 500);
-}
+// .mat-form-field.mat-focused.mat-error-color .mat-form-field-ripple {
+//   background-color: mat-color($error-color, 500);
+// }
+// .mat-form-field.mat-focused.mat-error-color .mat-form-field-label {
+//   color: mat-color($error-color, 500);
+// }
+// .mat-error-color .mat-option.mat-selected:not(.mat-option-disabled) {
+//   color: mat-color($error-color, 500);
+// }
 
-.mat-error-color .mat-pseudo-checkbox-checked {
-  background-color: mat-color($error-color, 500);
-}
+// .mat-error-color .mat-pseudo-checkbox-checked {
+//   background-color: mat-color($error-color, 500);
+// }
 
-.dark-theme-one
-  .mat-form-field.mat-focused.mat-error-color
-  .mat-form-field-ripple {
-  background-color: mat-color($error-color, 300);
-}
-.dark-theme-one
-  .mat-form-field.mat-focused.mat-error-color
-  .mat-form-field-label {
-  color: mat-color($error-color, 300);
-}
-.dark-theme-one
-  .mat-error-color
-  .mat-option.mat-selected:not(.mat-option-disabled) {
-  color: mat-color($error-color, 300);
-}
-.dark-theme-one .mat-pseudo-checkbox-checked,
-.dark-theme-one .mat-pseudo-checkbox-indeterminate,
-.dark-theme-one .mat-error-color .mat-pseudo-checkbox-checked,
-.dark-theme-one .mat-error-color .mat-pseudo-checkbox-indeterminate {
-  background-color: mat-color($error-color, 300);
-}
+// .dark-theme-one
+//   .mat-form-field.mat-focused.mat-error-color
+//   .mat-form-field-ripple {
+//   background-color: mat-color($error-color, 300);
+// }
+// .dark-theme-one
+//   .mat-form-field.mat-focused.mat-error-color
+//   .mat-form-field-label {
+//   color: mat-color($error-color, 300);
+// }
+// .dark-theme-one
+//   .mat-error-color
+//   .mat-option.mat-selected:not(.mat-option-disabled) {
+//   color: mat-color($error-color, 300);
+// }
+// .dark-theme-one .mat-pseudo-checkbox-checked,
+// .dark-theme-one .mat-pseudo-checkbox-indeterminate,
+// .dark-theme-one .mat-error-color .mat-pseudo-checkbox-checked,
+// .dark-theme-one .mat-error-color .mat-pseudo-checkbox-indeterminate {
+//   background-color: mat-color($error-color, 300);
+// }

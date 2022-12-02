@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MessagesComponent } from './messages-conponent/messages.component';
 import { SizeComponent } from './size/size.component';
+import { TipografiaComponent } from './tipografia/tipografia.component';
 
 const routes: Routes = [
   {path:'',component:DashboardComponent,children:[
@@ -12,7 +13,8 @@ const routes: Routes = [
     {path:'inicio',component:InicioComponent},
     {path:'colores',component:ColorsComponent},
     {path:'mensajes',component:MessagesComponent},
-    {path:'tamaños',component:SizeComponent}
+    {path:'tamaños',component:SizeComponent},
+    {path:'tipografia',component:TipografiaComponent},
   ]}
 ];
 

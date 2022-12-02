@@ -17,5 +17,10 @@
   {
     "nombre": "tamaños",
     "redirect": "/dashboard/tamaños"
+  },
+
+  {
+    "nombre": "tipografia",
+    "redirect": "/dashboard/tipografia"
   }
 ]

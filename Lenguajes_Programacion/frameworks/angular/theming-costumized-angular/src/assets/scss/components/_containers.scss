@@ -16,10 +16,15 @@
 }
 
 .container-text{
-    width: 75%;
+
     margin: 3rem auto;
     display: inherit;
     justify-content: inherit;
     flex-wrap: inherit;
     align-items: inherit;
+    &__cuztomized{
+        width: 90%;
+        margin: 3rem auto;
+        text-align: center;
+    }
 }

@@ -1,34 +1,34 @@
 
-        .mat-raised-button.mat-info,
-        .mat-flat-button.mat-info,
-        .mat-fab.mat-info,
-        .mat-mini-fab.mat-info
-        {
-            background-color:mat-color($info-color,500);
-            color: $color-white;
-            margin: .5rem;
-        }
-        .mat-button.mat-info,
-        .mat-stroked-button.mat-info,
-        .mat-icon-button.mat-info
-        {
-            color: mat-color($info-color,500);
-            margin:.5rem ;
-        }
+        // .mat-raised-button.mat-info,
+        // .mat-flat-button.mat-info,
+        // .mat-fab.mat-info,
+        // .mat-mini-fab.mat-info
+        // {
+        //     background-color:mat-color($info-color,500);
+        //     color: $color-white;
+        //     margin: .5rem;
+        // }
+        // .mat-button.mat-info,
+        // .mat-stroked-button.mat-info,
+        // .mat-icon-button.mat-info
+        // {
+        //     color: mat-color($info-color,500);
+        //     margin:.5rem ;
+        // }
 
 
 
-          // botones raised,flat,fab,mini-fab
-          .dark-theme-one .mat-flat-button.mat-info,
-          .dark-theme-one .mat-raised-button.mat-info,
-           .dark-theme-one .mat-fab.mat-info,
-            .dark-theme-one .mat-mini-fab.mat-info{
-             background-color: mat-color($info-color, 300);
-             color: currentColor;
-         }
-         //botones basic,stroked icon
-         .dark-theme-one .mat-button.mat-info,
-          .dark-theme-one .mat-icon-button.mat-info,
-           .dark-theme-one .mat-stroked-button.mat-info{
-             color:mat-color($info-color, 300); ;
-         }
+        //   // botones raised,flat,fab,mini-fab
+        //   .dark-theme-one .mat-flat-button.mat-info,
+        //   .dark-theme-one .mat-raised-button.mat-info,
+        //    .dark-theme-one .mat-fab.mat-info,
+        //     .dark-theme-one .mat-mini-fab.mat-info{
+        //      background-color: mat-color($info-color, 300);
+        //      color: currentColor;
+        //  }
+        //  //botones basic,stroked icon
+        //  .dark-theme-one .mat-button.mat-info,
+        //   .dark-theme-one .mat-icon-button.mat-info,
+        //    .dark-theme-one .mat-stroked-button.mat-info{
+        //      color:mat-color($info-color, 300); ;
+        //  }
