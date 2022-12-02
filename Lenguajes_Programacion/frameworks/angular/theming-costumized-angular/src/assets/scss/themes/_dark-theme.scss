@@ -14,20 +14,29 @@
 
 
 // );
-$typografy: mat.define-typography-config(
+$typografy: mat.define-legacy-typography-config(
   $headline-1: mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
   $headline-2: mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
   $headline-3: mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
   $headline-4: mat.define-typography-level(34px, 40px, 400),
   $headline-5: mat.define-typography-level(24px, 32px, 400),
-  // ...
+
 );
 
 // .mat-toolbar h1 {
 //   @include mat-typography-level-to-styles($typografy ,headline); // where headline maps to h1
 // }
 
-@include mat.core($typografy);
+// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
+//  The following line adds:
+//    1. Default typography styles for all components
+//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
+//  If you specify typography styles for the components you use elsewhere, you should delete this line.
+//  If you don't need the default component typographies but still want the hierarchy styles,
+//  you can delete this line and instead use:
+//    `@include mat.legacy-typography-hierarchy($typografy);`
+@include mat.all-legacy-component-typographies($typografy);
+@include mat.legacy-core();
 
 
 
@@ -69,5 +78,5 @@ $angular-original-dark-theme: map.deep-merge(
 
 // forma(1) en una clase propia
 .dark-theme-one {
-  @include mat.all-component-colors($angular-original-dark-theme);
+  @include mat.all-legacy-component-colors($angular-original-dark-theme);
 }

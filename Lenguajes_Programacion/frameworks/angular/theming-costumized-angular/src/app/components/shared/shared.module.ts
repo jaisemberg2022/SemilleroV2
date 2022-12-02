@@ -4,22 +4,22 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule} from '@angular/material/toolbar';
-import { MatButtonModule} from '@angular/material/button';
-import { MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
+import { MatLegacySlideToggleModule as MatSlideToggleModule} from '@angular/material/legacy-slide-toggle';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
-import { MatTabsModule} from '@angular/material/tabs';
+import { MatLegacyTabsModule as MatTabsModule} from '@angular/material/legacy-tabs';
 import { MatIconModule} from '@angular/material/icon';
-import { MatSelectModule} from '@angular/material/select';
+import { MatLegacySelectModule as MatSelectModule} from '@angular/material/legacy-select';
 import { MatDividerModule} from '@angular/material/divider';
-import { MatFormFieldModule } from "@angular/material/form-field";
-import { MatInputModule} from '@angular/material/input';
-import { MatCheckboxModule} from '@angular/material/checkbox';
-import { MatProgressBarModule} from '@angular/material/progress-bar';
-import { MatSnackBarModule} from '@angular/material/snack-bar';
-import { MatCardModule} from '@angular/material/card';
+import { MatLegacyFormFieldModule as MatFormFieldModule } from "@angular/material/legacy-form-field";
+import { MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
+import { MatLegacyCheckboxModule as MatCheckboxModule} from '@angular/material/legacy-checkbox';
+import { MatLegacyProgressBarModule as MatProgressBarModule} from '@angular/material/legacy-progress-bar';
+import { MatLegacySnackBarModule as MatSnackBarModule} from '@angular/material/legacy-snack-bar';
+import { MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
 import { SizeDirective } from './directives/size.directive';
-import { MatTableModule} from '@angular/material/table';
+import { MatLegacyTableModule as MatTableModule} from '@angular/material/legacy-table';
 
 
 
