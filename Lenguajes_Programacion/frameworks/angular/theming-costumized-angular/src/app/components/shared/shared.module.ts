@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
 
 
-import { Matt as MatTableModule} from '@angular/material/legacy-table';
+import {  as MatTableModule} from '@angular/material/legacy-table';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
