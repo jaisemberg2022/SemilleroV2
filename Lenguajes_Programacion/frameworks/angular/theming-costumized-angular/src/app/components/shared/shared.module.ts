@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
 
 
+import { Matt as MatTableModule} from '@angular/material/legacy-table';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
@@ -13,13 +14,13 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatLegacySelectModule as MatSelectModule} from '@angular/material/legacy-select';
 import { MatDividerModule} from '@angular/material/divider';
 import { MatLegacyFormFieldModule as MatFormFieldModule } from "@angular/material/legacy-form-field";
-import { MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
+import { MatLegacyInputModule} from '@angular/material/legacy-input';
 import { MatLegacyCheckboxModule as MatCheckboxModule} from '@angular/material/legacy-checkbox';
 import { MatLegacyProgressBarModule as MatProgressBarModule} from '@angular/material/legacy-progress-bar';
 import { MatLegacySnackBarModule as MatSnackBarModule} from '@angular/material/legacy-snack-bar';
 import { MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
 import { SizeDirective } from './directives/size.directive';
-import { MatLegacyTableModule as MatTableModule} from '@angular/material/legacy-table';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -30,7 +31,7 @@ import { MatLegacyTableModule as MatTableModule} from '@angular/material/legacy-
   imports: [
     CommonModule,
     MatToolbarModule,
-    MatButtonModule,
+
     HttpClientModule,
     MatSlideToggleModule,
     FormsModule,

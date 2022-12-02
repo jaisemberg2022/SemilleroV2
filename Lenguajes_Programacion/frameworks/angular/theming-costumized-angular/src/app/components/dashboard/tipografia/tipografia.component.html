@@ -1,21 +1,13 @@
-<div  class="container-text__cuztomized mat-elevation-z2" >
-    <!-- <div class="mat-display-4">display-4</div>
-    <div class="mat-display-3">display-3</div>
-    <div class="mat-display-2">display-2</div>
-    <div class="mat-display-1">display1</div> -->
+  <!-- This header will *not* be styled because it is outside `.mat-typography` -->
+  <h1>Top header</h1>
 
-    <div class="mat-headline">h1 headline</div>
-    <div class="mat-title">h2 tittle</div>
-    <div class="mat-subheading-2">h3 subheading-2</div>
-    <div class="mat-subheading-1">h4 subheading-1</div>
+  <!-- This paragraph will be styled as `body-1` via the `.mat-body` CSS class applied -->
+  <p class="mat-body">Introductory text</p>
 
-    <div class="mat-body-2">body 2</div>
-    <div class="mat-body-1">body 1</div>
+  <div class="mat-typography kids-theme">
+    <!-- This header will be styled as `title` because it is inside `.mat-typography` -->
+    <h2>Inner header</h2>
 
-    <div class="mat-caption">caption</div>
-<!-- 
-    <h1>h1</h1>
-    <h2>h2</h2>
-    <h3>h3</h3>
-    <h4>h4</h4> -->
-</div>
+    <!-- This paragraph will be styled as `body-1` because it is inside `.mat-typography` -->
+    <p>Some inner text</p>
+  </div>
