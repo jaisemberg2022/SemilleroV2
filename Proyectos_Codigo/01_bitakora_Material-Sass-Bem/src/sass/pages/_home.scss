@@ -1,0 +1,27 @@
+.section-Nav-Bar{
+background-color: $color-blue-dark;
+padding: .7rem .4rem;
+}
+.section-personal-information{
+    background-color: $color-gray-lighten-second;
+    .display-info-container{
+        width: 100%;
+        position: relative;   
+        z-index: 1;
+        box-shadow: 0px 1px 2px $color-gray-medium;
+    }
+    
+}
+.Section-calendaries{
+    position:absolute;
+    width: 91.7%;
+    left: 50%;
+    transform: translate( -50%); 
+    height: auto;
+    background-color: $color-white;
+    margin-bottom: 1rem;
+    &>:last-child{
+        margin-bottom: 1%;  
+    }
+}
+

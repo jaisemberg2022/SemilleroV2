@@ -1,0 +1,14 @@
+{
+  "name": "01-bitakora_material",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss src/css/main.css -w"
+  },
+  "author": "Jaider Emanuel Toro Sanguino",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

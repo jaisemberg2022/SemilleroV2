@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/material.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="src/css/main.css">    
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="section-Nav-Bar display-flex aling-items__center" >
+       <div class="container-Sections__first">
+            <div class="first-section">
+                <img src="/images/bitakora.png" class="image-sise image-sise-first" alt="bitakora">
+                    <form action="#" class="form-search form-search__first">
+                        <label class="form-search__label form-search__label-first mdc-text-field mdc-text-field--filled ">
+                            <input class="mdc-text-field__input form-search__search" type="search" aria-labelledby="my-label-id" placeholder="JUDAS TADEO - Cod. 26 -(CC - 8451666664)">
+                            <span class="mdc-line-ripple line-buttom "></span>
+                        </label>
+                        <button type="submit" class="form-search__submit form-search__submit-first">
+                            <i class="material-icons icons-font__edit-one">search</i>
+                        </button>                             
+                    </form>
+            </div>
+
+            <div class="second-section">
+                <div class="title-primary ">
+                        Nomina
+                        <a class="Anchor-links-first" href="#"><i class="material-icons Anchor-links-first__icon-edit-one">edit</i>Trasladar</a>
+                        <span class="sub__Title-primary">Expedicion quincenal</span> 
+                </div>
+    
+                <div class="container-periodo-actual">
+                    <div class="title-primary">
+                        Periodo actual:
+                        <span class="sub__Title-primary">16/03/2022 - 31/03/2022</span>
+                    </div>
+                </div>
+    
+                <div class="u-text-aling-right title-primary">
+                    Fenix 
+                    <a class="Anchor-links-second" href="#"> <i class="material-icons Anchor-links-second__https">https</i>  <span class="sub__Title-primary">Augusto Romero arango</span> </a>
+                   
+                </div>
+            </div>
+       </div>
+    </nav>
+
+      <section class="display-flex align-items__center flex-direction__column section-personal-information">
+            <div class="container-Sections__second" id="containerPersonalInfo">
+                <aside  class="first-section">
+                    <img src="/images/judas-tadeo.svg" class="image-sise image-sise-second" alt="">
+                    <ul  class="list-Employee-data list-Employee-data__one" id="first">
+                    </ul>
+                </aside>
+
+                <div class="second-section">
+
+                    <aside  id="center">
+                        <div class="u-container-left">
+                            <ul  class="list-Employee-data list-Employee-data__two" id="second">
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <aside  id="right">
+                        <div class="u-container-left">
+                            <ul  class="list-Employee-data list-Employee-data__tree" id="tree">
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                  
+                <div class="tertiry-section container-form">
+                    <form action="#" class="form-search form-search__second">
+                        <div class="form-search__select">
+                            <a class="Anchor-links-seven" href="#"><i class="material-icons Anchor-links-seven__reorder">reorder</i>Gestionar</a>
+                        </div>
+                        <label class="form-search__label form-search__label-second  mdc-text-field mdc-text-field--filled	">
+                            <input class="mdc-text-field__input form-search__search" type="search" aria-labelledby="my-label-id" placeholder="incapacidades,prima,modificacion,salario etc">
+                        </label>
+                        <button type="submit" class="form-search__submit form-search__submit-second">
+                            <i class="material-icons ">search</i>
+                        </button>                             
+                    </form>
+                </div>
+            </div>
+
+            <div id="togle" class="display-info-container display-flex aling-items__center justify-content__center">
+                <div class="Anchor-links-eighth">
+                    <i id="icon-up-down" class="material-icons Anchor-links-eighth__row">expand_less</i>
+                    <span id="mesage">Ocultar perfil</span>
+                </div>  
+            </div>
+    </section> 
+
+     <main class="Section-calendaries display-flex justify-content__center" id="calendariesSection">
+            <div class="container-Sections__tertiary" >    
+                <div class="first-section">
+                    <span class="bitakora-del-empleado">Bitácora del empleado</span>
+                </div>
+               
+                <div class="second-section">
+                    <div class="container-toggle ">
+                            <p class="sub__Title-dark-blue">Visualizar bitacora por:</p>
+                            <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+                            <label for="toggle-on" class="btn">Meses</label>
+                            <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+                            <label for="toggle-off" class="btn">Periodo</label>
+                    </div>
+                     
+                    <div class="container-slider-button">
+                          <p class="sub__Title-dark-blue">Marzo de 2022:</p>
+                            <a class="button-slider button-slider__after Anchor-links-nine" href="#"><i class="material-icons Anchor-links-nine__reorder">chevron_left</i></a>
+                            <a class="button-slider button-slider__next Anchor-links-nine" href="#"><i class="material-icons Anchor-links-nine__reorder">chevron_right</i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="first-calendarie container-Sections__fourth">
+                <div class="sub__Title-dark-blue first-section" id="categories">
+                    <span>Concepto</span>
+                    <span>Valor mensual</span>
+                </div>
+
+                <div class="display-flex justify-content__center  calendar-container second-section" id="firstCalendar"></div>
+
+                <div class="sub-title_secundary tertiry-section" id="categories">
+                    <span class="container-dias-Titulo">Dias</span>    
+                </div>
+            </div>
+            
+        </main> 
+
+    <script src="/src/js/material.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script>
+          const form_material = [].map.call(document.querySelectorAll('.mdc-text-field'), function (el) 
+            {
+                return new mdc.textField.MDCTextField.attachTo(el);
+            }) 
+    </script>
+    <script src="src/js/personalInfo.js"></script>
+    <script src="src/js/mapFlags.js"></script>
+    <script src="src/js/mapBitakora.js"></script>
+    <script src="src/js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@mixin adjust-width-childs($widht-first-section,$flex,$widht-tertiary-section){
+    &>*{
+        display: flex;
+    }
+    .first-section{
+        align-items: center;
+        flex-wrap: wrap;
+        width: $widht-first-section;
+    }
+    .second-section{
+        flex: $flex;
+        &>*{
+            flex: $flex;
+            align-self: center;
+        }
+    }
+    .tertiry-section{
+        width: $widht-tertiary-section;
+    }
+   
+}
+@mixin clearfix {
+    &::after{
+        content: "" ;
+        clear: both ;
+        display: table;
+    }   
+}
+@mixin flag-Form($bg-color) {
+    width: 5%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    clip-path: polygon(0% 0%, 80% 0%, 95% 27.5%, 80% 55%, 20% 55%, 20% 100%, 0% 100%);
+    font-size: 1.3rem;
+    padding-top: .1rem;
+    padding-left: .4rem;
+    color: $color-white-lighten;
+    background-color: $bg-color;
+    font-weight: 600;
+}
+@mixin row-form($bg-color,$text-color) {   
+    width: 10%;
+    height: 100%;
+    background-color:$bg-color;
+    clip-path: polygon(0% 0%,90% 0%,100% 50%,90% 100%,0% 100%,7% 50%);
+    margin-right:.5rem;
+    font-size: $medium-text;
+    color: darken($text-color,10); 
+}
+@mixin style-days-first-calendarie($border-bottom-color,$color,$bg-color){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: $bg-color;
+    border-bottom: 1px solid $border-bottom-color;
+    border-right: 1px solid $color-gray-medium;
+    font-size: $medium-text;
+    color: $color;
+    cursor: pointer;
+}
+@mixin style-days-devengado-deducido-vacaciones {
+    flex: 1;
+    height: 90%;
+    text-align: center;
+    cursor: pointer;
+    color: $color-white;
+    background-color: $color-gray-lighten;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-right:1px solid darken($color-gray-lighten,5);
+        &:hover{
+            background-color: darken($color-gray-lighten,10);
+        }
+}
+@mixin mensaje-flotante_total-paga-dia($bg-color) {
+    display: none;
+    align-items: center;
+    height: 1.4rem;
+    background-color: $bg-color;
+    border: 1px solid $color-white;
+    color: $color-white;
+    z-index: 1;
+    font-size: .9rem;
+    position:absolute;
+    bottom: 4rem;
+    font-weight: 300;
+}
