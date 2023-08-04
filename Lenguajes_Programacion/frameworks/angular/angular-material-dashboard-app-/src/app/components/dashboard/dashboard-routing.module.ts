@@ -7,12 +7,8 @@ import { ReportesComponent } from './reportes/reportes.component';
 import { CrearUsuarioComponent } from './usuarios/crear-usuario/crear-usuario.component';
 
 const routes: Routes = [
-  { path: '', component:DashboardComponent,children:[
-    { path: '',component:InicioComponent },
-    { path: 'usuarios',component:UsuariosComponent },
-    { path: 'reportes',component:ReportesComponent },
-    { path: 'crear-usuario',component:CrearUsuarioComponent }
-  ] }
+ 
+  
 ];
 
 @NgModule({

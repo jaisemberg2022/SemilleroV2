@@ -6,13 +6,16 @@ import { Home } from './pages/Home';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { tema } from './configuracion/configuracion';
 import { Actividades } from './pages/Actividades';
+import { DataGrid } from '@mui/x-data-grid';
+import CustomEditComponent from './modules/Actividades/components/DataGrid';
 
 function App() {
   return (
     <ThemeProvider theme={tema}>
       <CssBaseline />
-        {/* <Home /> */}
+        <Home />
         <Actividades/>
+        {/* <CustomEditComponent/> */}
     </ThemeProvider>
 
 

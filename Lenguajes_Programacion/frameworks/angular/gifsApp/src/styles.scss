@@ -1,0 +1,44 @@
+@use 'sass:map';
+@use 'sass:string';
+
+#sidebar{
+    height: 100%;
+    min-height: 100vh;
+    min-width: 180px;
+}
+
+
+$icon-button-bitakora-sizes: (
+  "small-medium": (28px, 20px),
+  "small-large": (43px, 35px),
+  "medium-small": (40px, 16px),
+  "medium-large": (59px, 35px)
+);
+
+@mixin density($size-container, $size-icon) {
+    width: $size-container !important;
+    height: $size-container !important;
+    padding: calc(($size-container - $size-icon) / 2) !important;
+    [class*="mat-icon"] {
+      width: $size-icon !important;
+      height: $size-icon !important;
+      font-size: $size-icon !important;
+    }
+    [class*="mat-mdc-button-touch-target"] {
+      height: $size-container !important;
+    }
+}
+
+@each $key ,$value in $icon-button-bitakora-sizes{
+    $button-class: nth(string.split($key, "-"), 1);
+    $icon-class: nth(string.split($key, "-"), 2);
+    $button-size:nth($value,1);
+    $icon-size:nth($value,2);
+    .mdc-icon-button.mat-mdc-button-base.#{$button-class}:has(.mat-icon.#{$icon-class}){
+        @include density($button-size,$icon-size);
+        .mat-icon{
+            vertical-align: text-top;
+        }
+    }
+}
+

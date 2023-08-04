@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Config de Riesgo</title>
+  </head>
+  <body class="flex">
+    <main class="flex">
+      <h1>CONFIGUARCION DE RIESGOS</h1>
+      <div class="flex">
+        <section id="left" class="flex">
+
+        </section>
+        <section id="right" class="flex">
+          <header id="topRight" class="flex">
+            <h2 id="tableHeader">&nbsp</h2>
+            <button id="newBtn">Nueva</button>
+          </header>
+          
+          <form id="module" class="flex hidden">
+            <header><b id="moduleHeader">"EVALUACION DE RIESGO"</b> <img id="x" src="./images/cerrar.svg" alt=""></header>
+            <p id="confirm"></p>
+            <div>
+              <label for="descripcion">Descripcion</label>
+              <input id="desc" name="descripcion" type="text" required>
+            </div>
+            <div>
+              <label id="val1Label" for="val1">Valor Minimo</label>
+              <input id="val1" name="val1" type="number" required>
+            </div>
+            <div id="val2Container">
+              <label for="val2">Valor Maximo</label>
+              <input id="val2" name="val2" type="text" required>
+            </div>
+            <button id="moduleBtn">Guardar</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="./src/script (1).js "></script>
+  </body>
+</html>

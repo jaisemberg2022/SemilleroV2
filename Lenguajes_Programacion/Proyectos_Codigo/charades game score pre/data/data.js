@@ -1,0 +1,4 @@
+const teams = {
+    nameFisrtTeam: "",
+    nameSecondTeam: ""
+}

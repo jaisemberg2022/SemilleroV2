@@ -1,0 +1,869 @@
+@font-face {
+  font-family:'DS-DIGI';
+  src: url('./DS-DIGI.TTF');
+}
+html {
+    margin: auto;
+    padding: auto;
+    background-color: #182339;
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gugi", cursive;
+  } 
+  body>header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    /* guess the word */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.48vw;
+    color: #ffffff;
+    margin-bottom: 45px;
+    line-height:0;
+  }
+  body>header > h2 {
+    /* charades online game */
+    font-family: "Gugi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.16vw;
+    line-height: 71px;
+    text-align: center;
+    color: #ffffff;
+   text-shadow: 0 0 0 5px #24ecff33,
+    0 0 0 10px #24ecff22,
+    0 0 0 20px #24ecff11,
+    0 0 20px #24ecff,
+    0 0 50px #24ecff;
+    line-height: 1px;
+  }
+  body>main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+  }
+  .backgroundAnimation {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%; 
+  
+  }
+  .backgroundAnimation .figure {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin: -70px;
+    border: 4px solid transparent;
+    border-left: 4px solid #24ecff;
+    animation: animate 4s linear infinite;
+  }
+  @keyframes animate{
+    0%{ transform: rotate(0deg)}
+    100%{ transform: rotate(360deg)}
+  }
+  .backgroundAnimation .figure::before {
+    content: "";
+    position: absolute;
+    top: 12%;
+    right: 82%;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: #24ecff;
+    box-shadow: 0 0 0 5px #24ecff33,
+  0 0 0 10px #24ecff22,
+  0 0 0 20px #24ecff11,
+  0 0 20px #24ecff,
+  0 0 50px #24ecff;
+}
+  .backgroundAnimation .figure:nth-child(2) {
+     animation: animateTwo 4s linear infinite;
+     animation-delay: -1s;
+     border-top: 4px solid transparent;
+     border-left: 4px solid #93ff2d;
+    }
+  @keyframes animateTwo{
+    0%{ transform: rotate(360deg)}
+    100%{ transform: rotate(0deg)}
+  }
+  .backgroundAnimation .figure:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: initial;
+    bottom: 25px;
+    left: 40px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: #93ff2d;
+    box-shadow: 0 0 0 5px #93ff2d,
+  0 0 0 10px #93ff2d22,
+  0 0 0 20px #93ff2d11,
+  0 0 20px #93ff2d,
+  0 0 50px #93ff2d;
+  }
+  .backgroundAnimation .figure:nth-child(3) {
+    animation: animate 4s linear infinite;
+    animation-delay: -3s;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #e41cf8;
+    position: absolute;
+    top: -49%;
+  }
+  .backgroundAnimation .figure:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: #e41cf8;
+    box-shadow: 0 0 0 5px #e41cf833,
+  0 0 0 10px #e41cf822,
+  0 0 0 20px #e41cf811,
+  0 0 20px #e41cf8,
+  0 0 50px #e41cf8;
+  }
+  .backgroundAnimation .figure:nth-child(4) {
+    animation: animateTwo 4s linear infinite;
+    animation-delay: -6s;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #d40a0a;
+    position: absolute;
+    top: -49%;
+    left: 5%;
+    
+   }
+  .backgroundAnimation .figure:nth-child(4)::before {
+   content: "";
+   position: absolute;
+   top: initial;
+   bottom: 25px;
+   left: 40px;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   background: #d40a0a;
+   box-shadow: 0 0 0 5px #d40a0a,
+  0 0 0 10px #d40a0a22,
+  0 0 0 20px #d40a0a11,
+  0 0 20px #d40a0a,
+  0 0 50px #d40a0a;
+  }
+  .backgroundAnimation .figure:nth-child(5) {
+    animation: animateTwo 4s linear infinite;
+    animation-delay: -10s;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #ff680a;
+    position: absolute;
+    top: -49%;
+    right: 5%;
+   }
+  .backgroundAnimation .figure:nth-child(5)::before {
+   content: "";
+   position: absolute;
+   top: initial;
+   bottom: 25px;
+   left: 40px;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   background: #ff680a;
+   box-shadow: 0 0 0 5px #ff680a,
+  0 0 0 10px #ff680a22,
+  0 0 0 20px #ff680a11,
+  0 0 20px #ff680a,
+  0 0 50px #ff680a;
+  }
+  main > section {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 1px;
+    background: #1c2a46dc;
+  }
+  main > section:hover {
+    background: rgba(40, 60, 100, 0.62);
+  }
+  main > section:active {
+    background: rgba(57, 87, 146, 0.849);
+  }
+  main > section > img {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+  }
+  main > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #314366f1;
+  }
+  main > article > img {
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+  }  
+  #setting {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+  }
+  #setting > form {
+    width: 99%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+  }
+  #setting > form > aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 24.75%;
+    height: 45vh;
+    background: #212f4de5;
+    border-radius: 9.39937px;
+    margin: 5px;
+    list-style: none;
+    box-shadow: 1px 1px 4px 2px #003575;
+  
+  }
+  #setting > form > aside >img{
+    
+    margin: auto;
+  }
+  #setting > form > aside:hover {
+    background: rgba(48, 72, 120, 0.62);
+    box-shadow: 1px 1px 10px 2px #00a2ffbe;
+  }
+  #setting > form > aside>article
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20vh;
+    margin: auto;
+
+  }
+  #setting > form > aside >article> .time_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: center;
+    width: 7.92vw;
+    height: 3.39vh;
+    background-color: #182339;
+    /* English words */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 0.732vw;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 5px;
+    padding: 5px;
+  }
+  #setting > form > aside > article>.time_container:hover {
+    background-color: #182339ad;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #00a2ffbe;
+  }
+  #setting > form > aside > article>.time_container > label:hover {
+    cursor: pointer;
+  }
+  #setting > form > aside > article>.points_container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.732vw;
+  }
+  #setting > form > aside >article>.container_category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  #setting > form > aside >article> .container_category > .option {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10.92vw;
+    height: 5.39vh;
+    background-color: #182339;
+    /* English words */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.732vw;
+    line-height: 16px;
+    text-align: left;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 10px;
+    padding: 5px;
+  }
+  #setting > form > aside >article> .container_category > .option:hover {
+    background-color: #182339ad;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #00a2ffbe;
+  }
+  #setting > form > aside >article> .container_category img {
+    margin-right: 10px;
+  }
+  #setting > form > aside:hover {
+    background: rgba(48, 72, 120, 0.62);
+  }
+  #setting > form > aside >article> .groups_container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.732vw;
+  }
+  #setting > form > aside > .categoryLabel {
+    /* English words */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.951vw;
+    line-height: 1px;
+    text-align: left;
+    border-radius: 5px;
+    color: white;
+  }
+  #setting > form > aside input[type="text"],
+  input[type="number"] {
+    width: 55%;
+    height: 5.39vh;
+    background-color: #182339;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+  }
+  #setting > form > aside input[type="text"]:hover,
+  input[type="number"]:hover {
+    background-color: #182339ad;
+    box-shadow: 1px 1px 10px 2px #00a2ffbe;
+  }
+  #setting > form > aside input[type="text"]::placeholder,
+  input[type="number"]::placeholder {
+    font-size: 0.732vw;
+    padding-left: 1px;
+  }
+  #setting > form > aside input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  #startGameSection {
+    width: 80%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #startGameSection>.headerStarGame {
+    font-size: 1.09vw;
+    font-style: normal;
+    font-family: "Inter";
+    color: #fff;
+  }
+  #startGameSection>.score_pre
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    height: auto;
+    margin: auto
+  }
+  #startGameSection > .score_pre> .score_body_Section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: auto;
+    font-size: 30px;
+    font-family: "DS-DIGI";
+    color: #f5b231;
+    border: 1px solid white;
+    margin: 2px;
+  }
+    #startGameSection > .score_pre> .score_body_Section> header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4vh;
+    border-bottom: 1px solid #ffffff;
+    font-family: "Gugi", cursive;
+    font-size: 1.1713vw;
+  }
+  #startGameSection > .score_pre> .left > header {
+    background-color: #f44336;
+    font-size: 1.24vw;  
+    color: #ffffff;
+  }
+  #startGameSection > .score_pre>h2{
+    color: white;
+  }
+  #startGameSection > .score_pre>  .right > header {
+    background-color: #006df0;
+    font-size: 1.24vw;
+    color: #ffffff;
+  }
+  #startGameSection>.game {
+    width: 55%;
+    height: auto;
+    font-size: 13px;
+    border-radius: 15px;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    font-style: normal;
+    color: #fff;
+    background-color: #212f4dde;
+    margin: auto;
+    border: 1px solid white;
+  }
+  #startGameSection>.game>img {
+    cursor: pointer;
+    width: 10%;
+    height: auto;
+  }
+  #startGameSection>.game > header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #3f5688e3;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 1px solid white;
+  }
+  #startGameSection>.game > header > h2{
+    display: none;
+    margin: auto;
+    
+  }
+  #startGameSection>.game > header > span{
+    margin: auto;
+  }
+  #startGameSection>.game > #randomWord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 35%;
+    height: 8vh;
+    background-color: #182339;
+    border-radius: 5px;
+    margin: 30px;
+    font-size: 1.46vw;
+    font-weight: 100;
+    color: gold
+  }
+  #startGameSection>.game > #buttonCorrect {
+    display: flex;
+  }
+  #startGameSection>.game > #buttonIncorrect {
+ 
+    display: none;
+  }
+  #startGameSection>.game > #buttonNextWord {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 8vh;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    background: #3f5688;
+    background-color: #07d603;
+    border: 1px solid #07d603;
+    box-shadow: 1px 1px 10px 2px #07d603;
+    cursor: pointer;
+    border: none;
+  }
+  .buttonsCheck {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 66px;
+    height: 66px;
+  }
+  /* .buttonNextWord {
+    width: 300px;
+    height: 65px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    background: rgba(0, 109, 240, 0.96);
+    background-color: #07d603;
+    border: 1px solid #07d603;
+    box-shadow: 1px 1px 10px 2px #07d603;
+    cursor: pointer;
+    border: none;
+  } */
+  input.incomplete {
+    border: 2px solid red;
+    background-image: url("../images/incorrect.svg");
+    /* background-color: rgba(243, 171, 171, 0.445); */
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 20%;
+  }
+  input.complete {
+    border: 2px solid lime;
+    background-image: url("../images/correct.svg");
+    /* background-color: rgba(177, 243, 171, 0.445); */
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+    background-size: 20%;
+  }
+  .buttonHome {
+    position: fixed;
+    bottom: 0.5rem;
+    left: 3em;
+    width: 85px;
+    height: 5vh;
+    background-color: #07d603;
+    background-color: #07d603;
+    border: 1px solid #07d603;
+    box-shadow: 1px 1px 10px 2px #07d603;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    font-family: "Gugi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.464vw;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+  }
+  footer {
+    margin: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+  }
+  .modal,
+  #poopScore {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+  }
+  footer>.modal>#rulesPop{
+
+    background-color:  #182547;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  footer>.modal>#rulesPop>.headerCloseRules{
+    background-color: #314366;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height:auto;
+    color: white;
+  }
+  footer>.modal>#rulesPop>.headerCloseRules>h3{
+    margin: auto;
+    padding: 10px;
+  }
+  footer>.modal>#rulesPop>.headerCloseRules>img{
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  footer>.modal>#rulesPop>img{
+    width: 100%;
+    height: auto;
+  }
+  .toStartGame {
+    position: absolute;
+    bottom: 2.5rem;
+    width: 15%;
+    height: 9vh;
+    background-color: #07d603;
+    border: 1px solid #07d603;
+    box-shadow: 1px 1px 10px 2px #07d603;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    font-family: "Gugi";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.464vw;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+    animation: animateStartGame 4s linear infinite;
+  }
+  @keyframes animateStartGame{
+     0% {   } 
+     50% { box-shadow: 1px 1px 8px 1px #07d603 ; }
+     100% { box-shadow: 1px 1px 10px 2px #07d603 ; }
+  }
+  .toStarGame:hover {
+    background-color: limegreen;
+  }
+  .openModalBtn {
+    width: 5%;
+    height: auto;
+    padding:5px;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgba(66, 92, 119, 0.68);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  .openModalBtn:hover {
+    background-color: #0d71dbad;
+  }
+  .iconCategory {
+    width: 23px;
+    height: 23px;
+  }  
+  #scorePop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    background-color: #182547;
+    border-radius: 10px;
+    box-shadow: 0px 0px 105.649px 14.5008px rgba(60, 60, 60, 0.81);
+    font-family: "Gugi", cursive;
+  }
+  #scorePop > header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: rgb(0, 111, 202);
+    border-radius: 10px 10px 0px 0px;
+  }
+  #scorePop > header > p {
+    margin: auto;
+    text-align: center;
+  }
+  #scorePop > header > img {
+
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  #scorePop > aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    border: 1px solid #ffffff;
+    margin: 30px;
+  }
+  #scorePop > aside > header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ffffff;
+    background-color: #344d7a;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  #scorePop > aside > form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 30vh;
+  
+    margin: auto;
+  }
+  #scorePop > aside > form > .score_body_Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 32%;
+    height: 25vh;
+  }
+  #scorePop > aside > form > .left,
+  .right {
+    border: 1px solid #ffffff;
+    font-size: 70px;
+    font-family: "DS-DIGI";
+    color: #f5b231;
+  }
+  #scorePop > aside > form > .score_body_Section > header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4vh;
+    border-bottom: 1px solid #ffffff;
+    font-family: "Gugi", cursive;
+    font-size: 1.1713vw;
+  }
+  #scorePop > aside > form > .left > header {
+    background-color: #f44336;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  #scorePop > aside > form > .right > header {
+    background-color: #006df0;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  #scorePop > aside > form > .score_body_Section > p {
+    margin: auto;
+  }
+  #scorePop > aside > form > .score_body_Section > .data_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    border: 1px solid white;
+    font-size: 1.1713vw;
+  }
+  #scorePop > aside > form > .score_body_Section > .one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #8abe47;
+    font-family: 'DS-DIGI';
+  }
+  #scorePop > aside > form > .score_body_Section > .two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/incorrect.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+  }
+  #scorePop > aside > form > .score_body_Section > .two > span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #d83932;
+    border: 1px solid white;
+    width: 30%;
+    height: 4vh;
+    font-size: 22px;
+    font-family: "DS-DIGI";
+  }
+  #scorePop > aside > form > .score_body_Section > .return,.reload {
+    background-color: lime;
+    width: 30%;
+    height: 4vh;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    border: none;
+  }
+  @media (max-width: 375px) {
+    #scorePop > aside > form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #scorePop > aside > form > .score_body_Section {
+      width: 90%;
+      height: 10vh;
+      margin: 5px;
+    }
+  }
+  

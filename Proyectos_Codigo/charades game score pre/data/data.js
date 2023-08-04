@@ -1,4 +1,0 @@
-const teams = {
-    nameFisrtTeam: "",
-    nameSecondTeam: ""
-}
