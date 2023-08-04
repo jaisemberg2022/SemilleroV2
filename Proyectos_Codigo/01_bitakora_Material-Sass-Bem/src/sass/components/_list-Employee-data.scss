@@ -1,0 +1,23 @@
+.list-Employee-data{
+    padding: .1rem;
+    list-style: none;
+    li{
+        margin-top: .1rem;
+        display: flex;
+    }
+    &__one{
+        width: 40%;
+        li span{
+            width: 50%;    
+        }
+    }
+    &__two{
+        width: 75%;
+        li span{
+            width: 34%;    
+        }
+    }
+    &__tree{
+        width: 70%;
+    }
+}

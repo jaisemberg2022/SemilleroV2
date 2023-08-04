@@ -1,0 +1,49 @@
+[class^='container-Sections']{
+    display: flex;
+    height: auto;
+}
+.container-Sections{
+    &__first{
+        width: 100%;
+        @include adjust-width-childs($widht-first-section:61.5%,$flex:1,$widht-tertiary-section:0);
+        .second-section{
+           &>*{
+            padding-left: 1.2rem;
+            height: 2.4rem;
+            border-left: 1px solid darken($color-gray-lighten,60);
+           }
+           .container-periodo-actual{
+            padding-right: 2rem;
+           }
+        }
+    }
+    &__second{
+        width: 92%;
+        flex-wrap: wrap;
+        @include adjust-width-childs($widht-first-section:50%,$flex:1,$widht-tertiary-section:51%);
+        .tertiry-section{
+            justify-content: flex-end;
+        }
+    }
+    &__tertiary{
+        width: 100%;
+        height: 7rem;
+        background-color: $color-white-lighten;
+        @include adjust-width-childs($widht-first-section:63.4%,$flex:1,$widht-tertiary-section:0);
+    }
+    &__fourth{
+        display: flex;
+        align-items: center;
+        width: 98%;
+        height: 3.8rem;
+        @include adjust-width-childs($widht-first-section:15%,$flex:1,$widht-tertiary-section:5%);
+            .first-section{
+                justify-content: space-evenly;
+                padding-right: 4rem;
+            }
+            .tertiry-section{
+                justify-content: center;
+            }
+    }
+}
+

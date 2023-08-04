@@ -1,0 +1,152 @@
+body{
+    font-size: $default-font-size;
+    text-decoration: none ;
+    font-family: 'Roboto';
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.17em;
+}
+
+h4{
+    font-size: 1em;
+}
+
+h5{
+    font-size: .83em;
+}
+
+h6{
+    font-size: .67em;
+}
+
+.title-primary{
+    color: $color-white;
+    font-size: $medium-text;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 100%;
+}
+.sub__Title-primary{
+    color: $color-white;
+    font-weight: 300;
+    font-size:  $medium-text;
+    display: inline-block;
+    line-height: 0%;
+}
+.sub__Title-dark-blue{
+    color: $color-blue-medium-dark;
+    font-weight: 500;
+    font-size:  $medium-text;
+    display: inline-block;
+    line-height: 0%;
+}
+[class^='Anchor-links']{
+    text-decoration: none;
+    display: inline-block;
+}
+.Anchor-links{
+    &-first{
+    color: $color-green-medium;
+    font-size: 1.1rem;
+        &__icon-edit-one{
+                font-size: 1rem;
+                color: $color-green-medium;
+        }
+    }
+    &-second{
+        &__https{
+            font-size: 1.5rem;
+            line-height: 0%;
+            color: $color-gray-lighten;
+        }
+    }
+    &-tertiary{
+            &__edit-two{
+                font-size: 1.8rem;
+                color: $color-green-medium;
+            }
+    }
+    &-fourth{
+        font-size: $Anchor-tag-size_first;
+        color: #53cac6;
+        margin-left:.3rem;
+        &__actualize{
+            color: #53cac6;
+            font-size:$Anchor-tag-size_second;
+        }
+    }
+    &-fifth{
+        font-size:$Anchor-tag-size_first;
+        color: $color-green-dark;
+        &__class{
+            font-size:$Anchor-tag-size_second;
+        }
+
+    }
+    &-sixth{
+        font-size:$Anchor-tag-size_first;
+        color: $color-green-dark;
+        &__icon-list{
+            font-size: $Anchor-tag-size_second;
+            color: $color-green-dark;
+        }
+    }
+    &-seven{
+        font-size:$Anchor-tag-size_second;
+        color: #465763;
+        font-weight: 700;
+        display: flex;
+        &__reorder{
+            font-size: 1.6rem;
+            padding-right: .3rem;
+        }
+    }
+    &-eighth{
+        align-items: center;
+        display: inline-flex;
+        color: $color-green-dark;
+        font-size: 1.1rem;
+        font-weight: 500;
+        cursor: pointer;
+        &__row{
+            color: $color-green-medium;
+        }
+    }
+}
+.title-secundary{
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $color-blue-dark;
+}
+.contador{
+    font-size: $medium-text;
+    color: $color-gray-medium;
+    display: inline;
+    font-weight: 500;
+    line-height: normal;
+}
+.sub-title_secundary{
+    font-size: $medium-text;
+    color: $color-blue-medium;
+    font-weight: 500;
+}
+.appex{
+    font-size: 1.1rem;
+    color: $color-blue-medium-dark_second;
+    font-weight: 200;
+}
+.bitakora-del-empleado{
+    font-size: 1.7rem;
+    color: $color-blue-devengado;
+    font-weight: 700;
+}

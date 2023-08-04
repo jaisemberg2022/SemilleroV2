@@ -1,0 +1,124 @@
+    .first-calendarie{
+        .calendar-container{
+            &>:first-child{
+                border-left: 1px solid $color-gray-medium;
+            }
+            .dia-TDV{
+                &_T{
+                    @include style-days-first-calendarie($border-bottom-color:$color-gray-medium,$color:$color-gray-medium,$bg-color:transparent);
+                }
+                &_D{
+                    @include style-days-first-calendarie($border-bottom-color:$color-blue-dark,$color:$color-blue-dark,$bg-color:lighten($color-gray-medium,28));
+                }
+                &_V{
+                    @include style-days-first-calendarie($border-bottom-color:$color-yellow-vacaciones,$color:$color-yellow-vacaciones,$bg-color:lighten($color-yellow-vacaciones,31));
+                }
+            }
+        }
+    }
+    .Another-calendaries{
+    
+        position: relative;
+        width: 98%;
+        height: 3.8rem;
+        margin-top: .8rem; 
+        .flag-form{
+            &__Devengado{
+                @include flag-Form($bg-color:$color-blue-devengado); 
+            }
+            &__Vacaciones{
+                @include flag-Form($bg-color:$color-yellow-vacaciones); 
+            }
+            &__Deducido{
+                @include flag-Form($bg-color:$color-red-deducido);
+            }
+        }
+        .up-container{
+            width: 95%;
+            height: 55%;
+            .row-form{
+                @include row-form($bg-color:$color-gray-lighten ,$text-color:$color-gray-medium); 
+            }
+            .calendar-container{
+                width: 84%;
+                .mensaje-total-Pago{
+                    @include mensaje-flotante_total-paga-dia($bg-color:$color-blue-dark);
+                }
+                .dia-DVD{
+                    @include style-days-devengado-deducido-vacaciones ;
+                        &:hover .mensaje-total-Pago {
+                            display: flex;
+                        }
+                 }
+                    .Vacaciones-liquidación{
+                    background-color: $color-yellow-vacaciones;
+                    border: 0.1px solid darken($color-yellow-vacaciones,10);
+                        &:hover{
+                        background-color: darken($color-yellow-vacaciones,10);   
+                        }
+                    }  
+                    .Devengado{
+                        &-Pagado{
+                            background-color: lighten($color-blue-devengado,20);
+                            border-right-color:lighten($color-blue-devengado,10);
+                            &:hover{
+                                background-color: lighten($color-blue-devengado,30);
+                                border-right-color: lighten($color-blue-devengado,30);
+                            }        
+                        }
+                        &-liquidación{
+                            background-color: $color-blue-devengado;
+                            border-right-color:darken($color-blue-devengado,5);
+                            &:hover{
+                                background-color: darken($color-blue-devengado ,10);
+                            }        
+                        }
+                    }    
+                    .Deducido{
+                        &-Pagado{
+                            background-color: lighten($color-red-deducido,20);
+                            border-right-color:lighten($color-red-deducido,10);
+                                &:hover{
+                                    background-color: lighten($color-red-deducido,30);
+                                }  
+                        }
+                        &-liquidación{
+                            background-color: $color-red-deducido;
+                            border-right-color:darken($color-red-deducido,5);
+                            &:hover{
+                                background-color: darken($color-red-deducido ,5);
+                            }   
+                        }
+                    }    
+            }
+            .total-dias-container{
+                flex: 1;
+                text-align: center;
+                margin-left: .5rem;
+                &__total-dias{
+                    color: $color-white-lighten;
+                    width: 50%;
+                    height: 100%;
+                    background-color: darken($color-gray-medium,10);
+                    border-radius: .1rem;
+                }
+            }
+        }
+        .down-container{
+            width: auto;
+            margin-left: 1.5rem;
+            margin-top: .1rem;
+            .item{
+                color: $color-gray-dark-second;
+                font-weight: 500;
+                font-size: 1.1rem;
+            }
+            .base-formula-matematica{
+                background-color:#fbe5ff;
+                color: #9a6ca1;
+                width: auto;
+                font-size: 1.1rem;
+                margin-left: 1.2rem;
+            }
+        }   
+    } 
